@@ -1,0 +1,97 @@
+html {font-size: 20px;}
+body {font-size: 0.8rem;}
+
+/*-----헤더 시작-----*/
+.header {line-height: 5rem;}
+
+.header .container {display:flex; width: 60rem; margin: 0 auto; justify-content: space-between; padding: 0 0.75rem}
+.header h1 {width: 10rem;}
+
+.gnb {text-align: center;}
+.gnb .step01 {display: flex; position: relative;}
+.gnb .step01>li {padding: 0 0.75rem;}
+.gnb .step01>li>a {display: block; font-size: 1rem; font-weight: 400; color: #333; padding: 0 0.75rem;}
+.gnb .step01>li:hover>a {font-weight: 700;}
+.gnb .step02 {display: flex; height: 0; overflow: hidden; position: absolute; top: 5rem; left: 50%; transform: translateX(-50%); width: 60rem; justify-content: center; z-index: 999;}
+.gnb:before {content: ""; display:block; width: 100%; height: 0; background:rgba(255, 255, 255, 0.9); position: absolute; top: 5rem; left: 0; transition: 0.5s; z-index: 999;}
+.gnb:hover:before {height: 3rem;}
+.gnb ul>li:hover .step02 {height: 3rem; transition: 0.5s;}
+.step02>li>a:before {content: "#";}
+.step02>li>a {display: block; position: relative; font-size: 0.75rem; font-weight: 300; color: #333; line-height: 3rem; text-align: center; padding: 0 1rem}
+.step02>li>a:after {content: ""; display: block; width: 0; height: 3px; background: #89a130; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); transition: 0.3s;}
+.step02>li>a:hover:after {width: 100%;}
+
+.sub_nav a {font-size: 0.75rem; font-weight: 500;}
+.sub_nav a~a:before {content: ""; display: inline-block; width: 1px; height: 0.45rem; margin: 0 15px; background: #aaa;}
+/*-----헤더 끝-----*/
+
+/*-----서브페이지 시작-----*/
+.subpage .visual_01 {width: 100%; background:url(../img/subpage_img01.jpg) no-repeat right bottom/cover;}
+.subpage .visual_01 .text {width: 60rem; margin: auto; vertical-align: middle; padding: 10rem 0.75rem 10rem 0; text-align: right;}
+.subpage .visual_01 h2 {font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem;}
+.subpage .visual_01 p {font-size: 1rem; line-height: 1.5rem; font-weight: 300}
+
+.subpage .container {display: flex; width: 1200px; margin: 0 auto; padding: 5rem 0;}
+.subpage .container aside {width: 350px; padding: 0 50px 0 15px;}
+.subpage .container aside h2 {margin-bottom: 20px; border-bottom: 1px solid #89a130; font-size: 20px; line-height: 2;}
+.subpage .container aside ul>li {border:1px solid #ddd; margin-bottom: 4px; border-radius: 5px;}
+.subpage .container aside ul>li>a {display: block; padding: 10px 15px;}
+.subpage .container aside ul>li:hover {background: #89a130; color: #fff}
+
+.subpage .container article {width: 850px; padding: 0 15px 0 50px; border-left:  1px solid #ddd; text-align: center;}
+.subpage .container article h3 {font-size: 1.2rem; font-weight: 500; line-height: 1.5; margin-bottom: 2rem;}
+.subpage .container article strong {font-size: 1rem; font-weight: 300; line-height: 1.5; margin-bottom: 1rem;}
+.subpage .container article .sentence01 {font-size: 0.8rem; font-weight: 300; margin-bottom: 3rem;}
+.subpage .container article .sentence02 {font-size: 1rem; font-weight: 300; line-height: 1.5;}
+
+.business_tab {padding: 5rem 0;}
+.business_tab .tab_menu {display: flex;}
+.business_tab .tab_menu>li {flex: 1; text-align: center; font-size: 1rem;line-height: 40px; background: #ddd;}
+.business_tab .tab_menu>li~li {border-left: 1px solid #ccc;}
+.business_tab .tab_menu>li.on {background: #715F5C; color: #fff;}
+.business_tab .tab_content {text-align: left; position: relative; height: 38rem}
+.business_tab .tab_content>div {opacity: 0; visibility: hidden;position: absolute; top:0; left:0; padding: 2rem 0;}
+.business_tab .tab_content>div.on {opacity: 1; width: 100%; height: 100%; visibility: visible;}
+.business_tab .tab_content  h4 {font-size: 1.2rem; font-weight: 500; margin: 1rem 0 1rem 0;}
+.business_tab .tab_content h4~h4:before {content:""; display: block; border-top: 1px solid #ddd; margin: 2.5rem 0;}
+.business_tab .tab_content  p {font-size: 1rem; font-weight: 300; line-height: 1.5; margin-bottom: 2rem;}
+.business_tab .tab_content .mission>li {font-size: 0.9rem; font-weight: 300; margin-bottom: 1rem;}
+.business_tab .tab_content .mission>li:before {content: ""; display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: #ddd; vertical-align: middle; margin-right: 0.75rem;}
+.business_tab .tab_content figure {text-align: right; margin-top: 6rem}
+
+.business_tab .tab_content .three_direction dl>dt{font-size: 0.75rem; font-weight: 700; margin: 2rem 0 1rem 0; color: #89a130}
+.business_tab .tab_content .three_direction dl>dd{font-size: 0.9rem; font-weight: 300; margin-bottom: 1rem; line-height: 1.5;}
+
+.business_tab .tab_content .principles li {font-size: 0.9rem; font-weight: 300; margin-bottom: 1rem;}
+.business_tab .tab_content .principles li:before {content: ""; display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: #ddd; vertical-align: middle; margin-right: 0.75rem;}
+
+/*-----서브페이지 끝-----*/
+
+/*-----푸터 시작-----*/
+.footer {padding: 2rem 0; background: #333; color: #999;}
+.footer .container {width: 60rem; margin: 0 auto; padding: 0 0.75rem}
+.footer .top {display: flex; justify-content: space-between; border-bottom: 1px solid #666; padding-bottom: 2rem;}
+.footer .top h2 {padding-right: 15px;}
+.footer .top img {width: 10rem;}
+.footer .top dl {display: flex; padding: 0 15px; line-height: 1.5rem;}
+.footer .top .strong {font-weight: 700; color: #89a130;}
+.footer .top dl>dd~dd:before {content: ""; display: inline-block; border-left: 1px solid #666; height: 0.75rem; margin: 0 15px; vertical-align: middle;}
+.footer .top .icon {font-size: 0;}
+.footer .top .icon a {padding-left: 8.3px;}
+.footer .top .icon i {font-size: 1rem; border: 2px solid #999; color: #999; border-radius: 25%; padding: 0.3rem}
+
+.footer .bottom {display: flex; justify-content: space-between; padding-top: 2rem;}
+.footer .bottom .left h3 {font-size: 0.8rem; font-weight: 700; margin-bottom: 1.5rem; color: #ccc}
+.footer .bottom .left address {font-size: 0.75rem; margin-bottom: 0.75rem; color: #999;}
+.footer .bottom .left>div {margin-bottom: 2rem;}
+.footer .bottom .left span {font-size: 0.75rem; color: #999;}
+.footer .bottom .left span~span:before {content: ""; display: inline-block; border-left: 2px solid #444; height: 0.7rem; margin: 0 1rem}
+.footer .bottom .left>span {font-size: 0.7rem;}
+
+.footer .bottom .right .call { margin: 0 0 1rem 0;}
+.footer .bottom .right .call>span {font-size: 0.75rem; vertical-align: baseline;}
+.footer .bottom .right .call>a {font-size: 0.8rem; color: #ccc;}
+.footer .bottom .right .support_guide a {display: inline-block; line-height: 2rem; font-size: 0.75rem; background: #444; color: #ccc; text-align: center; padding: 0 2.5rem; margin: 1rem 0 0 0;}
+/* {outline: 1px solid #f00;}
+
+/*-----푸터 끝-----*/
