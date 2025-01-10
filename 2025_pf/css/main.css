@@ -1,0 +1,174 @@
+/* 공통 */
+* {
+    color: #fff
+}
+#sec {
+    position: relative;
+    background-color: #000;
+}
+.pc-br {
+    display: block;
+}
+.mo-br{
+    display: none;
+}
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+@media (max-width:768px){
+    #sec {
+        position: relative;
+    }
+    .pc-br {
+        display: none;
+    }
+    .mo-br{
+        display: block;
+    }
+    .inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Header */
+
+#header {
+    width: 100%;
+    background-color: #333;
+    transition: background-color 0.5s ease;
+}
+#header.on {
+    position: fixed;
+    background-color: #000;
+    border-bottom: 2px solid #333;
+    z-index: 1;
+}
+#header .inner-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+#header .inner .gnb .menu-flex {
+    display: flex;
+}
+#header .inner .gnb .menu-flex>li>a {
+    font-family: 's-core-dream-medium';
+    font-size: 1.2rem;
+}
+
+
+/* Main */
+#sec.main {
+    height: 400vh;
+}
+#sec.main .sticky {
+    position: sticky;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#sec.main .inner .main-title .title-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-out, transform 1s ease-out;
+}
+#sec.main .inner .main-title .title-box.visible {
+    opacity: 1;
+  }
+#sec.main .inner .main-title .title-box.hidden {
+    opacity: 0;
+    transition: opacity 0.6s ease-in, transform 1s ease-in;
+  }
+#sec.main .inner .main-title .box-01{
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+#sec.main .inner .main-title .box-02{
+   left: 0;
+   text-align: left;
+}
+#sec.main .inner .main-title .box-03{
+   right: 0;
+   text-align: right;
+}
+#sec.main .inner .main-title .box-04{
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+#sec.main .inner .main-title .title-box>.title{
+    font-family: 's-core-dream-medium';
+    font-size: 2rem;
+    line-height: 4rem;
+}
+#sec.main .inner .main-title .title-box>.text{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+#sec.sec-01 .inner {
+    position: relative;
+    height: 300vh;
+    overflow: visible;
+}
+#sec.sec-01 .inner .left {
+    position: sticky;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 50%;
+    margin-bottom: 20%;
+}
+#sec.sec-01 .inner .left .title{
+    font-family: 's-core-dream-medium';
+    font-size: 2rem;
+    line-height: 4rem;
+}
+#sec.sec-01 .inner .left .btn-box{
+    width: 50%;
+    margin-top: 50px;
+}
+#sec.sec-01 .inner .left .btn-box .btn{
+    width: 280px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#sec.sec-01 .inner .left .btn-box .btn p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+#sec.sec-01 .inner .left .btn-box .btn:hover p{
+    color: #000;
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+#sec.sec-01 .inner .right {
+    height: auto;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#sec.sec-01 .inner .right div {
+    width: 50%;
+    padding: 50px 0;
+}
+#sec.sec-01 .inner .right div:nth-child(2n) {
+    margin-left: auto;
+}
+#sec.sec-01 .inner .right div img {
+    border-radius: 20px;
+}
