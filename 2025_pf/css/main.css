@@ -48,14 +48,18 @@
 #header .inner-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 25px 0;
 }
 #header .inner .gnb .menu-flex {
     display: flex;
 }
+#header .inner .gnb .menu-flex>li {
+    margin-left: 25px;
+}
 #header .inner .gnb .menu-flex>li>a {
     font-family: 's-core-dream-medium';
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
