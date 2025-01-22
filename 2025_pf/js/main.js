@@ -12,7 +12,7 @@ $(function () {
   $(window).on("scroll", function () {
     const scrollTop = $(window).scrollTop();
     // 헤더에 "on" 클래스 추가/제거
-    $header.toggleClass("on", scrollTop > 0);
+    $header.toggleClass("fixed", scrollTop > 0);
     // 현재 스크롤 위치를 기준으로 활성 박스 계산
     const newIndex = Math.floor(scrollTop / customHeight);
     // visible 제거 조건: 특정 높이 이상일 경우
@@ -160,6 +160,24 @@ init04();
     pagerCustom:".custom_pager", //원하는 id 및 class
   });
 
+// 스크롤 잠금 함수
+function lockScroll() {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${scrollTop}px`;
+  document.body.style.width = '100%';
+  document.body.dataset.scrollY = scrollTop; // 현재 스크롤 위치 저장
+}
+
+// 스크롤 잠금 해제 함수
+function unlockScroll() {
+  const scrollY = document.body.dataset.scrollY || '0';
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.width = '';
+  window.scrollTo(0, parseInt(scrollY, 10)); // 저장된 스크롤 위치로 이동
+  document.body.dataset.scrollY = ''; // 데이터 초기화
+}
 
   // 첫번째 팝업 열기
   $(".pop-btn-01").click(function () {
@@ -167,7 +185,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 첫번째 팝업 닫기
-  $(".popup-01 .xi-close").click(function () {
+  $(".popup-01 .close").click(function () {
     $(".popup-01").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -177,7 +195,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 두번째 팝업 닫기
-  $(".popup-02 .xi-close").click(function () {
+  $(".popup-02 .close").click(function () {
     $(".popup-02").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -187,7 +205,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 세번째 팝업 닫기
-  $(".popup-03 .xi-close").click(function () {
+  $(".popup-03 .close").click(function () {
     $(".popup-03").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -197,7 +215,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 네번째 팝업 닫기
-  $(".popup-04 .xi-close").click(function () {
+  $(".popup-04 .close").click(function () {
     $(".popup-04").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -207,7 +225,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 다섯번째 팝업 닫기
-  $(".popup-05 .xi-close").click(function () {
+  $(".popup-05 .close").click(function () {
     $(".popup-05").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -217,7 +235,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 여섯번째 팝업 닫기
-  $(".popup-06 .xi-close").click(function () {
+  $(".popup-06 .close").click(function () {
     $(".popup-06").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -227,7 +245,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 일곱번째 팝업 닫기
-  $(".popup-07 .xi-close").click(function () {
+  $(".popup-07 .close").click(function () {
     $(".popup-07").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -237,7 +255,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 여덟번째 팝업 닫기
-  $(".popup-08 .xi-close").click(function () {
+  $(".popup-08 .close").click(function () {
     $(".popup-08").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -247,7 +265,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 아홉번째 팝업 닫기
-  $(".popup-09 .xi-close").click(function () {
+  $(".popup-09 .close").click(function () {
     $(".popup-09").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -257,7 +275,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 열번째 팝업 닫기
-  $(".popup-10 .xi-close").click(function () {
+  $(".popup-10 .close").click(function () {
     $(".popup-10").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -267,7 +285,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 열한번째 팝업 닫기
-  $(".popup-11 .xi-close").click(function () {
+  $(".popup-11 .close").click(function () {
     $(".popup-11").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -277,7 +295,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 열두번째 팝업 닫기
-  $(".popup-12 .xi-close").click(function () {
+  $(".popup-12 .close").click(function () {
     $(".popup-12").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -287,7 +305,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 열세번째 팝업 닫기
-  $(".popup-13 .xi-close").click(function () {
+  $(".popup-13 .close").click(function () {
     $(".popup-13").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
@@ -297,7 +315,7 @@ init04();
     document.body.style.overflow = "hidden"; // 스크롤 비활성화
   });
   // 열넷번째 팝업 닫기
-  $(".popup-14 .xi-close").click(function () {
+  $(".popup-14 .close").click(function () {
     $(".popup-14").removeClass("on");
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
