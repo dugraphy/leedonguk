@@ -4,57 +4,57 @@ $(function () {
   const totalBoxes = $boxes.length;
   const customHeight = 900; // 900px 기준
   const removeVisibleHeight = customHeight * totalBoxes; // 특정 높이에서 visible 이벤트 제거
-  
   let activeIndex = 0;
 
   // 초기 상태: 첫 번째 박스 보이기
   $boxes.eq(activeIndex).addClass("visible");
-
   // 스크롤 이벤트
   $(window).on("scroll", function () {
-      const scrollTop = $(window).scrollTop();
-
-      // 헤더에 "on" 클래스 추가/제거
-      $header.toggleClass("on", scrollTop > 0);
-
-      // 현재 스크롤 위치를 기준으로 활성 박스 계산
-      const newIndex = Math.floor(scrollTop / customHeight);
-
-      // visible 제거 조건: 특정 높이 이상일 경우
-      if (scrollTop > removeVisibleHeight) {
-          // 모든 박스에서 visible과 hidden 제거
-          $boxes.removeClass("visible hidden");
-          activeIndex = -1; // 비활성화
-          return;
-      }
-
-      // 박스가 변경되었으면 처리
-      if (newIndex !== activeIndex && newIndex < totalBoxes) {
-          // 이전 박스 숨기기
-          $boxes.eq(activeIndex).removeClass("visible").addClass("hidden");
-
-          // 새로운 박스 보이기
-          $boxes.eq(newIndex).addClass("visible").removeClass("hidden");
-
-          // 활성 인덱스 업데이트
-          activeIndex = newIndex;
-      }
+    const scrollTop = $(window).scrollTop();
+    // 헤더에 "on" 클래스 추가/제거
+    $header.toggleClass("on", scrollTop > 0);
+    // 현재 스크롤 위치를 기준으로 활성 박스 계산
+    const newIndex = Math.floor(scrollTop / customHeight);
+    // visible 제거 조건: 특정 높이 이상일 경우
+    if (scrollTop > removeVisibleHeight) {
+      // 모든 박스에서 visible과 hidden 제거
+      $boxes.removeClass("visible hidden");
+      activeIndex = -1; // 비활성화
+      return;
+    }
+    // 박스가 변경되었으면 처리
+    if (newIndex !== activeIndex && newIndex < totalBoxes) {
+      // 이전 박스 숨기기
+      $boxes.eq(activeIndex).removeClass("visible").addClass("hidden");
+      // 새로운 박스 보이기
+      $boxes.eq(newIndex).addClass("visible").removeClass("hidden");
+      // 활성 인덱스 업데이트
+      activeIndex = newIndex;
+    }
   });
 
   $('.sec-03 .left-box .slider').bxSlider({
     mode: 'vertical',
+    slideWidth: 300,
     minSlides: 2,
     maxSlides: 2,
     ticker: true,
     speed: 12000,
+    responsive:{
+      slideWidth: auto,
+    }
   });
   $('.sec-03 .right-box .slider').bxSlider({
     mode: 'vertical',
     autoDirection: 'prev',
+    slideWidth: 300,
     minSlides: 2,
     maxSlides: 2,
     ticker: true,
     speed: 12000,
+    responsive:{
+      slideWidth: auto,
+    }
   });
 
 
@@ -137,9 +137,8 @@ async function onScroll04() {
     if (loadedItems04 >= totalItems04) {
       window.removeEventListener("scroll", onScroll04);
       loading04.textContent = "No more items to load.";
-    }
+    }}
   }
-}
 
 // 초기화 함수
 function init04() {
@@ -164,6 +163,159 @@ init04();
     speed:500,
     pagerCustom:".custom_pager", //원하는 id 및 class
   });
+
+
+  // 첫번째 팝업 열기
+  $(".pop-btn-01").click(function () {
+    $(".popup-01").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 첫번째 팝업 닫기
+  $(".popup-01 .xi-close").click(function () {
+    $(".popup-01").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 두번째 팝업 열기
+  $(".pop-btn-02").click(function () {
+    $(".popup-02").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 두번째 팝업 닫기
+  $(".popup-02 .xi-close").click(function () {
+    $(".popup-02").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 세번째 팝업 열기
+  $(".pop-btn-03").click(function () {
+    $(".popup-03").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 세번째 팝업 닫기
+  $(".popup-03 .xi-close").click(function () {
+    $(".popup-03").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 네번째 팝업 열기
+  $(".pop-btn-04").click(function () {
+    $(".popup-04").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 네번째 팝업 닫기
+  $(".popup-04 .xi-close").click(function () {
+    $(".popup-04").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 다섯번째 팝업 열기
+  $(".pop-btn-05").click(function () {
+    $(".popup-05").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 다섯번째 팝업 닫기
+  $(".popup-05 .xi-close").click(function () {
+    $(".popup-05").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 여섯번째 팝업 열기
+  $(".pop-btn-06").click(function () {
+    $(".popup-06").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 여섯번째 팝업 닫기
+  $(".popup-06 .xi-close").click(function () {
+    $(".popup-06").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 일곱번째 팝업 열기
+  $(".pop-btn-07").click(function () {
+    $(".popup-07").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 일곱번째 팝업 닫기
+  $(".popup-07 .xi-close").click(function () {
+    $(".popup-07").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 여덟번째 팝업 열기
+  $(".pop-btn-08").click(function () {
+    $(".popup-08").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 여덟번째 팝업 닫기
+  $(".popup-08 .xi-close").click(function () {
+    $(".popup-08").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 아홉번째 팝업 열기
+  $(".pop-btn-09").click(function () {
+    $(".popup-09").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 아홉번째 팝업 닫기
+  $(".popup-09 .xi-close").click(function () {
+    $(".popup-09").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 열번째 팝업 열기
+  $(".pop-btn-10").click(function () {
+    $(".popup-10").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 열번째 팝업 닫기
+  $(".popup-10 .xi-close").click(function () {
+    $(".popup-10").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 열한번째 팝업 열기
+  $(".pop-btn-11").click(function () {
+    $(".popup-11").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 열한번째 팝업 닫기
+  $(".popup-11 .xi-close").click(function () {
+    $(".popup-11").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 열두번째 팝업 열기
+  $(".pop-btn-12").click(function () {
+    $(".popup-12").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 열두번째 팝업 닫기
+  $(".popup-12 .xi-close").click(function () {
+    $(".popup-12").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 열세번째 팝업 열기
+  $(".pop-btn-13").click(function () {
+    $(".popup-13").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 열세번째 팝업 닫기
+  $(".popup-13 .xi-close").click(function () {
+    $(".popup-13").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+  // 열넷번째 팝업 열기
+  $(".pop-btn-14").click(function () {
+    $(".popup-14").addClass("on").siblings().removeClass("on");
+    document.body.style.overflow = "hidden"; // 스크롤 비활성화
+  });
+  // 열넷번째 팝업 닫기
+  $(".popup-14 .xi-close").click(function () {
+    $(".popup-14").removeClass("on");
+    document.body.style.overflow = "auto"; // 스크롤 활성화
+  });
+
+  $('.pop-img .pop-slider').bxSlider({
+    infiniteLoop: false,
+    slideWidth: 800,
+    minSlides: 1,
+    maxSlides: 1,
+    moveSlides: 1,
+    controls: true,
+  });
+
+
 });
 
 
