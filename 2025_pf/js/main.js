@@ -35,26 +35,22 @@ $(function () {
 
   $('.sec-03 .left-box .slider').bxSlider({
     mode: 'vertical',
+    shrinkItems: true,
     slideWidth: 300,
     minSlides: 2,
     maxSlides: 2,
     ticker: true,
     speed: 12000,
-    responsive:{
-      slideWidth: auto,
-    }
   });
   $('.sec-03 .right-box .slider').bxSlider({
     mode: 'vertical',
+    shrinkItems: true,
     autoDirection: 'prev',
     slideWidth: 300,
     minSlides: 2,
     maxSlides: 2,
     ticker: true,
     speed: 12000,
-    responsive:{
-      slideWidth: auto,
-    }
   });
 
 
