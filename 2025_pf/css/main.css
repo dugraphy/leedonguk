@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #333;
     transition: background-color 0.5s ease;
 }
-#header.on {
+#header.fixed {
     position: fixed;
     background-color: #000;
     border-bottom: 2px solid #333;
@@ -448,12 +448,11 @@ body::-webkit-scrollbar-thumb {
 .pop-img.on {
     visibility:visible;
 }
-.pop-img i {
-    font-size: 2rem;
-    color: #fff;
+.pop-img .close {
     position: absolute;
     top: 20px;
     right: 16px;
+    width: 30px;
     cursor: pointer;
     z-index: 999;
 }
