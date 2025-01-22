@@ -31,6 +31,15 @@
         margin: 0 auto;
     }
 }
+@media (max-width:1920px){
+    #sec {
+        position: relative;
+    }
+    .inner {
+        width: 1920px;
+        margin: 0 auto;
+    }
+}
 body::-webkit-scrollbar {
 	width: 5px;
     background-color: #000;
