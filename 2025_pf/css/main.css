@@ -75,8 +75,8 @@ body::-webkit-scrollbar-thumb {
 #sec.main {
     height: 400vh;
 }
-#sec.main .inner.sticky {
-    position: sticky;
+#sec.main .inner.fixed {
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
