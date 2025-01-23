@@ -330,6 +330,12 @@ function unlockScroll() {
   });
 
 
+// 모바일 리사이징징
+
+  $('.xi-bars').on('click', function(){
+    $(this).toggleClass('on');
+    $('.gnb').toggleClass('on');
+  });
 });
 
 
