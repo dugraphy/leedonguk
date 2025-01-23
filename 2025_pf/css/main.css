@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb {
 #header {
     width: 100%;
     background-color: #333;
+    border-bottom: 2px solid #000;
     transition: background-color 0.5s ease;
 }
 #header.fixed {
@@ -57,7 +58,10 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    height: 100px;
+}
+#header .inner h1 {
+    width: 200px;
 }
 #header .inner .gnb .menu.flex {
     display: flex;
@@ -67,9 +71,72 @@ body::-webkit-scrollbar-thumb {
 }
 #header .inner .gnb .menu>li>a {
     font-family: 's-core-dream-medium';
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
+#header .mobile_open {
+    display: none;
+}
+@media (max-width:768px) {
+    #header {
+        width: 100%;
+        background-color: #333;
+        border-bottom: 2px solid #000;
+        transition: background-color 0.5s ease;
+    }
+    #header.fixed {
+        position: fixed;
+        background-color: #000;
+        border-bottom: 2px solid #333;
+        z-index: 1;
+    }
+    #header .inner.flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    #header .inner h1 {
+        width: 200px;
+    }
+    #header .inner .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: calc(100% - 3rem);
+        height: 100vh;
+        margin: 0 auto;
+        background: #000;
+        transition: 0.3s;
+        z-index: 995;
+        border-right: 1px solid #000
+    }
+    #header .inner .gnb.on {
+        left: 0;
+    }
+    #header .inner .gnb .menu.flex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        height: 80vh;
+        overflow-y: auto;
+    }
+    #header .inner .gnb .menu>li {
+        position: relative;
+        line-height: 4;
+    }
+    #header .inner .gnb .menu>li>a {
+        display: block;
+        padding: 0 1.5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
 
+
+    #header .mobile_open {
+        display: block;
+        margin-left: 0.75rem;
+    }
+}
 
 /* Main */
 #sec.main {
