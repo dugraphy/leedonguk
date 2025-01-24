@@ -8,41 +8,18 @@ $(function () {
 
   // 초기 상태: 첫 번째 박스 보이기
   $boxes.eq(activeIndex).addClass("visible");
-
-  // 페이지 로드 시 스크롤 위치 강제 초기화 (Safari 복원 방지)
-  $(window).on("load", function () {
-    window.scrollTo(0, 0); // 강제로 스크롤 위치를 맨 위로 초기화
-  });
-
-  // 디바운스를 모바일에서만 적용
-  let debounceTimer;
-  const isMobile = () => window.innerWidth < 768;
-
   // 스크롤 이벤트
   $(window).on("scroll", function () {
-    if (isMobile()) {
-      // 모바일 환경에서 디바운스 처리
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(handleScroll, 100);
-    } else {
-      handleScroll(); // PC 환경에서는 디바운스 없이 실행
-    }
-  });
-
-  function handleScroll() {
     const scrollTop = $(window).scrollTop();
     const windowWidth = window.innerWidth;
-
     // 헤더에 "fixed" 클래스 추가/제거 (768px 미만에서는 "fixed" 삭제)
     if (windowWidth < 768) {
       $header.removeClass("fixed");
     } else {
       $header.toggleClass("fixed", scrollTop > 0);
     }
-
     // 현재 스크롤 위치를 기준으로 활성 박스 계산
     const newIndex = Math.floor(scrollTop / customHeight);
-
     // visible 제거 조건: 특정 높이 이상일 경우
     if (scrollTop > removeVisibleHeight) {
       // 모든 박스에서 visible과 hidden 제거
@@ -50,7 +27,6 @@ $(function () {
       activeIndex = -1; // 비활성화
       return;
     }
-
     // 박스가 변경되었으면 처리
     if (newIndex !== activeIndex && newIndex < totalBoxes) {
       // 이전 박스 숨기기
@@ -60,7 +36,8 @@ $(function () {
       // 활성 인덱스 업데이트
       activeIndex = newIndex;
     }
-  }
+  });
+
   $('.sec-03 .left-box .slider').bxSlider({
     mode: 'vertical',
     shrinkItems: true,
