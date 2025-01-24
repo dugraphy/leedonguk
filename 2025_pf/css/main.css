@@ -83,12 +83,6 @@ body::-webkit-scrollbar-thumb {
         border-bottom: 2px solid #000;
         transition: background-color 0.5s ease;
     }
-    #header.fixed {
-        position: relative;
-        background-color: #000;
-        border-bottom: 2px solid #333;
-        z-index: 1;
-    }
     #header .inner.flex {
         display: flex;
         justify-content: space-between;
@@ -97,17 +91,18 @@ body::-webkit-scrollbar-thumb {
     }
     #header .inner h1 {
         width: 200px;
+        z-index: 2;
     }
     #header .inner .gnb {
         position: fixed;
         top: 0;
         left: -100%;
-        width: calc(100% - 3rem);
+        width: calc(100vw - 3rem);
         height: 100vh;
         margin: 0 auto;
         background: #000;
         transition: 0.3s;
-        z-index: 995;
+        z-index: 1;
         border-right: 1px solid #000
     }
     #header .inner .gnb.on {
@@ -130,11 +125,12 @@ body::-webkit-scrollbar-thumb {
         font-size: 1rem;
         text-align: center;
     }
-
-
     #header .mobile_open {
         display: block;
         margin-left: 0.75rem;
+    }
+    #header .mobile_open .xi-bars.on:before {
+        content: "\e921";
     }
 }
 
