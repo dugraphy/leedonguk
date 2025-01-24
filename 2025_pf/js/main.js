@@ -9,17 +9,27 @@ $(function () {
   // 초기 상태: 첫 번째 박스 보이기
   $boxes.eq(activeIndex).addClass("visible");
 
-  // 디바운스 함수 구현
-  function debounce(func, wait) {
-    let timeout;
-    return function (...args) {
-      clearTimeout(timeout);
-      timeout = setTimeout(() => func.apply(this, args), wait);
-    };
-  }
+  // 페이지 로드 시 스크롤 위치 강제 초기화 (Safari 복원 방지)
+  $(window).on("load", function () {
+    window.scrollTo(0, 0); // 강제로 스크롤 위치를 맨 위로 초기화
+  });
 
-  // 스크롤 이벤트 핸들러
-  function onScroll() {
+  // 디바운스를 모바일에서만 적용
+  let debounceTimer;
+  const isMobile = () => window.innerWidth < 768;
+
+  // 스크롤 이벤트
+  $(window).on("scroll", function () {
+    if (isMobile()) {
+      // 모바일 환경에서 디바운스 처리
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(handleScroll, 100);
+    } else {
+      handleScroll(); // PC 환경에서는 디바운스 없이 실행
+    }
+  });
+
+  function handleScroll() {
     const scrollTop = $(window).scrollTop();
     const windowWidth = window.innerWidth;
 
@@ -35,6 +45,7 @@ $(function () {
 
     // visible 제거 조건: 특정 높이 이상일 경우
     if (scrollTop > removeVisibleHeight) {
+      // 모든 박스에서 visible과 hidden 제거
       $boxes.removeClass("visible hidden");
       activeIndex = -1; // 비활성화
       return;
@@ -42,19 +53,14 @@ $(function () {
 
     // 박스가 변경되었으면 처리
     if (newIndex !== activeIndex && newIndex < totalBoxes) {
+      // 이전 박스 숨기기
       $boxes.eq(activeIndex).removeClass("visible").addClass("hidden");
+      // 새로운 박스 보이기
       $boxes.eq(newIndex).addClass("visible").removeClass("hidden");
+      // 활성 인덱스 업데이트
       activeIndex = newIndex;
     }
   }
-
-  // 디바운스 적용: 모바일 환경에서만 사용
-  const isMobile = window.innerWidth < 768;
-  const scrollHandler = isMobile ? debounce(onScroll, 100) : onScroll;
-
-  // 스크롤 이벤트 등록
-  $(window).on("scroll", scrollHandler);
-
   $('.sec-03 .left-box .slider').bxSlider({
     mode: 'vertical',
     shrinkItems: true,
