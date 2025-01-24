@@ -11,8 +11,13 @@ $(function () {
   // 스크롤 이벤트
   $(window).on("scroll", function () {
     const scrollTop = $(window).scrollTop();
-    // 헤더에 "on" 클래스 추가/제거
-    $header.toggleClass("fixed", scrollTop > 0);
+    const windowWidth = window.innerWidth;
+    // 헤더에 "fixed" 클래스 추가/제거 (768px 미만에서는 "fixed" 삭제)
+    if (windowWidth < 768) {
+      $header.removeClass("fixed");
+    } else {
+      $header.toggleClass("fixed", scrollTop > 0);
+    }
     // 현재 스크롤 위치를 기준으로 활성 박스 계산
     const newIndex = Math.floor(scrollTop / customHeight);
     // visible 제거 조건: 특정 높이 이상일 경우
@@ -36,7 +41,7 @@ $(function () {
   $('.sec-03 .left-box .slider').bxSlider({
     mode: 'vertical',
     shrinkItems: true,
-    slideWidth: 300,
+    // slideWidth: 300,
     minSlides: 2,
     maxSlides: 2,
     ticker: true,
@@ -46,7 +51,7 @@ $(function () {
     mode: 'vertical',
     shrinkItems: true,
     autoDirection: 'prev',
-    slideWidth: 300,
+    // slideWidth: 300,
     minSlides: 2,
     maxSlides: 2,
     ticker: true,
