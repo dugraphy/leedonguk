@@ -22,7 +22,7 @@ reset
 
 html{font-size:20px;box-sizing:border-box;}
 *,*:before,*:after{box-sizing:inherit;outline:none;}
-body {margin:0; padding:0; font-size:0.8rem; font-family:'Noto Sans KR'; font-weight: inherit; color:#333333;line-height:1;overflow-x:hidden;}
+body {margin:0; padding:0; font-size:0.8rem; font-family:'Noto Sans KR'; font-weight: inherit; color:#333333;background-color: #333;line-height:1;overflow-x:hidden;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,video,img,svg
 { margin:0;  padding:0; font-size: inherit; font-weight: inherit;}
 p,h1,h2,h3,h4,h5,h6,figure{margin:0; padding:0;font-size: inherit;font-weight: inherit;}
