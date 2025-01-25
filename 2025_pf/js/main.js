@@ -23,7 +23,7 @@ $(function () {
       const windowWidth = window.innerWidth;
   
       // 헤더에 "fixed" 클래스 추가/제거
-      if (windowWidth < 0) {
+      if (windowWidth < 768) {
         $header.removeClass("fixed");
       } else {
         $header.toggleClass("fixed", scrollTop > 0);

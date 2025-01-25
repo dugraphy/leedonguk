@@ -303,7 +303,67 @@ body::-webkit-scrollbar-thumb {
 #sec.sec-01 .inner .right div img {
     border-radius: 20px;
 }
-
+@media (max-width:768px) {
+    #sec.sec-01 .inner {
+        position: relative;
+        height: 200vh;
+        overflow: visible;
+    }
+    #sec.sec-01 .inner .left {
+        position: sticky;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 50%;
+        margin-bottom: 20%;
+    }
+    #sec.sec-01 .inner .left .title {
+        font-family: 's-core-dream-medium';
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    #sec.sec-01 .inner .left .btn-box {
+        width: 80%;
+        margin-top: 50px;
+    }
+    #sec.sec-01 .inner .left .btn-box .btn {
+        width: 100%;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    #sec.sec-01 .inner .left .btn-box .btn p {
+        text-align: center;
+        font-size: 0.6rem;
+        line-height: 1rem;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        transition: all 0.4s;
+    }
+    #sec.sec-01 .inner .left .btn-box .btn:hover p {
+        color: #000;
+        border: 2px solid #fff;
+        background-color: #fff;
+    }
+    
+    #sec.sec-01 .inner .right {
+        height: auto;
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    #sec.sec-01 .inner .right div {
+        width: 50%;
+        padding: 20px 0;
+    }
+    #sec.sec-01 .inner .right div:nth-child(2n) {
+        margin-left: auto;
+    }
+    #sec.sec-01 .inner .right div img {
+        border-radius: 20px;
+    }
+}
 
 #sec.sec-02 {
     padding: 100px 0;
