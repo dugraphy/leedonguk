@@ -5,37 +5,49 @@ $(function () {
   const customHeight = 900; // 900px 기준
   const removeVisibleHeight = customHeight * totalBoxes; // 특정 높이에서 visible 이벤트 제거
   let activeIndex = 0;
-
+  
+  // 요청 애니메이션 프레임을 사용하여 성능 최적화
+  let isScrolling = false;
+  let newIndex = -1;
+  
   // 초기 상태: 첫 번째 박스 보이기
   $boxes.eq(activeIndex).addClass("visible");
+  
   // 스크롤 이벤트
   $(window).on("scroll", function () {
-    const scrollTop = $(window).scrollTop();
-    const windowWidth = window.innerWidth;
-    // 헤더에 "fixed" 클래스 추가/제거 (768px 미만에서는 "fixed" 삭제)
-    if (windowWidth < 768) {
-      $header.removeClass("fixed");
-    } else {
-      $header.toggleClass("fixed", scrollTop > 0);
-    }
-    // 현재 스크롤 위치를 기준으로 활성 박스 계산
-    const newIndex = Math.floor(scrollTop / customHeight);
-    // visible 제거 조건: 특정 높이 이상일 경우
-    if (scrollTop > removeVisibleHeight) {
-      // 모든 박스에서 visible과 hidden 제거
-      $boxes.removeClass("visible hidden");
-      activeIndex = -1; // 비활성화
-      return;
-    }
-    // 박스가 변경되었으면 처리
-    if (newIndex !== activeIndex && newIndex < totalBoxes) {
-      // 이전 박스 숨기기
-      $boxes.eq(activeIndex).removeClass("visible").addClass("hidden");
-      // 새로운 박스 보이기
-      $boxes.eq(newIndex).addClass("visible").removeClass("hidden");
-      // 활성 인덱스 업데이트
-      activeIndex = newIndex;
-    }
+    if (isScrolling) return; // 이미 스크롤 이벤트가 처리 중이면 리턴
+  
+    isScrolling = true;
+    requestAnimationFrame(() => {
+      const scrollTop = $(window).scrollTop();
+      const windowWidth = window.innerWidth;
+  
+      // 헤더에 "fixed" 클래스 추가/제거 (768px 미만에서는 "fixed" 삭제)
+      if (windowWidth < 768) {
+        $header.removeClass("fixed");
+      } else {
+        $header.toggleClass("fixed", scrollTop > 0);
+      }
+  
+      // 현재 스크롤 위치를 기준으로 활성 박스 계산
+      newIndex = Math.floor(scrollTop / customHeight);
+  
+      // visible 제거 조건: 특정 높이 이상일 경우
+      if (scrollTop > removeVisibleHeight) {
+        // 모든 박스에서 visible과 hidden 제거
+        $boxes.removeClass("visible hidden");
+        activeIndex = -1; // 비활성화
+      } else if (newIndex !== activeIndex && newIndex < totalBoxes) {
+        // 이전 박스 숨기기
+        $boxes.eq(activeIndex).removeClass("visible").addClass("hidden");
+        // 새로운 박스 보이기
+        $boxes.eq(newIndex).addClass("visible").removeClass("hidden");
+        // 활성 인덱스 업데이트
+        activeIndex = newIndex;
+      }
+  
+      isScrolling = false; // 스크롤 이벤트 처리 완료
+    });
   });
 
   $('.sec-03 .left-box .slider').bxSlider({
@@ -342,6 +354,3 @@ function unlockScroll() {
     $('.gnb').toggleClass('on');
   });
 });
-
-
-
