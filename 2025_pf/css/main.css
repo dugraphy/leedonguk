@@ -19,6 +19,7 @@
 @media (max-width:768px){
     #sec {
         position: relative;
+        width: 100%;
     }
     .pc-br {
         display: none;
