@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb {
         height: 80px;
     }
     #header .inner h1 {
-        width: 200px;
+        width: 100px;
         z-index: 2;
     }
     #header .inner .gnb {
