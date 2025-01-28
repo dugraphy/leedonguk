@@ -49,25 +49,46 @@ $(function () {
       isScrolling = false; // 스크롤 이벤트 처리 완료
     });
   });
-
-  $('.sec-03 .left-box .slider').bxSlider({
-    mode: 'vertical',
-    shrinkItems: true,
-    // slideWidth: 300,
-    minSlides: 2,
-    maxSlides: 2,
-    ticker: true,
-    speed: 12000,
-  });
-  $('.sec-03 .right-box .slider').bxSlider({
-    mode: 'vertical',
-    autoDirection: 'prev',
-    shrinkItems: true,
-    // slideWidth: 300,
-    minSlides: 2,
-    maxSlides: 2,
-    ticker: true,
-    speed: 12000,
+  $(document).ready(function () {
+    // 왼쪽 슬라이더 설정
+    const leftSlider = $('.sec-03 .left-box .slider').bxSlider({
+      mode: 'vertical',
+      minSlides: 2,
+      maxSlides: 2,
+      ticker: true,
+      speed: 12000,
+      responsive: true, // 반응형 설정
+      onSliderLoad: function () {
+        adjustSlideWidth('.sec-03 .left-box .slider');
+      },
+    });
+  
+    // 오른쪽 슬라이더 설정
+    const rightSlider = $('.sec-03 .right-box .slider').bxSlider({
+      mode: 'vertical',
+      autoDirection: 'prev', // 역방향 슬라이드
+      minSlides: 2,
+      maxSlides: 2,
+      ticker: true,
+      speed: 12000,
+      responsive: true, // 반응형 설정
+      onSliderLoad: function () {
+        adjustSlideWidth('.sec-03 .right-box .slider');
+      },
+    });
+  
+    // 창 크기 변경 시 슬라이드 너비 조정
+    $(window).resize(function () {
+      adjustSlideWidth('.sec-03 .left-box .slider');
+      adjustSlideWidth('.sec-03 .right-box .slider');
+    });
+  
+    // 슬라이드 너비 조정 함수
+    function adjustSlideWidth(sliderSelector) {
+      const slider = $(`${sliderSelector} .bx-viewport`); // 해당 슬라이더의 뷰포트 선택
+      const slideWidth = Math.min(slider.width() / 2, 120); // 슬라이드 너비 계산 (최대 120px)
+      $(`${sliderSelector} .bxslider .bx-slide`).css('width', slideWidth + '%'); // 각 슬라이드에 너비 적용
+    }
   });
 
 
