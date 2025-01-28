@@ -49,48 +49,51 @@ $(function () {
       isScrolling = false; // 스크롤 이벤트 처리 완료
     });
   });
-  $(document).ready(function () {
-    // 왼쪽 슬라이더 설정
-    const leftSlider = $('.sec-03 .left-box .slider').bxSlider({
-      mode: 'vertical',
-      minSlides: 2,
-      maxSlides: 2,
-      ticker: true,
-      speed: 12000,
-      responsive: true, // 반응형 설정
-      onSliderLoad: function () {
-        adjustSlideWidth('.sec-03 .left-box .slider');
-      },
-    });
-  
-    // 오른쪽 슬라이더 설정
-    const rightSlider = $('.sec-03 .right-box .slider').bxSlider({
-      mode: 'vertical',
-      autoDirection: 'prev', // 역방향 슬라이드
-      minSlides: 2,
-      maxSlides: 2,
-      ticker: true,
-      speed: 12000,
-      responsive: true, // 반응형 설정
-      onSliderLoad: function () {
-        adjustSlideWidth('.sec-03 .right-box .slider');
-      },
-    });
-  
-    // 창 크기 변경 시 슬라이드 너비 조정
-    $(window).resize(function () {
-      adjustSlideWidth('.sec-03 .left-box .slider');
-      adjustSlideWidth('.sec-03 .right-box .slider');
-    });
-  
-    // 슬라이드 너비 조정 함수
-    function adjustSlideWidth(sliderSelector) {
-      const slider = $(`${sliderSelector} .bx-viewport`); // 해당 슬라이더의 뷰포트 선택
-      const slideWidth = Math.min(slider.width() / 2, 120); // 슬라이드 너비 계산 (최대 120px)
-      $(`${sliderSelector} .bxslider .bx-slide`).css('width', slideWidth + '%'); // 각 슬라이드에 너비 적용
-    }
-  });
 
+    // 공통 슬라이더 설정
+    function initializeSlider() {
+      $('.sec-03 .left-box .slider').bxSlider({
+        mode: 'vertical',
+        shrinkItems: true,
+        slideWidth: getSlideWidth(), // 동적으로 너비 설정
+        minSlides: 2,
+        maxSlides: 2,
+        ticker: true,
+        speed: 12000,
+      });
+  
+      $('.sec-03 .right-box .slider').bxSlider({
+        mode: 'vertical',
+        autoDirection: 'prev',
+        shrinkItems: true,
+        slideWidth: getSlideWidth(), // 동적으로 너비 설정
+        minSlides: 2,
+        maxSlides: 2,
+        ticker: true,
+        speed: 12000,
+      });
+    }
+  
+    // 슬라이드 너비 계산 함수
+    function getSlideWidth() {
+      const windowWidth = $(window).width();
+      return windowWidth <= 768 ? windowWidth * 0.5 : 300; // 모바일에서는 80% 너비, 기본은 300px
+    }
+  
+    // 초기 슬라이더 실행
+    initializeSlider();
+  
+    // 창 크기 변경 시 슬라이드 크기 재조정
+    $(window).resize(function () {
+      $('.sec-03 .slider').each(function () {
+        const sliderInstance = $(this).data('bxSlider'); // 기존 bxSlider 인스턴스 가져오기
+        if (sliderInstance) {
+          sliderInstance.destroySlider(); // 기존 슬라이더 삭제
+        }
+      });
+  
+      initializeSlider(); // 슬라이더 다시 초기화
+    });
 
   const section04 = document.querySelector(".sec-04"); // sec-04 섹션 선택
   const content04 = section04.querySelector(".content"); // sec-04 콘텐츠 컨테이너
