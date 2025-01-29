@@ -361,14 +361,16 @@ function unlockScroll() {
     document.body.style.overflow = "auto"; // 스크롤 활성화
   });
 
-  $('.pop-img .pop-slider').bxSlider({
-    infiniteLoop: false,
-    slideWidth: 800,
-    minSlides: 1,
-    maxSlides: 1,
-    moveSlides: 1,
-    controls: true,
-  });
+
+  function initializeSlider() {
+    $('.pop-img .pop-slider').bxSlider({
+      infiniteLoop: false,
+      minSlides: 1,
+      maxSlides: 1,
+      moveSlides: 1,
+      controls: true,
+    });
+  }
 
 
 // 모바일 리사이징징

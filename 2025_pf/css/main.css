@@ -498,8 +498,7 @@ body::-webkit-scrollbar-thumb {
 }
 #sec.sec-04 .inner .pagination .content .pagination-item {
     box-sizing: border-box;
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding: 0 0 30px 30px;
     text-align: center;
     width: 33.3%;
 }
@@ -517,21 +516,22 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width:768px) {
     #sec.sec-04 {
-        padding: 100px 0;
+        padding: 50px 0;
     }
     #sec.sec-04 .inner .title {
         margin-bottom: 50px;
         text-align: left;
         font-family: 's-core-dream-medium';
-        font-size: 2rem;
-        line-height: 4rem;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
     }
     #sec.sec-04 .inner .title span {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
     #sec.sec-04 .inner .pagination {
-        width: 80%;
+        width: 100%;
         margin-left: auto;
+        margin-right: auto;
     }
     #sec.sec-04 .inner .pagination .content {
         display: flex;
@@ -540,10 +540,9 @@ body::-webkit-scrollbar-thumb {
     }
     #sec.sec-04 .inner .pagination .content .pagination-item {
         box-sizing: border-box;
-        padding-bottom: 30px;
-        padding-left: 30px;
+        padding: 0 10px 20px 10px;
         text-align: center;
-        width: 33.3%;
+        width: 33%;
     }
     #sec.sec-04 .inner .pagination .content .pagination-item img {
         border-radius: 20px;
@@ -602,6 +601,52 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: #fff;
 }
+@media (max-width:768px) {
+    #sec.sec-05 {
+        padding: 50px 0;
+    }
+    #sec.sec-05 .inner .title {
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 's-core-dream-medium';
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    #sec.sec-05 .inner .title span {
+        font-size: 0.6rem;
+    }
+    #sec.sec-05 .inner .bx-wrapper {
+        border: none;
+        box-shadow: none;
+        background: transparent;
+    }
+    #sec.sec-05 .inner .slider {
+        width: 100%;
+        height: 100%;
+    }
+    #sec.sec-05 .inner .slider .pop-box .img-box {
+        margin-bottom: 10px;
+    }
+    #sec.sec-05 .inner .slider .pop-box .img-box img {
+        cursor: pointer;
+    }
+    #sec.sec-05 .inner .custom_pager {
+        display: flex;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: #333;
+    }
+    #sec.sec-05 .inner .custom_pager a {
+        flex: 1;
+        transition: all 0.3s;
+    }
+    #sec.sec-05 .inner .custom_pager a.active {
+        border-radius: 5px;
+        background-color: #fff;
+    }
+}
+
 #sec.sec-06 {
     padding: 100px 0;
 }
@@ -704,19 +749,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
  
 .pop-img {
     visibility: hidden;
@@ -758,4 +790,52 @@ body::-webkit-scrollbar-thumb {
 }
 .pop-img .bx-wrapper .bx-controls .bx-pager-link.active {
     background: #fff;
+}
+@media (max-width:768px) {
+    .pop-img {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color:rgba(0, 0, 0,0.9);
+        z-index:999;
+    }
+    .pop-img.on {
+        visibility:visible;
+    }
+    .pop-img .close {
+        position: absolute;
+        top: 20px;
+        right: 16px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .pop-img .bx-wrapper {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+    }
+    .pop-img .bx-wrapper .bx-viewport {
+        width: 100% !important;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .pop-img .bx-wrapper img {
+        width: 100%;
+    }
+    .pop-img .bx-wrapper .bx-controls .bx-pager-link {
+        background: #333;
+    }
+    .pop-img .bx-wrapper .bx-controls .bx-pager-link.active {
+        background: #fff;
+    }
 }
