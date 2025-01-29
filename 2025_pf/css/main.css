@@ -813,7 +813,49 @@ body::-webkit-scrollbar-thumb {
 #footer .inner .copyright p {
     font-size: 0.6rem;
 }
-
+@media (max-width:768px) {
+    #footer {
+        width: 100%;
+        padding: 25px 0;
+        background-color: #333;
+    }
+    #footer .inner .f-logo {
+        width: 150px;
+        margin: 0 auto;
+    }
+    #footer .inner .text-box.flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #footer .inner .text-box {
+        margin-top: 25px;
+        text-align: center;
+    }
+    #footer .inner .text-box p {
+        font-size: 0.6rem;
+        line-height: 1.5rem;
+    }
+    #footer .inner .text-box p:before {
+        content: "";
+        display: none;
+        width: 2px;
+        height: 100%;
+        margin: 0 25px;
+        vertical-align: middle;
+        background-color: #fff;
+    }
+    #footer .inner .text-box p:first-child:before {
+        display: none;
+    }
+    #footer .inner .copyright {
+        text-align: center;
+        margin-top: 25px;
+    }
+    #footer .inner .copyright p {
+        font-size: 0.5rem;
+    }
+}
 
  
 .pop-img {

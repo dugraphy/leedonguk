@@ -362,7 +362,6 @@ function unlockScroll() {
   });
 
 
-  function initializeSlider() {
     $('.pop-img .pop-slider').bxSlider({
       infiniteLoop: false,
       minSlides: 1,
@@ -370,7 +369,6 @@ function unlockScroll() {
       moveSlides: 1,
       controls: true,
     });
-  }
 
 
 // 모바일 리사이징징
