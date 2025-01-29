@@ -1,4 +1,16 @@
 $(function () {
+  const lenis = new Lenis({
+    // 추가된 부분
+    duration: 2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  });
+  
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+
   const $header = $("#header");
   const $boxes = $(".title-box");
   const totalBoxes = $boxes.length;
@@ -59,18 +71,19 @@ $(function () {
         minSlides: 2,
         maxSlides: 2,
         ticker: true,
-        speed: 12000,
+        tickerHover:true,
+        speed: 10000,
       });
   
       $('.sec-03 .right-box .slider').bxSlider({
         mode: 'vertical',
-        autoDirection: 'prev',
         shrinkItems: true,
         slideWidth: getSlideWidth(), // 동적으로 너비 설정
         minSlides: 2,
         maxSlides: 2,
         ticker: true,
-        speed: 12000,
+        tickerHover:true,
+        speed: 10000,
       });
     }
   
@@ -373,7 +386,7 @@ function unlockScroll() {
 
 // 모바일 리사이징징
 
-  $('.xi-bars').on('click', function(){
+  $('.bars').on('click', function(){
     $(this).toggleClass('on');
     $('.gnb').toggleClass('on');
   });

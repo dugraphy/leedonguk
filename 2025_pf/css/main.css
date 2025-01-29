@@ -40,7 +40,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #000;
     border-radius: 2.5px;
 }
-
 /* Header */
 #header {
     width: 100%;
@@ -90,7 +89,7 @@ body::-webkit-scrollbar-thumb {
         height: 80px;
     }
     #header .inner h1 {
-        width: 100px;
+        width: 150px;
         z-index: 2;
     }
     #header .inner .gnb {
@@ -127,10 +126,21 @@ body::-webkit-scrollbar-thumb {
     }
     #header .mobile_open {
         display: block;
-        margin-left: 0.75rem;
+        width: 20px;
+        height: 20px;
     }
-    #header .mobile_open .xi-bars.on:before {
-        content: "\e921";
+    #header .mobile_open .bars {
+        background-image: url(../img/list.png);
+        background-size: 100%;
+        display: block;
+        height: 100%;
+        transition: all 0.8s
+    }
+    #header .mobile_open .bars.on {
+        background-image: url(../img/close.png);
+        background-size: 100%;
+        display: block;
+        height: 100%;
     }
 }
 
@@ -441,6 +451,13 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     box-sizing: border-box;
   }
+.right-box {
+    transform: rotate(180deg);    
+  }
+  
+.right-box figure {
+    transform: rotate(180deg);
+}
   #sec.sec-03 .inner .center-box .title {
     text-align: center;
     font-family: 's-core-dream-medium';
