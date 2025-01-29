@@ -659,7 +659,6 @@ body::-webkit-scrollbar-thumb {
 }
 #sec.sec-06 .inner .profile.flex {
     display: flex;
-    align-items: center;
 }
 #sec.sec-06 .inner .profile .img-box img {
     border-radius: 20px;
@@ -709,6 +708,73 @@ body::-webkit-scrollbar-thumb {
 #sec.sec-06 .inner .ability p>span {
     font-size: 0.75rem;
 }
+@media (max-width:768px) {
+    #sec.sec-06 {
+        padding: 50px 0;
+    }
+    #sec.sec-06 .inner .title {
+        margin-bottom: 50px;
+        text-align: left;
+        font-family: 's-core-dream-medium';
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+    #sec.sec-06 .inner .profile.flex {
+        display: flex;
+    }
+    #sec.sec-06 .inner .profile .img-box {
+        flex: 1;
+    }
+    #sec.sec-06 .inner .profile .img-box img {
+        border-radius: 20px;
+    }
+    #sec.sec-06 .inner .profile .text {
+        margin: auto 0 auto 30px;
+    }
+    #sec.sec-06 .inner .profile .text i {
+        display: block;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        margin: 15px 0;
+    }
+    #sec.sec-06 .inner .profile .text i::before {
+        vertical-align: middle;
+    }
+    #sec.sec-06 .inner .profile .text i>p {
+        margin-left: 10px;
+        display: inline-block;
+        font-size: 0.6rem;
+        vertical-align: middle;
+    }
+    #sec.sec-06 .inner .ability {
+        display: block;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    #sec.sec-06 .inner .ability .license {
+        margin-top: 50px;
+    }
+    #sec.sec-06 .inner .ability .career {
+        margin-top: 50px;
+    }
+    #sec.sec-06 .inner .ability .skill>p {
+        margin-bottom: 30px;
+    }
+    #sec.sec-06 .inner .ability h3 {
+        font-family: 's-core-dream-medium';
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        margin-bottom: 30px;
+    }
+    #sec.sec-06 .inner .ability p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+    #sec.sec-06 .inner .ability p>span {
+        font-size: 0.75rem;
+    }
+}
+
 #footer {
     width: 100%;
     padding: 50px 0;
