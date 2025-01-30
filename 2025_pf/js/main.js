@@ -205,7 +205,7 @@ var slider = $('.sec-05 .slider').bxSlider({
   auto: true,
   infiniteLoop: true,
   slideWidth: 300,
-  slideMargin: 20,
+  slideMargin: 10,
   minSlides: 4,
   maxSlides: 4,
   moveSlides: 1,
@@ -233,7 +233,7 @@ function updateSlider() {
       auto: true,
       infiniteLoop: true,
       slideWidth: 300,
-      slideMargin: 20,
+      slideMargin: 10,
       minSlides: 4, // PC에서는 4개
       maxSlides: 4, // PC에서는 4개
       moveSlides: 1,
@@ -272,15 +272,26 @@ function unlockScroll() {
 $('.img-box').click(function () {
   var index = $(this).attr('class').match(/pop-btn-(\d+)/)[1];
   var popup = $('.popup-' + index);
-      
+  
+  // 안드로이드 대응: lockScroll() 적용
+  lockScroll();
+  
   popup.addClass('on').siblings('.pop-img').removeClass('on');
-  document.body.style.overflow = 'hidden';
+
+  // bxSlider 리로드 (팝업 내부에서 슬라이더 오류 방지)
+  setTimeout(function () {
+    $('.pop-img.on .pop-slider').each(function () {
+      $(this).bxSlider().reloadSlider();
+    });
+  }, 300); // 0.3초 후 실행 (팝업이 열릴 시간을 고려)
 });
 
 // 팝업 닫기
 $('.pop-img .close').click(function () {
   $(this).closest('.pop-img').removeClass('on');
-  document.body.style.overflow = 'auto';
+  
+  // 안드로이드 대응: unlockScroll() 적용
+  unlockScroll();
 });
 
 $('.pop-img .pop-slider').bxSlider({

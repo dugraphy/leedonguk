@@ -598,7 +598,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
 }
 #sec.sec-05 .inner .slider .pop-box .img-box {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #sec.sec-05 .inner .slider .pop-box .img-box img {
     cursor: pointer;
@@ -643,7 +643,7 @@ body::-webkit-scrollbar-thumb {
         height: 100%;
     }
     #sec.sec-05 .inner .slider .pop-box .img-box {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     #sec.sec-05 .inner .slider .pop-box .img-box img {
         cursor: pointer;
