@@ -232,156 +232,28 @@ function unlockScroll() {
   window.scrollTo(0, parseInt(scrollY, 10)); // 저장된 스크롤 위치로 이동
   document.body.dataset.scrollY = ''; // 데이터 초기화
 }
+// 팝업 열기
+$('.img-box').click(function () {
+  var index = $(this).attr('class').match(/pop-btn-(\d+)/)[1];
+  var popup = $('.popup-' + index);
+      
+  popup.addClass('on').siblings('.pop-img').removeClass('on');
+  document.body.style.overflow = 'hidden';
+});
 
-  // 첫번째 팝업 열기
-  $(".pop-btn-01").click(function () {
-    $(".popup-01").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 첫번째 팝업 닫기
-  $(".popup-01 .close").click(function () {
-    $(".popup-01").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 두번째 팝업 열기
-  $(".pop-btn-02").click(function () {
-    $(".popup-02").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 두번째 팝업 닫기
-  $(".popup-02 .close").click(function () {
-    $(".popup-02").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 세번째 팝업 열기
-  $(".pop-btn-03").click(function () {
-    $(".popup-03").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 세번째 팝업 닫기
-  $(".popup-03 .close").click(function () {
-    $(".popup-03").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 네번째 팝업 열기
-  $(".pop-btn-04").click(function () {
-    $(".popup-04").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 네번째 팝업 닫기
-  $(".popup-04 .close").click(function () {
-    $(".popup-04").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 다섯번째 팝업 열기
-  $(".pop-btn-05").click(function () {
-    $(".popup-05").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 다섯번째 팝업 닫기
-  $(".popup-05 .close").click(function () {
-    $(".popup-05").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 여섯번째 팝업 열기
-  $(".pop-btn-06").click(function () {
-    $(".popup-06").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 여섯번째 팝업 닫기
-  $(".popup-06 .close").click(function () {
-    $(".popup-06").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 일곱번째 팝업 열기
-  $(".pop-btn-07").click(function () {
-    $(".popup-07").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 일곱번째 팝업 닫기
-  $(".popup-07 .close").click(function () {
-    $(".popup-07").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 여덟번째 팝업 열기
-  $(".pop-btn-08").click(function () {
-    $(".popup-08").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 여덟번째 팝업 닫기
-  $(".popup-08 .close").click(function () {
-    $(".popup-08").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 아홉번째 팝업 열기
-  $(".pop-btn-09").click(function () {
-    $(".popup-09").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 아홉번째 팝업 닫기
-  $(".popup-09 .close").click(function () {
-    $(".popup-09").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 열번째 팝업 열기
-  $(".pop-btn-10").click(function () {
-    $(".popup-10").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 열번째 팝업 닫기
-  $(".popup-10 .close").click(function () {
-    $(".popup-10").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 열한번째 팝업 열기
-  $(".pop-btn-11").click(function () {
-    $(".popup-11").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 열한번째 팝업 닫기
-  $(".popup-11 .close").click(function () {
-    $(".popup-11").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 열두번째 팝업 열기
-  $(".pop-btn-12").click(function () {
-    $(".popup-12").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 열두번째 팝업 닫기
-  $(".popup-12 .close").click(function () {
-    $(".popup-12").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 열세번째 팝업 열기
-  $(".pop-btn-13").click(function () {
-    $(".popup-13").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 열세번째 팝업 닫기
-  $(".popup-13 .close").click(function () {
-    $(".popup-13").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
-  // 열넷번째 팝업 열기
-  $(".pop-btn-14").click(function () {
-    $(".popup-14").addClass("on").siblings().removeClass("on");
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-  });
-  // 열넷번째 팝업 닫기
-  $(".popup-14 .close").click(function () {
-    $(".popup-14").removeClass("on");
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-  });
+// 팝업 닫기
+$('.pop-img .close').click(function () {
+  $(this).closest('.pop-img').removeClass('on');
+  document.body.style.overflow = 'auto';
+});
 
-
-    $('.pop-img .pop-slider').bxSlider({
-      infiniteLoop: false,
-      minSlides: 1,
-      maxSlides: 1,
-      moveSlides: 1,
-      controls: true,
-    });
+$('.pop-img .pop-slider').bxSlider({
+  infiniteLoop: false,
+  minSlides: 1,
+  maxSlides: 1,
+  moveSlides: 1,
+  controls: true,
+});
 
 
 // 모바일 리사이징징
