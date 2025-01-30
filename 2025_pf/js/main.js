@@ -203,6 +203,8 @@ init04();
 
 var slider = $('.sec-05 .slider').bxSlider({
   auto: true,
+  slideWidth: 300,
+  slideMargin: 10,
   infiniteLoop: true,
   minSlides: 4,
   maxSlides: 4,
@@ -217,6 +219,8 @@ function updateSlider() {
   if ($(window).width() <= 768) {
     slider.reloadSlider({
       auto: true,
+      slideWidth: 300,
+      slideMargin: 10,
       infiniteLoop: true,
       minSlides: 3, // 모바일에서는 3개
       maxSlides: 3, // 모바일에서는 3개
@@ -229,6 +233,8 @@ function updateSlider() {
   } else {
     slider.reloadSlider({
       auto: true,
+      slideWidth: 300,
+      slideMargin: 10,
       infiniteLoop: true,
       minSlides: 4, // PC에서는 4개
       maxSlides: 4, // PC에서는 4개
