@@ -199,8 +199,6 @@ function init04() {
 
 // 초기화 실행
 init04();
-
-
 var slider = $('.sec-05 .slider').bxSlider({
   auto: true,
   infiniteLoop: true,
@@ -210,6 +208,7 @@ var slider = $('.sec-05 .slider').bxSlider({
   controls: false,
   speed: 500,
   pagerCustom: ".custom_pager",
+  touchEnabled: false, // 터치 이벤트 방지 (슬라이드가 움직이는 문제 해결)
 });
 
 function updateSlider() {
@@ -223,6 +222,7 @@ function updateSlider() {
       controls: false,
       speed: 500,
       pagerCustom: ".custom_pager",
+      touchEnabled: false, // 모바일에서도 터치 이벤트 방지
     });
   } else {
     slider.reloadSlider({
@@ -234,6 +234,7 @@ function updateSlider() {
       controls: false,
       speed: 500,
       pagerCustom: ".custom_pager",
+      touchEnabled: false,
     });
   }
 }
@@ -247,6 +248,7 @@ updateSlider();
 // 스크롤 잠금 함수
 function lockScroll() {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  document.body.style.overflow = 'hidden'; // overflow로 제한
   document.body.style.position = 'fixed';
   document.body.style.top = `-${scrollTop}px`;
   document.body.style.width = '100%';
@@ -256,45 +258,45 @@ function lockScroll() {
 // 스크롤 잠금 해제 함수
 function unlockScroll() {
   const scrollY = document.body.dataset.scrollY || '0';
+  document.body.style.overflow = ''; // 스크롤 복원
   document.body.style.position = '';
   document.body.style.top = '';
   document.body.style.width = '';
   window.scrollTo(0, parseInt(scrollY, 10)); // 저장된 스크롤 위치로 이동
   document.body.dataset.scrollY = ''; // 데이터 초기화
 }
+
 // 팝업 열기
 $('.img-box').click(function () {
   var index = $(this).attr('class').match(/pop-btn-(\d+)/)[1];
   var popup = $('.popup-' + index);
-  
-  // 안드로이드 대응: lockScroll() 적용
-  lockScroll();
-  
+
+  lockScroll(); // 스크롤 잠금
+
   popup.addClass('on').siblings('.pop-img').removeClass('on');
 
-  // bxSlider 리로드 (팝업 내부에서 슬라이더 오류 방지)
+  // 팝업이 뜬 후 슬라이더 재초기화
   setTimeout(function () {
     $('.pop-img.on .pop-slider').each(function () {
-      $(this).bxSlider().reloadSlider();
+      $(this).bxSlider({
+        infiniteLoop: false,
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
+        controls: true,
+        touchEnabled: false, // 팝업 내부 슬라이드 터치 방지
+      });
     });
-  }, 300); // 0.3초 후 실행 (팝업이 열릴 시간을 고려)
+  }, 500); // 팝업이 뜰 시간을 고려하여 약간의 딜레이 추가
 });
 
 // 팝업 닫기
 $('.pop-img .close').click(function () {
   $(this).closest('.pop-img').removeClass('on');
-  
-  // 안드로이드 대응: unlockScroll() 적용
-  unlockScroll();
+
+  unlockScroll(); // 스크롤 잠금 해제
 });
 
-$('.pop-img .pop-slider').bxSlider({
-  infiniteLoop: false,
-  minSlides: 1,
-  maxSlides: 1,
-  moveSlides: 1,
-  controls: true,
-});
 
 
 // 모바일 리사이징징
