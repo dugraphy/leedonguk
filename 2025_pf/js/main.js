@@ -201,18 +201,54 @@ function init04() {
 init04();
 
 
-  $('.sec-05 .slider').bxSlider({
-    auto: true,
-    infiniteLoop: true,
-    slideWidth: 300,
-    slideMargin: 10,
-    minSlides: 4,
-    maxSlides: 4,
-    moveSlides: 1,
-    controls: false,
-    speed:500,
-    pagerCustom:".custom_pager", //원하는 id 및 class
-  });
+var slider = $('.sec-05 .slider').bxSlider({
+  auto: true,
+  infiniteLoop: true,
+  slideWidth: 300,
+  slideMargin: 10,
+  minSlides: 4,
+  maxSlides: 4,
+  moveSlides: 1,
+  controls: false,
+  speed: 500,
+  pagerCustom: ".custom_pager",
+});
+
+function updateSlider() {
+  if ($(window).width() <= 768) {
+    slider.reloadSlider({
+      auto: true,
+      infiniteLoop: true,
+      slideWidth: 300,
+      slideMargin: 10,
+      minSlides: 3, // 모바일에서는 3개
+      maxSlides: 3, // 모바일에서는 3개
+      moveSlides: 1,
+      controls: false,
+      speed: 500,
+      pagerCustom: ".custom_pager",
+    });
+  } else {
+    slider.reloadSlider({
+      auto: true,
+      infiniteLoop: true,
+      slideWidth: 300,
+      slideMargin: 10,
+      minSlides: 4, // PC에서는 4개
+      maxSlides: 4, // PC에서는 4개
+      moveSlides: 1,
+      controls: false,
+      speed: 500,
+      pagerCustom: ".custom_pager",
+    });
+  }
+}
+
+$(window).resize(function () {
+  updateSlider();
+});
+
+updateSlider();
 
 // 스크롤 잠금 함수
 function lockScroll() {
