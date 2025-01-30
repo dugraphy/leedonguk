@@ -199,6 +199,8 @@ function init04() {
 
 // 초기화 실행
 init04();
+
+
 var slider = $('.sec-05 .slider').bxSlider({
   auto: true,
   infiniteLoop: true,
@@ -208,7 +210,7 @@ var slider = $('.sec-05 .slider').bxSlider({
   controls: false,
   speed: 500,
   pagerCustom: ".custom_pager",
-  touchEnabled: false, // 터치 이벤트 방지 (슬라이드가 움직이는 문제 해결)
+  touchEnabled: false, // 터치 이벤트 방지
 });
 
 function updateSlider() {
@@ -245,25 +247,20 @@ $(window).resize(function () {
 
 updateSlider();
 
-// 스크롤 잠금 함수
+// 빠른 스크롤 잠금 방법 (딜레이 없음)
 function lockScroll() {
-  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  document.body.style.overflow = 'hidden'; // overflow로 제한
-  document.body.style.position = 'fixed';
-  document.body.style.top = `-${scrollTop}px`;
-  document.body.style.width = '100%';
-  document.body.dataset.scrollY = scrollTop; // 현재 스크롤 위치 저장
+  $('html, body').css({
+    height: '100vh',
+    overflow: 'hidden'
+  });
 }
 
-// 스크롤 잠금 해제 함수
+// 스크롤 잠금 해제
 function unlockScroll() {
-  const scrollY = document.body.dataset.scrollY || '0';
-  document.body.style.overflow = ''; // 스크롤 복원
-  document.body.style.position = '';
-  document.body.style.top = '';
-  document.body.style.width = '';
-  window.scrollTo(0, parseInt(scrollY, 10)); // 저장된 스크롤 위치로 이동
-  document.body.dataset.scrollY = ''; // 데이터 초기화
+  $('html, body').css({
+    height: '',
+    overflow: ''
+  });
 }
 
 // 팝업 열기
@@ -271,13 +268,13 @@ $('.img-box').click(function () {
   var index = $(this).attr('class').match(/pop-btn-(\d+)/)[1];
   var popup = $('.popup-' + index);
 
-  lockScroll(); // 스크롤 잠금
+  lockScroll(); // 빠르게 스크롤 잠금 적용
 
   popup.addClass('on').siblings('.pop-img').removeClass('on');
 
-  // 팝업이 뜬 후 슬라이더 재초기화
-  setTimeout(function () {
-    $('.pop-img.on .pop-slider').each(function () {
+  // setTimeout() 없이 바로 bxSlider 초기화 (딜레이 제거)
+  $('.pop-img.on .pop-slider').each(function () {
+    if (!$(this).hasClass('bx-initialized')) {
       $(this).bxSlider({
         infiniteLoop: false,
         minSlides: 1,
@@ -286,8 +283,8 @@ $('.img-box').click(function () {
         controls: true,
         touchEnabled: false, // 팝업 내부 슬라이드 터치 방지
       });
-    });
-  }, 500); // 팝업이 뜰 시간을 고려하여 약간의 딜레이 추가
+    }
+  });
 });
 
 // 팝업 닫기
@@ -296,8 +293,6 @@ $('.pop-img .close').click(function () {
 
   unlockScroll(); // 스크롤 잠금 해제
 });
-
-
 
 // 모바일 리사이징징
 
