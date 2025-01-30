@@ -253,20 +253,26 @@ $(window).resize(function () {
 
 updateSlider();
 
-// 빠른 스크롤 잠금 방법 (딜레이 없음)
+var scrollPosition = 0; // 현재 스크롤 위치 저장 변수
+
+// 📌 스크롤 잠금 함수 (위치 유지)
 function lockScroll() {
+  scrollPosition = $(window).scrollTop(); // 현재 스크롤 위치 저장
   $('html, body').css({
-    height: '100vh',
-    overflow: 'hidden'
+    position: 'fixed',
+    top: `-${scrollPosition}px`,
+    width: '100%'
   });
 }
 
-// 스크롤 잠금 해제
+// 📌 스크롤 잠금 해제 (위치 유지)
 function unlockScroll() {
   $('html, body').css({
-    height: '',
-    overflow: ''
+    position: '',
+    top: '',
+    width: ''
   });
+  $(window).scrollTop(scrollPosition); // 저장된 위치로 복귀
 }
 
 // 팝업 열기
@@ -274,11 +280,11 @@ $('.img-box').click(function () {
   var index = $(this).attr('class').match(/pop-btn-(\d+)/)[1];
   var popup = $('.popup-' + index);
 
-  lockScroll(); // 빠르게 스크롤 잠금 적용
+  lockScroll(); // 스크롤 잠금 적용
 
   popup.addClass('on').siblings('.pop-img').removeClass('on');
 
-  // setTimeout() 없이 바로 bxSlider 초기화 (딜레이 제거)
+  // 팝업 내부 bxSlider 초기화 (중복 실행 방지)
   $('.pop-img.on .pop-slider').each(function () {
     if (!$(this).hasClass('bx-initialized')) {
       $(this).bxSlider({
@@ -287,7 +293,7 @@ $('.img-box').click(function () {
         maxSlides: 1,
         moveSlides: 1,
         controls: true,
-        touchEnabled: false, // 팝업 내부 슬라이드 터치 방지
+        touchEnabled: false, // 터치 이벤트 방지
       });
     }
   });
@@ -297,9 +303,8 @@ $('.img-box').click(function () {
 $('.pop-img .close').click(function () {
   $(this).closest('.pop-img').removeClass('on');
 
-  unlockScroll(); // 스크롤 잠금 해제
+  unlockScroll(); // 스크롤 원래 위치로 복귀
 });
-
 // 모바일 리사이징징
 
   $('.bars').on('click', function(){
