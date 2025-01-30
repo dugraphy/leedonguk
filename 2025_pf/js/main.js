@@ -205,7 +205,7 @@ var slider = $('.sec-05 .slider').bxSlider({
   auto: true,
   infiniteLoop: true,
   slideWidth: 300,
-  slideMargin: 10,
+  slideMargin: 20,
   minSlides: 4,
   maxSlides: 4,
   moveSlides: 1,
@@ -219,7 +219,7 @@ function updateSlider() {
     slider.reloadSlider({
       auto: true,
       infiniteLoop: true,
-      slideWidth: 300,
+      slideWidth: 100,
       slideMargin: 10,
       minSlides: 3, // 모바일에서는 3개
       maxSlides: 3, // 모바일에서는 3개
@@ -233,7 +233,7 @@ function updateSlider() {
       auto: true,
       infiniteLoop: true,
       slideWidth: 300,
-      slideMargin: 10,
+      slideMargin: 20,
       minSlides: 4, // PC에서는 4개
       maxSlides: 4, // PC에서는 4개
       moveSlides: 1,
