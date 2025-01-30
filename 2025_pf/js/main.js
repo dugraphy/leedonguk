@@ -255,7 +255,7 @@ updateSlider();
 
 var scrollPosition = 0; // 현재 스크롤 위치 저장 변수
 
-// 📌 스크롤 잠금 함수 (위치 유지)
+// 스크롤 잠금 함수 (위치 유지)
 function lockScroll() {
   scrollPosition = $(window).scrollTop(); // 현재 스크롤 위치 저장
   $('html, body').css({
@@ -265,7 +265,7 @@ function lockScroll() {
   });
 }
 
-// 📌 스크롤 잠금 해제 (위치 유지)
+// 스크롤 잠금 해제 (위치 유지)
 function unlockScroll() {
   $('html, body').css({
     position: '',
