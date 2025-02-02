@@ -2,13 +2,16 @@
 .pc_br {
     display: block;
 }
+
 .mo_br {
     display: none;
 }
+
 @media all and (max-width: 700px) {
     .pc_br {
         display: none;
     }
+
     .mo_br {
         display: block;
     }
@@ -22,6 +25,7 @@
     line-height: 25px;
     letter-spacing: 0;
 }
+
 .sub_tit_e {
     margin-bottom: 15px;
     text-align: center;
@@ -30,18 +34,22 @@
     line-height: 25px;
     letter-spacing: 4px;
 }
+
 .tit {
     margin-bottom: 70px;
     font-size: 28px;
     line-height: 38px;
     text-align: center;
 }
+
 .tit span {
     font-family: 'SCDream_Bold';
 }
+
 .b_tit {
     margin-bottom: 20px !important;
 }
+
 .b_sub_txt {
     width: 60%;
     margin: 0 auto 70px;
@@ -50,6 +58,7 @@
     line-height: 25px;
     color: #525252;
 }
+
 .program_tit {
     width: 35%;
     margin: 0 auto 35px;
@@ -60,106 +69,137 @@
     text-align: center;
     background-color: #6b605d;
 }
+
 /* .tit span.red {
     color: #cd2524;
 } */
 .txt_bottom {
     margin-top: 70px;
 }
+
 .txt_bottom .text01 {
     margin-bottom: 30px;
     line-height: 35px;
-    font-size:25px;
+    font-size: 25px;
     font-family: 'SCDream_Bold';
     text-align: center;
 }
+
 .txt_bottom .text02 {
     margin: 0 auto 30px;
     width: 80%;
     line-height: 30px;
     text-align: center;
 }
+
 .txt_bottom .text02 span {
     font-family: 'SCDream_Bold';
 }
+
 .txt_bottom .text03 {
     line-height: 35px;
-    font-size:25px;
+    font-size: 25px;
     font-family: 'SCDream_Medium';
     text-align: center;
     color: #c4a589;
 }
-.c00_mo {display:none;}
+
+.c00_mo {
+    display: none;
+}
 
 @media all and (max-width: 1400px) {
     .b_sub_txt {
         width: 90%;
     }
+
     .program_tit {
         width: 55%;
     }
-    .c00_mo {display:none;}
+
+    .c00_mo {
+        display: none;
+    }
 }
+
 @media all and (max-width: 1060px) {
     .tit {
         font-size: 25px;
         line-height: 35px;
     }
+
     .txt_bottom .text01 {
         margin-bottom: 20px;
         line-height: 25px;
-        font-size:22px;
+        font-size: 22px;
     }
+
     .txt_bottom .text02 {
         width: 90%;
         margin: 0 auto 20px;
     }
+
     .txt_bottom .text03 {
         line-height: 30px;
-        font-size:22px;
+        font-size: 22px;
     }
-    .c00_mo {display:none;}
+
+    .c00_mo {
+        display: none;
+    }
 }
+
 @media all and (max-width: 700px) {
     .sub_tit {
         margin-bottom: 10px;
         font-size: 16px;
         line-height: 20px;
     }
+
     .sub_tit_e {
         margin-bottom: 10px;
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 2px;
     }
+
     .tit {
         font-size: 23px;
         line-height: 30px;
         margin-bottom: 50px;
     }
+
     .program_tit {
         width: 100%;
         font-size: 23px;
     }
+
     .b_sub_txt {
         font-size: 16px;
         margin-bottom: 50px;
     }
+
     .txt_bottom {
         margin-top: 50px;
     }
+
     .txt_bottom .text01 {
-        font-size:20px;
+        font-size: 20px;
     }
+
     .txt_bottom .text02 {
         width: 100%;
         font-size: 16px;
         line-height: 25px;
     }
+
     .txt_bottom .text03 {
-        font-size:20px;
+        font-size: 20px;
     }
-    .c00_mo {display:block;}
+
+    .c00_mo {
+        display: block;
+    }
 }
 
 /* clinic-menu CSS */
@@ -172,3427 +212,50 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-#top_banner .banner_logo {
-    display: block;
-    margin-bottom: 25px;
-}
-#top_banner .banner_logo img {
-    margin: 0 auto;
-}
-.clinic_menu_top {
-    padding: 230px 0;
-    background-image: url(/images/sub/new_clinic/clinic00_top_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.clinic_menu_top .txt {
-    position: relative;
-    margin: 0 auto;
-    padding: 70px 0;
-    width: 630px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-.clinic_menu_top .txt span {
-    position: absolute;
-    width: 75px;
-    height: 2px;
-    background-color: #fff;
-    transform: rotate(90deg);
-}
-.clinic_menu_top .txt span.top_line {
-    left: 44%;
-    top: 0;
-}
-.clinic_menu_top .txt span.bottom_line {
-    left: 45%;
-    bottom: 0;
-}
-.clinic_menu_top .txt p {
-    margin: 0 auto;
-    width: 80%;
-    font-size: 25px;
-    line-height: 35px;
-    text-align: center;
-}
-@media all and (max-width: 1200px) {
-    .clinic_menu_top .txt p {
-        font-size: 22px;
-    }
-}
-@media all and (max-width: 700px) {
-    .clinic_menu_top .txt {
-        padding: 55px 0;
-        width: 75%;
-    }
-    .clinic_menu_top .txt p {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    .clinic_menu_top .txt span.top_line,
-    .clinic_menu_top .txt span.bottom_line {
-        left: 40%;
-    }
-}
-
-/* 클리닉 메뉴 */
-#clinic_menu .clinic {
-    float: left;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 40px 0;
-    width: 270px;
-    border: 1px solid #d0d0d0;
-}
-#clinic_menu .clinic:hover {
-    background-color: #f2f2f2;
-}
-#clinic_menu .clinic:hover .read_more {
-    background-color: #87776b;
-    color: #fff;
-}
-#clinic_menu li:nth-child(1),
-#clinic_menu li:nth-child(5),
-#clinic_menu li:nth-child(9) {
-    margin-left: 0;
-}
-#clinic_menu li:nth-child(1),
-#clinic_menu li:nth-child(2),
-#clinic_menu li:nth-child(3),
-#clinic_menu li:nth-child(4) {
-    margin-top: 0;
-}
-#clinic_menu .clinic .text01 {
-    color: #cbbcb0;
-    font-size: 35px;
-    text-align: center;
-    font-family: 'Mongolian Baiti';
-}
-#clinic_menu .clinic .line {
-    display: block;
-    margin: 25px auto;
-    width: 25px;
-    height: 2px;
-    background-color: #cbbcb0;
-}
-#clinic_menu .clinic .text02 {
-    font-size: 25px;
-    font-family: 'SCDream_Medium';
-    text-align: center;
-}
-#clinic_menu .clinic .text02 br {
-    display: none;
-}
-#clinic_menu .clinic .text03 {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 16px;
-    color: #7e6d5f;
-}
-#clinic_menu .clinic .text03_none {
-    display: block;
-    width: 100%;
-    height: 26px;
-}
-#clinic_menu .clinic .read_more {
-    display: block;
-    margin: 50px auto 0;
-    width: 80%;
-    color: #fff;
-    background-color: #cbbcb0;
-    text-align: center;
-    line-height: 45px;
-    box-sizing: border-box;
-}
-@media all and (max-width: 1400px) {
-    #clinic_menu {
-        width: 1000px;
-    }
-    #clinic_menu .clinic {
-        width: 233px;
-    }
-}
-@media all and (max-width: 1060px) {
-    #clinic_menu {
-        width: 700px;
-    }
-    #clinic_menu .clinic {
-        width: 218px;
-    }
-    #clinic_menu li:nth-child(1),
-    #clinic_menu li:nth-child(4),
-    #clinic_menu li:nth-child(7) {
-        margin-left: 0;
-    }
-    #clinic_menu li:nth-child(4) {
-        margin-top: 20px;
-    }
-    #clinic_menu li:nth-child(5) {
-        margin-left: 20px;
-    }
-    #clinic_menu .clinic .text02 {
-        font-size: 23px;
-    }
-    #clinic_menu .clinic .text03 {
-        font-size: 14px;
-    }
-    #clinic_menu .clinic .text03_none {
-        height: 25px;
-    }
-}
-@media all and (max-width: 700px) {
-    #clinic_menu {
-        width: 90%;
-    }
-    #clinic_menu .clinic {
-        margin-left: 2%;
-        width: 48%;
-    }
-    #clinic_menu li:nth-child(1),
-    #clinic_menu li:nth-child(3),
-    #clinic_menu li:nth-child(5),
-    #clinic_menu li:nth-child(7) {
-        margin-left: 0;
-    }
-    #clinic_menu li:nth-child(3) {
-        margin-top: 2%;
-    }
-    #clinic_menu li:nth-child(4) {
-        margin-left: 2%;
-        margin-top: 2%;
-    }
-    #clinic_menu .clinic .text01 {
-        font-size: 25px;
-    }
-    #clinic_menu .clinic .line {
-        margin: 20px auto;
-        width: 15px;
-    }
-    #clinic_menu .clinic .text02 {
-        font-size: 20px;
-        line-height: 25px;
-    }
-    #clinic_menu .clinic .text02 br {
-        display: block;
-    }
-    #clinic_menu .clinic .text03 {
-        line-height: 20px;
-        width: 85%;
-        margin: 5px auto 0;
-    }
-    #clinic_menu .clinic .read_more {
-        margin: 35px auto 0;
-        line-height: 40px;
-    }
-}
-/* // clinic-menu CSS */
-
-/* clinic-색소질환 CSS */
-.clinic_pigment_top {
-    background-image: url(/images/sub/new_clinic/clinic01_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-#top_banner .sub_title {
-    position: absolute;
-    top: 58%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-#top_banner .sub_title h3 {
-    margin-bottom: 25px;
-    font-size: 22px;
-}
-#top_banner .sub_title h2 {
-    margin-bottom: 25px;
-    font-size: 42px;
-    font-family: 'SCDream_Bold';
-
-}
-#top_banner .sub_title .line {
-    display: block;
-    margin: 0 auto 50px;
-    width: 45px;
-    height: 2px;
-    background-color: #2f2f2f;
-}
-#top_banner .sub_title p {
-    margin: auto 0;
-    font-size: 18px;
-    line-height: 30px;
-}
-@media all and (max-width: 1400px) {
-    .clinic_pigment_top {
-        background-position: 35%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_pigment_top {
-        background-position: 15%;
-    }
-    #top_banner .sub_title {
-        padding: 50px 70px;
-        width: 60%;
-        background-color: rgba(255, 255, 255, 0.9)
-    }
-    #top_banner .sub_title h3 {
-        margin-bottom: 20px;
-        font-size: 20px;
-    }
-    #top_banner .sub_title h2 {
-        margin-bottom: 20px;
-        font-size: 32px;
-    }
-    #top_banner .sub_title .line {
-        margin: 0 auto 30px;
-        width: 35px;
-    }
-    #top_banner .sub_title p br {
-        display: none;
-    }
-}
-@media all and (max-width: 700px) {
-    .medical #top_banner .sub_title {
-        background-color: rgba(0,0,0,0);
-    }
-    #top_banner .sub_title {
-        padding: 30px 25px;
-        width: 90%;
-        box-sizing: border-box;
-    }
-    #top_banner .sub_title h3 {
-        margin-bottom: 15px;
-        font-size: 18px;
-    }
-    #top_banner .sub_title h2 {
-        margin-bottom: 15px;
-        font-size: 28px;
-    }
-    #top_banner .sub_title p {
-        font-size: 16px;
-        line-height: 25px;
-    }
-}
-
-/* 이유있는 자신감 */
-#confidence {
-    margin-top: 100px;
-}
-#confidence .f_wrap .txt {
-    float: left;
-    width: 39%;
-    margin-top: 70px;
-}
-#confidence .text01 {
-    font-size: 38px;
-    color: #6a605e;
-    line-height: 48px;
-}
-#confidence .text01 span {
-    color: #6a605e;
-    font-family: 'SCDream_Bold';
-}
-#confidence .text02 {
-    margin-top: 30px;
-    line-height: 30px;
-}
-#confidence .f_wrap .img {
-    float: right;
-}
-@media all and (max-width: 1400px) {
-    #confidence .f_wrap .txt {
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-    #confidence .f_wrap .img {
-        width: 100%;
-    }
-    #confidence .f_wrap .img img {
-        display: block;
-        margin: 50px auto 0;
-    }
-}
-@media all and (max-width: 1060px) {
-    #confidence .text01 {
-        font-size: 28px;
-        line-height: 38px;
-    }
-    #confidence .text02 {
-        margin-top: 20px;
-        line-height: 28px;
-    }
-}
-@media all and (max-width: 700px) {
-    #confidence {
-        margin-top: 70px;
-    }
-    #confidence .text01 {
-        font-size: 25px;
-        line-height: 35px;
-    }
-    #confidence .text02 {
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #confidence .f_wrap .img img {
-        width: 90%;
-    }
-}
-/* 마크뷰 */
-#markvu {
-    padding: 110px 0 50px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic_markvu_bg_1.jpg);
-    background-size: cover;
-    background-position: center left;
-    background-repeat: no-repeat;
-}
-#markvu .f_warp {
-    width: 1150px;
-    margin: 0 auto;
-}
-#markvu .txt {
-    float: left;
-}
-#markvu .text01 {
-    color: #c4a589;
-    font-size: 32px;
-    font-family: 'SCDream_Bold';
-    line-height: 35px;
-    color: #2f2f2f;
-}
-#markvu .text02 {
-    margin: 20px 0 40px 0;
-    font-size: 25px;
-    font-family: 'SCDream_Medium';
-    color: #2f2f2f;
-}
-#markvu .text03 {
-    width: 100%;
-    line-height: 30px;
-    color: #2f2f2f;
-}
-#markvu img {
-    margin: 0 0 0 auto;
-}
-@media all and (max-width: 1400px) {
-    #markvu {
-        padding: 110px 0 50px 0;
-        width: 100%;
-        background-image: url(/images/sub/new_clinic/clinic_markvu_bg_1.jpg);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-    #markvu .txt {
-        width: 100%;
-        text-align: center;
-        float: none;
-    }
-    #markvu .text03 {
-        width: 100%;
-    }
-    #markvu .f_warp {
-        width: 100%;
-        margin: 0 auto;
-    }
-    #markvu img {
-        margin: 50px auto 0;
-    }
-}
-@media all and (max-width: 1060px) {
-    #markvu .text01 {
-        margin: 15px 0 25px 0;
-        font-size: 28px;
-    }
-    #markvu .text02 {
-        font-size: 22px;
-    }
-    #markvu .text03 {
-        line-height: 28px;
-    }
-}
-@media all and (max-width: 700px) {
-    #markvu {
-        padding: 70px 0 0;
-    }
-    #markvu .text01 {
-        font-size: 23px;
-        line-height: 30px;
-    }
-    #markvu .text02 {
-        font-size: 20px;
-    }
-    #markvu .text03 {
-        width: 100%;
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #markvu img {
-        width: 50%;
-    }
-}
-
-/* 프로그램 */
-#program {
-    padding: 110px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic_program_bg.jpg);
-    background-size: cover;
-    background-position: center left;
-    background-repeat: no-repeat;
-}
-#program .wrapper {
-    text-align: center;
-}
-#program .text01 {
-    color: #c4a589;
-    font-size: 25px;
-    font-family: 'SCDream_Medium';
-}
-#program .text02 {
-    margin: 20px 0 40px 0;
-    font-size: 32px;
-    font-family: 'SCDream_Bold';
-}
-#program .text02 span {
-    font-family: 'SCDream_Light';
-}
-#program .text03 {
-    width: 50%;
-    margin: 0 auto;
-    line-height: 30px;
-}
-@media all and (max-width: 1400px) {
-    #program .text03 {
-        width: 80%;
-    }
-}
-@media all and (max-width: 1060px) {
-    #program .text01 {
-        font-size: 22px;
-    }
-    #program .text02 {
-        margin: 15px 0 25px 0;
-        font-size: 28px;
-    }
-    #program .text03 {
-        line-height: 28px;
-    }
-}
-@media all and (max-width: 700px) {
-    #program {
-        padding: 70px 0;
-    }
-    #program .text01 {
-        font-size: 20px;
-    }
-    #program .text02 {
-        font-size: 23px;
-    }
-    #program .text03 {
-        width: 100%;
-        font-size: 16px;
-        line-height: 25px;
-    }
-}
-
-/* 전문 수련 */
-#training {
-    padding: 110px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic_training_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#training .process {
-    padding: 50px 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-#training .process .f_wrap {
-    position: relative;
-}
-#training .process .p_01 {
-    float: left;
-    width: 48%;
-    margin-right: 4%;
-}
-#training .process .text01 {
-    font-family: 'SCDream_Bold';
-    margin-bottom: 20px;
-    font-size: 25px;
-    text-align: center;
-}
-#training .process .text01 br {
-    display: none;
-}
-#training .process .text01 span {
-    font-family: 'SCDream_Light';
-}
-#training .process .p_01 .text01 {
-    margin-top: 85px;
-}
-#training .process .arrow {
-    position: relative;
-    width: 100%;
-    height: 2px;
-}
-#training .process .p_01 .arrow {
-    background-color: #2f2f2f;
-
-}
-#training .process .p_01 .arrow .left {
-    position: absolute;
-    left: -3px;
-    top: -5px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(-45deg);
-    background-color: #2f2f2f;
-}
-#training .process .p_01 .arrow .left::before {
-    content: '';
-    position: absolute;
-    left: -7px;
-    bottom: -7px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(90deg);
-    background-color: #2f2f2f;
-}
-#training .process .p_01 .arrow .right {
-    position: absolute;
-    right: -3px;
-    top: -5px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(45deg);
-    background-color: #2f2f2f;
-}
-#training .process .p_01 .arrow .right::before {
-    content: '';
-    position: absolute;
-    left: 7px;
-    bottom: -7px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(90deg);
-    background-color: #2f2f2f;
-}
-#training .process .p_01 .box {
-    margin-top: 50px;
-}
-#training .process .box span {
-    display: inline-block;
-    padding: 50px 0;
-    width: 48%;
-    margin-left: 2%;
-    text-align: center;
-    line-height: 25px;
-    background-color: #fff;
-    border: 1px solid #2f2f2f;
-}
-#training .process .box span:first-of-type {
-    margin-left: 0;
-}
-
-#training .process .p_02 {
-    float: left;
-    width: 48%;
-}
-#training .process .p_02 img {
-    display: block;
-    margin: 0 auto 20px;
-    width: 65px;
-}
-#training .process .red_arrow {
-    position: absolute;
-    top: 160px;
-    background-color: #c42836; 
-}
-#training .process .red_arrow .left {
-    position: absolute;
-    left: -3px;
-    top: -5px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(-45deg);
-    background-color: #c42836;
-}
-#training .process .red_arrow .left::before {
-    content: '';
-    position: absolute;
-    left: -7px;
-    bottom: -7px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(90deg);
-    background-color: #c42836;
-}
-#training .process .red_arrow .right {
-    position: absolute;
-    right: -3px;
-    top: -5px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(45deg);
-    background-color: #c42836;
-}
-#training .process .red_arrow .right::before {
-    content: '';
-    position: absolute;
-    left: 7px;
-    bottom: -7px;
-    width: 15px;
-    height: 2px;
-    transform: rotate(90deg);
-    background-color: #c42836;
-}
-#training .process .p_02 .box span {
-    border: 1px solid #c42836;
-}
-#training .process .p_02 .box {
-    margin-top: 72px;
-}
-#training .txt {
-    margin-top: 70px;
-    font-size: 25px;
-    line-height: 35px;
-    text-align: center;
-}
-#training .txt span {
-    font-family: 'SCDream_Bold';
-}
-@media all and (max-width: 1400px) {
-    #training .process .box span {
-        width: 47%;
-        font-size: 16px;
-    }
-}
-
-@media all and (max-width: 1060px) {
-    #training .txt br {
-        display: none;
-    }
-    #training .process .box span {
-        width: 100%;
-        padding: 30px 0;
-        margin-left: 0;
-        margin-top: 15px;
-    }
-    #training .process .box span br {
-        display: none;
-    }
-    #training .process .box span:first-of-type {
-        margin-left: 0;
-        margin-top: 0;
-    }
-}
-@media all and (max-width: 700px) {
-    #training {
-        padding: 70px 0;
-    }
-    #training .process .text01 {
-        font-size: 18px;
-        line-height: 25px;
-    }
-    #training .process .text01 br {
-        display: block;
-    }
-    #training .process .p_01 .text01 {
-        margin-top: 70px;
-    }
-    #training .process .p_02 img {
-        width: 50px;
-    }
-    #training .process .p_01 .box {
-        margin-top: 35px;
-    }
-    #training .process .box span {
-        padding: 20px 0;
-    }
-    #training .process .box span br {
-        display: block;
-    }
-    #training .process .p_02 .box {
-        margin-top: 57px;
-    }
-}
-
-/* 설명 */
-#explanation img {
-    display: block;
-    margin: 0 auto;
-}
-.loar_program {
-    padding: 70px 40px;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
-}
-.loar_program > img {
-    width: 130px;
-    margin: 0 auto 20px !important;
-}
-.loar_program h1 {
-    padding-bottom: 8px;
-    font-size: 20px;
-    text-align: center;
-}
-.loar_program h2 {
-    margin-bottom: 70px;
-    font-size: 27px;
-    text-align: center;
-    font-family: 'SCDream_Bold';
-}
-.loar_program ul.img li {
-    float: left;
-    width: 32%;
-    margin-left: 2%;
-}
-.loar_program ul.img li:first-of-type {
-    margin-left: 0;
-}
-.loar_program ul.img li img {
-    width: 100% !important;
-}
-.loar_program ul.img li p {
-    width: 100%;
-    padding: 10px;
-    font-family: 'SCDream_Medium';
-    color: #fff;
-    background-color: #2f2f2f;
-    text-align: center;
-    box-sizing: border-box;
-}
-@media all and (max-width: 1400px) {
-    #explanation img {
-        display: block;
-        margin: 0 auto;
-    }
-}
-@media all and (max-width: 1060px) {
-    #explanation img {
-        width: 60%;
-    }
-    #explanation .loar_program > img {
-        width: 22%;
-    }
-}
-@media all and (max-width: 700px) {
-    #explanation img {
-        width: 90%;
-    }
-    .loar_program {
-        padding: 50px 20px;
-    }
-    #explanation .loar_program > img {
-        width: 30%;
-    }
-    .loar_program h1 {
-        padding-bottom: 5px;
-        font-size: 16px;
-    }
-    .loar_program h2 {
-        margin-bottom: 50px;
-        font-size: 22px;
-    }
-    .loar_program ul.img li p {
-        font-size: 16px;
-        padding:10px 0;
-    }
-}
-/* clinic-특별함 */
-#different {
-    padding: 110px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic_different_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#different .sub_tit {
-    color: #bba997;
-}
-#different .sub_tit br {
-    display: none;
-}
-#different ul li {
-    float: left;
-    width: 48%;
-    margin-left: 4%;
-    margin-top: 4%;
-}
-#different ul li:nth-child(1),
-#different ul li:nth-child(3) {
-    margin-left: 0;
-}
-#different ul li:nth-child(1),
-#different ul li:nth-child(2) {
-    margin-top: 0;
-}
-#different ul li span {
-    margin-left: 18px;
-    color: #c4a589;
-    letter-spacing: 3px;
-}
-#different ul li .box {
-    padding: 40px;
-    width: 100%;
-    height: 195px;
-    border-radius: 0 70px 0 70px;
-    background-color: #fff;
-    box-sizing: border-box;
-}
-#different ul li .box .b_tit {
-    text-align: center;
-    font-size: 23px;
-    font-family: 'SCDream_Bold';
-}
-#different ul li .box .b_txt {
-    margin-top: 20px;
-    text-align: center;
-    line-height: 25px;
-}
-#different .text01 {
-    margin-bottom: 0;
-}
-@media all and (max-width: 1400px) {
-    #different ul li .box {
-        padding: 35px;
-        height: 210px;
-    }
-}
-@media all and (max-width: 1060px) {
-    #different .sub_tit br {
-        display: block;
-    }
-    #different ul li {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 4%;
-    }
-    #different ul li:nth-child(1),
-    #different ul li:nth-child(3) {
-        margin-left: 0;
-    }
-    #different ul li:nth-child(1) {
-        margin-top: 0;
-    }
-    #different ul li:nth-child(2) {
-        margin-top: 4%;
-    }
-    #different ul li .box {
-        padding: 25px 50px;
-        height: auto;
-    }
-}
-@media all and (max-width: 700px) {
-    #different {
-        padding: 70px 0;
-    }
-    #different ul li {
-        margin-top: 8%;
-    }
-    #different ul li span {
-        font-size: 16px;
-        letter-spacing: 2px;
-    }
-    #different ul li .box {
-        padding: 25px 30px;
-        border-radius: 0 50px 0 50px;
-    }
-    #different ul li .box .b_tit {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    #different ul li .box .b_txt {
-        margin-top: 10px;
-        font-size: 16px;
-    }
-    #different ul li:nth-child(2) {
-        margin-top: 8%;
-    }
-    #different .text02 br {
-        display: none;
-    }
-}
-/* medical-특별함 */
-#medical_different {
-    padding: 0 0 110px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic_different_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#medical_different .sub_tit {
-    color: #bba997;
-}
-#medical_different .sub_tit br {
-    display: none;
-}
-#medical_different ul li {
-    float: left;
-    width: 48%;
-    margin-left: 4%;
-    margin-top: 4%;
-}
-#medical_different ul li:nth-child(1),
-#medical_different ul li:nth-child(3) {
-    margin-left: 0;
-}
-#medical_different ul li:nth-child(1),
-#medical_different ul li:nth-child(2) {
-    margin-top: 0;
-}
-#medical_different ul li span {
-    margin-left: 18px;
-    color: #c4a589;
-    letter-spacing: 3px;
-}
-#medical_different ul li .box {
-    position: relative;
-    width: 100%;
-    height: 195px;
-    background-color: #fff;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-#medical_different ul li .box img {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translateY(-50%);
-    width: 60%;
-}
-#medical_different ul li .box .txt {
-    float: right;
-    padding: 30px 0 20px 0;
-    width: 45%;
-    margin: 3%;
-    box-sizing: border-box;
-}
-#medical_different ul li .box .b_tit {
-    text-align: center;
-    font-size: 23px;
-    font-family: 'SCDream_Bold';
-}
-#medical_different ul li .box .b_txt {
-    margin-top: 20px;
-    text-align: center;
-    line-height: 25px;
-}
-#difmedical_differentferent .text01 {
-    margin-bottom: 0;
-}
-@media all and (max-width: 1400px) {
-    #medical_different ul li .box {
-        height: 210px;
-    }
-    #medical_different ul li .box img {
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateY(0);
-        width: 100%;
-    }
-    #medical_different ul li .box .txt {
-        float: none;
-        padding: 30px;
-        width: 100%;
-        margin: 7.5% 0;
-        background-color: rgba(255, 255, 255, 0.8);
-        box-sizing: border-box;
-    }
-}
-@media all and (max-width: 1060px) {
-    #medical_different .sub_tit br {
-        display: block;
-    }
-    #medical_different ul li {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 4%;
-    }
-    #medical_different ul li:nth-child(1),
-    #medical_different ul li:nth-child(3) {
-        margin-left: 0;
-    }
-    #medical_different ul li:nth-child(1) {
-        margin-top: 0;
-    }
-    #medical_different ul li:nth-child(2) {
-        margin-top: 4%;
-    }
-    #medical_different ul li .box {
-        padding: 25px 50px;
-        height: auto;
-    }
-}
-@media all and (max-width: 700px) {
-    #medical_different {
-        padding: 70px 0;
-    }
-    #medical_different ul li {
-        margin-top: 8%;
-    }
-    #medical_different ul li span {
-        font-size: 16px;
-        letter-spacing: 2px;
-    }
-    #medical_different ul li .box {
-        padding: 25px 30px;
-    }
-    #medical_different ul li .box img {
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateY(0);
-        width: 100%;
-    }
-    #medical_different ul li .box .txt {
-        float: none;
-        padding: 70% 0 20px 0;
-        width: 100%;
-        margin: 0;
-        background-color: unset;
-        box-sizing: border-box;
-    }
-    #medical_different ul li .box .b_tit {
-        font-size: 20px;
-        line-height: 30px;
-    }
-    #medical_different ul li .box .b_txt {
-        margin-top: 10px;
-        font-size: 16px;
-    }
-    #medical_different ul li:nth-child(2) {
-        margin-top: 8%;
-    }
-    #medical_different .text02 br {
-        display: none;
-    }
-}
-
-
-/* 색소질환 - 로아르 아토피 치료 */
-#atopy {
-    padding: 110px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic03_disease_bg01.jpg);
-    background-size: cover;
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-color: #f4f4f4;
-}
-.disease_treatment h2 {
-    text-align: center;
-    font-size: 30px;
-    color: #6a605e;
-}
-.disease_treatment h2 span {
-    color: #6a605e;
-    font-family: 'SCDream_Bold';
-}
-.disease_treatment h2 br {
-    display: none;
-}
-.disease_treatment .text01 {
-    width: 65%;
-    margin: 15px auto 50px;
-    text-align: center;
-    line-height: 30px;
-}
-.disease_treatment .con {
-    position: relative;
-}
-.disease_treatment .con li {
-    float: left;
-    width: 48%;
-    margin-left: 4%;
-}
-.disease_treatment .con li:first-of-type {
-    margin-left: 0;
-}
-.disease_treatment .con li .con_tit {
-    width: 100%;
-    padding: 15px 0;
-    color: #fff;
-    background-color: #333333;
-    font-size: 22px;
-    font-family: 'SCDream_Medium';
-    text-align: center;
-}
-.disease_treatment .con li img {
-    width: 100%;
-}
-.disease_treatment .con li .con_txt {
-    margin: 30px auto 0;
-    width: 80%;
-    line-height: 30px;
-    text-align: center;
-}
-.disease_treatment .con .plus {
-    position: absolute;
-    display: block;
-    top: 36%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #333333;
-    font-size: 45px;
-    font-family: 'SCDream_Bold';
-}
-
-
-/* 건선/백반증 */
-#vitiligo {
-    padding: 110px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic03_disease_bg02.jpg);
-    background-size: cover;
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-#vitiligo .con > img {
-    float: left;
-    width: 44%;
-}
-#vitiligo .con .txt_box {
-    float: left;
-    width: 56%;
-}
-#vitiligo .con .txt_box .con_tit {
-    width: 100%;
-    padding: 15px 0;
-    color: #fff;
-    background-color: #333333;
-    font-size: 22px;
-    font-family: 'SCDream_Medium';
-    text-align: center;
-}
-#vitiligo .con .txt_box .con_txt {
-    padding: 66.5px 50px;
-    background-color: #f2f2f2;
-}
-#vitiligo .con .txt_box .con_txt p {
-    line-height: 25px;
-    text-align: center;
-}
-#vitiligo .con .txt_box .con_txt p span {
-    font-family: 'SCDream_Medium';
-}
-#vitiligo .con .txt_box .con_txt > span {
-    display: block;
-    padding: 10px 0;
-    margin-top: 10px;
-    width: 100%;
-    color: #fffb90;
-    background-color: #6b605d;
-    font-family: 'SCDream_Medium';
-    border-radius: 20px;
-    text-align: center;
-    box-sizing: border-box;
-}
-#vitiligo .con .txt_box .con_txt > span:first-of-type {
-    margin-top: 30px;
-}
-
-/* 사마귀 */
-#wart {
-    padding: 110px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic03_disease_bg03.jpg);
-    background-size: cover;
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-color: #f4f4f4;
-}
-
-/* 무좀 */
-#h_foot {
-    padding: 110px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic03_disease_bg04.jpg);
-    background-size: cover;
-    background-position: top right;
-    background-repeat: no-repeat;
-}
-#h_foot ul li {
-    float: left;
-    width: 31%;
-    margin-left: 3%;
-}
-#h_foot ul li:first-of-type {
-    margin-left: 0;
-}
-#h_foot ul li > p {
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-    font-size: 25px;
-    color: #fff;
-    font-family: 'Bebas Kai';
-    letter-spacing: 3px;
-}
-#h_foot ul li.point01 > p {
-    background-color: #ccbbb1;
-}
-#h_foot ul li.point02 > p {
-    background-color: #b09d97;
-}
-#h_foot ul li.point03 > p {
-    background-color: #6b605e;
-}
-#h_foot ul li img {
-    width: 100%;
-}
-#h_foot ul li .text {
-    width: 100%;
-    height: 200px;
-    padding: 25px 15px;
-    text-align: center;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
-}
-#h_foot ul li .text span {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 23px;
-    font-family: 'SCDream_Bold';
-}
-#h_foot ul li .text p {
-    text-align: center;
-    line-height: 30px;
-}
-
-@media all and (max-width: 1400px) {
-    #atopy {
-        background-size: 90%;
-    }
-    #vitiligo {
-        background-size: 110%;
-    }
-    #vitiligo .con > img {
-        float: none;
-        width: 60%;
-        margin: 0 auto 50px;
-    }
-    #vitiligo .con .txt_box {
-        width: 100%;
-    }
-    #wart {
-        background-size: 110%;
-    }
-    #h_foot {
-        background-size: 110%;
-    }
-    #h_foot ul li {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 50px;
-    }
-    #h_foot ul li:first-of-type {
-        margin-top: 0;
-    }
-    #h_foot ul li > p {
-        width: 100%;
-    }
-    #h_foot ul li img {
-        float: left;
-        width: 50%;
-    }
-    #h_foot ul li .text {
-        float: left;
-        width: 50%;
-        height: 250px;
-        padding: 64px 20px;
-    }
-}
-@media all and (max-width: 1060px) {
-    #atopy {
-        background-size: 120%;
-    }
-    .disease_treatment .text01 {
-        width: 100%;
-    }
-    .disease_treatment .con .plus {
-        top: 30%;
-        font-size: 35px;
-    }
-    #vitiligo {
-        background-size: 130%;
-    }
-    #vitiligo .con > img {
-        width: 100%;
-        margin: 0 auto 0;
-    }
-    #wart {
-        background-size: 115%;
-    }
-    #h_foot {
-        background-size: 140%;
-    }
-    #h_foot ul li .text {
-        padding: 35px;
-        height: 220px;
-    }
-}
-@media all and (max-width: 700px) {
-    #atopy {
-        padding: 70px 0;
-        background-image: none;
-    }
-    .disease_treatment h2 {
-        font-size: 25px;
-        line-height: 35px;
-    }
-    .disease_treatment h2 br {
-        display: block;
-    }
-    .disease_treatment .text01 {
-        font-size: 16px;
-        line-height: 25px;
-        margin: 15px auto 40px;
-    }
-    .disease_treatment .con li {
-        width: 100%;
-        margin-left: 0;
-    }
-    .disease_treatment .con li:first-of-type {
-        margin-bottom: 40px;
-    }
-    .disease_treatment .con li .con_tit {
-        padding: 10px 0;
-        font-size: 18px;
-    }
-    .disease_treatment .con li .con_txt {
-        margin: 10px auto 0;
-        width: 100%;
-        line-height: 25px;
-        font-size: 16px;
-    }
-    .disease_treatment .con .plus {
-        display: none;
-    }
-    #vitiligo {
-        padding: 70px 0;
-        background-image: none;
-    }
-    #vitiligo .con .txt_box .con_tit {
-        padding: 10px 0;
-        font-size: 20px;
-    }
-    #vitiligo .con .txt_box .con_txt {
-        padding: 30px;
-    }
-    #vitiligo .con .txt_box .con_txt p{
-        font-size: 16px;
-    }
-    #vitiligo .con .txt_box .con_txt > span {
-        font-size: 16px;
-    }
-    #wart {
-        padding: 70px 0;
-        background-image: none;
-    }
-    #h_foot {
-        padding: 70px 0;
-        background-image: none;
-    }
-    #h_foot ul li {
-        margin-top: 30px;
-    }
-    #h_foot ul li > p {
-        font-size: 20px;
-    }
-    #h_foot ul li img {
-        width: 100%;
-    }
-    #h_foot ul li .text {
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-    #h_foot ul li .text span {
-        font-size: 18px;
-    }
-    #h_foot ul li .text p {
-        font-size: 16px;
-        line-height: 25px;
-    }
-}
-
-/* 포인트 */
-#point {
-    padding: 100px 0;
-    background-color: #f2f2f2;
-}
-#point ul li {
-    float: left;
-    margin-left:5%;
-    width: 30%;
-    box-sizing: border-box;
-}
-#point ul li:first-of-type {
-    margin-left: 0;
-}
-#point ul li img {
-    display: block;
-    margin: 0 auto;
-}
-#point ul li span {
-    display: block;
-    margin: 25px 0;
-    text-align: center;
-    font-size: 22px;
-    line-height: 30px;
-    font-family: 'SCDream_Bold';
-}
-#point ul li p {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 30px;
-}
-@media all and (max-width: 1400px) {
-    #point ul li img {
-        width: 100%;
-    }
-    #point ul li span br {
-        display: none;
-    }
-}
-@media all and (max-width: 1060px) {
-    #point ul li {
-        float: none;
-        margin-left: 0;
-        margin-top: 5%;
-        width: 100%;
-        height: 280px;
-        overflow: hidden;
-    }
-    #point ul li:first-of-type {
-        margin-top: 0%;
-    }
-    #point ul li img {
-        width: 40%;
-        float: left;
-        margin-right: 5%;
-    }
-    #point ul li .text {
-        width: 55%;
-        float: left;
-        margin-top: 75px;
-    }
-    #point ul li span {
-        margin: 0 0 20px 0;
-        text-align: left;
-    }
-    #point ul li span br {
-        display: block;
-    }
-    #point ul li p {
-        width: 100%;
-        margin: 0;
-        text-align: left;
-    }
-}
-@media all and (max-width: 700px) {
-    #point {
-        padding: 70px 0;
-    }
-    #point ul li {
-        margin-top: 40px;
-        width: 100%;
-        height: auto;
-    }
-    #point ul li img {
-        width: 70%;
-        float: none;
-        margin: 0 auto;
-    }
-    #point ul li .text {
-        width: 100%;
-        float: none;
-        margin-top: 30px;
-    }
-    #point ul li span {
-        text-align: center;
-    }
-    #point ul li p {
-        width: 70%;
-        margin: 0 auto;
-        text-align: center;
-    }
-}
-
-#laser {
-    padding: 100px 0;
-    background-color: #f2f2f2;
-}
-#laser .clinic_laser .slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .4;
-}
-#laser .clinic_laser .slick-current {
-    opacity: 1;
-}
-#laser .clinic_laser > div {
-    padding: 0 28% !important;
-}
-#laser .clinic_laser img {
-    margin: 0 auto 20px;
-}
-#laser .clinic_laser .more{
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    margin-bottom: 30px;
-}
-#laser .clinic_laser .more .box{
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform:translateX(-50%);
-    width: 329px;
-    height: 329px;
-    border-radius: 50%;
-    background: rgba(0,0,0,0.5);
-}
-#laser .clinic_laser .more:hover .box {
-    top: 0;
-}
-#laser .clinic_laser .more span{
-    text-align: center;
-    font-size: 25px;
-    font-family: 'SCDream_bold';
-    color: #fff;
-    padding: 41.8% 0;
-} 
-#laser .clinic_laser .more span a{
-    display: block;
-    font-size: 18px;
-    color: #fff;
-    margin-top: 15px;
-}
-#laser .clinic_laser span {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 25px;
-    text-align: center;
-    font-family: 'SCDream_Bold';
-}
-#laser .clinic_laser span.no_logo {
-    margin-top: 115px;
-}
-#laser .clinic_laser p {
-    width: 70%;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 30px;
-}
-
-#specialist img.doctor {
-    float: left;
-    width: 50%;
-}
-#specialist .box {
-    position: relative;
-    float: left;
-    padding: 135px 0;
-    width: 50%;
-    height: 420px;
-    background-color: #f2f2f2;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-#specialist .box img {
-    position: absolute;
-    width: 65px;
-    right: 25px;
-    top: 25px;
-}
-#specialist .box .text01 {
-    margin-left: 8%;
-    margin-bottom: 30px;
-    font-size: 32px;
-}
-#specialist .box .text01 span {
-    font-family: 'SCDream_Bold';
-}
-#specialist .box .text02 {
-    margin-left: 8%;
-    width: 80%;
-    line-height: 30px;
-}
-@media all and (max-width: 1400px) {
-    #laser .clinic_laser > div {
-        padding: 0 25% !important;
-    }
-    #specialist .box {
-        padding: 70px 0;
-        height: 292px;
-    }
-    #specialist .box img {
-        width: 50px;
-        right: 15px;
-        top: 15px;
-    }
-    #specialist .box .text01 {
-        font-size: 25px;
-    }
-}
-@media all and (max-width: 1060px) {
-    #laser .clinic_laser > div {
-        padding: 0 !important;
-    }
-    #laser .clinic_laser span.no_logo {
-        margin-top: 60px;
-    }
-    #laser .clinic_laser p {
-        line-height: 28px;
-    }
-    #specialist img.doctor {
-        width: 100%;
-    }
-    #specialist .box {
-        width: 100%;
-        height: auto;
-    }
-    #specialist .box .text01 {
-        margin-bottom: 20px;
-        font-size: 22px;
-    }
-}
-@media all and (max-width: 700px) {
-    #laser {
-        padding: 70px 0;
-    }
-    #laser .clinic_laser img {
-        margin: 0 auto 15px;
-    }
-    #laser .clinic_laser p {
-        width: 100%;
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #specialist .box .text01 {
-        margin: 0 auto 15px;
-        width: 90%;
-        box-sizing: border-box;
-    }
-    #specialist .box .text02 {
-        margin: 0 auto;
-        width: 90%;
-        box-sizing: border-box;
-    }
-    #specialist .txt_bottom .text01 br {
-        display: none;
-    }
-}
-
-/* 스킨케어 */
-#skincare {
-    padding: 100px 0;
-    background-color: #f8f6f4;
-}
-#skincare .tit {
-    margin-bottom: 30px;
-    font-size: 28px;
-    text-align: center;
-}
-#skincare .tit span {
-    font-family: 'SCDream_Bold';
-}
-#skincare .t_txt {
-    margin: 0 auto 40px;
-    width: 55%;
-    color: #5a5a5a;
-    text-align: center;
-    line-height: 25px;
-}
-#skincare .t_txt span {
-    font-family: 'SCDream_Bold';
-}
-#skincare .skincare_box {
-    position: relative;
-    margin: 40px auto 0;
-    width: 80%;
-    border: 1px solid #ddd;
-    background-color: #fff;
-}
-#skincare .skincare_box:first-of-type {
-    margin: 0 auto;
-}
-#skincare .skincare_box .txt {
-    float: left;
-    padding: 50px 0 50px 50px;
-    width: 57%;
-    margin-right: 3%;
-    box-sizing: border-box;
-}
-#skincare .skincare_box .txt  h1 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-family: 'SCDream_Bold';
-}
-#skincare .skincare_box .txt h2 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    font-family: 'SCDream_Medium';
-    color: #c4a589;
-    line-height: 25px;
-}
-#skincare .skincare_box .txt > p {
-    margin-bottom: 30px;
-    font-size: 16.5px;
-    line-height: 25px;
-}
-#skincare .skincare_box .txt .point p {
-    float: left;
-    padding: 8px 25px;
-    margin-right: 10px;
-    font-size: 15px;
-    color: #6b605d;
-    background-color: #f2f2f2;
-    font-family: 'SCDream_Bold';
-}
-#skincare .skincare_box img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 40%;
-}
-
-@media all and (max-width: 1400px) {
-    #skincare .wrapper {
-        width: 1100px !important;
-    }
-}
-@media all and (max-width: 1060px) {
-    #skincare .wrapper {
-        width: 700px !important;
-    }
-    #skincare .tit {
-        font-size: 25px;
-    }
-    #skincare .t_txt {
-        width: 85%;
-    }
-    #skincare .skincare_box {
-        width: 90%;
-    }
-    #skincare .skincare_box .txt {
-        padding: 50px 0 35px 50px;
-        margin-right: 0;
-        width: 90%;
-    }
-    #skincare .skincare_box img {
-        position: inherit;
-    }
-}
-@media all and (max-width: 700px) {
-    #skincare {
-        padding: 70px 0;
-    }
-    #skincare .wrapper {
-        width: 90% !important;
-    }
-    #skincare .tit {
-        font-size: 23px;
-    }
-    #skincare .t_txt {
-        width: 90%;
-        font-size: 16px;
-    }
-    #skincare .skincare_box {
-        width: 100%;
-    }
-    #skincare .skincare_box .txt {
-        padding: 35px 0 35px 35px;
-    }
-    #skincare .skincare_box .txt > p {
-        font-size: 16px;
-    }
-    #skincare .skincare_box .txt .point p {
-        padding: 8px 15px;
-    }
-}
-
-#caution {
-    margin-bottom: 150px;
-    padding: 100px 0;
-    background-image: url(../images/sub/new_clinic/clinic_caution_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#caution .wrapper {
-    position: relative;
-}
-#caution .text01 {
-    font-size: 25px;
-    color: #fff;
-    font-family: 'SCDream_Medium';
-}
-#caution .line {
-    display: block;
-    margin: 20px 0 50px;
-    width: 50px;
-    height: 3px;
-    background-color: #c4a589;
-}
-#caution .text02 {
-    width: 32%;
-    color: #fff;
-    line-height: 30px;
-}
-#caution .box {
-    position: absolute;
-    bottom: -150px;
-    right: 0;
-    padding: 50px;
-    background-color: #fff;
-    box-shadow: 30px 30px 50px 0px rgb(0 0 0 / 10%);
-}
-#caution .box p {
-    line-height: 45px;
-}
-#caution .box p::before {
-    display: inline-block;
-    margin: 0 8px 5px 0;
-    content: '';
-    width: 5px;
-    height: 5px;
-    background-color: #c4a589;
-    transform: rotate(45deg);
-}
-@media all and (max-width: 1400px) {
-    #caution {
-        margin-bottom:290px;
-        padding: 80px 0 140px;
-    }
-    #caution .text01 {
-        text-align: center;
-    }
-    #caution .line {
-        margin: 20px auto 30px;
-    }
-    #caution .text02 {
-        margin: 0 auto;
-        width: 50%;
-        text-align: center;
-    }
-    #caution .box {
-        bottom: -330px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
-@media all and (max-width: 1060px) {
-    #caution .text02 {
-        width: 70%;
-    }
-    #caution .box {
-        padding: 35px;
-    }
-}
-@media all and (max-width: 700px) {
-    #caution {
-        margin-bottom: 70px;
-        padding: 70px 0;
-    }
-    #caution .text01 {
-        font-size: 20px;
-    }
-    #caution .box {
-        position: relative;
-        bottom: 0;
-        padding: 20px 30px;
-        margin-top: 40px;
-    }
-    #caution .text02 {
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #caution .box p {
-        margin-top: 10px;
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #caution .box p:first-of-type {
-        margin-top: 0;
-    }
-}
-
-#clinic_bottom_banner {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    height: 450px;
-    background-image: url(/images/sub/new_clinic/clinic_bottom_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
-#clinic_bottom_banner .wrapper {
-    width: 1350px !important;
-    height: inherit;
-}
-#clinic_bottom_banner .txt {
-    position: relative;
-    margin: 0 auto;
-    width: 450px;
-    height: 450px;
-    overflow: hidden;
-}
-#clinic_bottom_banner .txt .top_line {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-}
-#clinic_bottom_banner .txt .bottom_line {
-    position: absolute;
-    bottom: 50px;
-    width: 100%;
-}
-#clinic_bottom_banner .txt .top_line .left {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 10px;
-    height: 40px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt .top_line .right {
-    position: absolute;
-    top:0;
-    right:0;
-    width: 10px;
-    height: 40px;
-    background-color: #beac9d;
-
-}
-#clinic_bottom_banner .txt .top_line .top {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 10px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt .bottom_line .left {
-    position: absolute;
-    bottom:0;
-    left:0;
-    width: 10px;
-    height: 40px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt .bottom_line .right {
-    position: absolute;
-    bottom:0;
-    right:0;
-    width: 10px;
-    height: 40px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt .bottom_line .bottom {
-    position: absolute;
-    bottom:0;
-    left:0;
-    width: 100%;
-    height: 10px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt p {
-    text-align: center;
-    color: #564b48;
-    line-height: 25px;
-    margin-top:145px;
-}
-#clinic_bottom_banner .txt .mid_line {
-    display: block;
-    width: 2px;
-    height: 40px;
-    background-color: #beac9d;
-    margin: 15px auto;
-    transform: rotate(30deg);
-}
-#clinic_bottom_banner .txt h1 {
-    text-align: center;
-    font-size: 38px;
-    font-family: 'SCDream_Bold';
-    color: #564b48;
-}
-#clinic_bottom_banner img.left_img {
-    position: absolute;
-    width: 30%;
-    bottom: 0;
-    left: 0;
-}
-#clinic_bottom_banner img.right_img {
-    position: absolute;
-    width: 25%;
-    bottom: 0;
-    right: 8%;
-}
-#clinic_bottom_banner img.right2_img {
-    position: absolute;
-    width: 25%;
-    bottom: 0;
-    right: -8%;
-}
-
-@media all and (max-width: 1400px) {
-    #clinic_bottom_banner .wrapper {
-        width: 960px !important;
-    }
-    #clinic_bottom_banner .txt {
-        width: 380px;
-    }
-    #clinic_bottom_banner img.left_img {
-        width: 33%;
-    }
-    #clinic_bottom_banner img.right_img {
-        width: 27%;
-    }
-    #clinic_bottom_banner img.right2_img {
-        width: 27%;
-    }
-}
-@media all and (max-width: 1060px) {
-    #clinic_bottom_banner {
-        height: 350px;
-    }
-    #clinic_bottom_banner .wrapper {
-        width: 620px !important
-    }
-    #clinic_bottom_banner .txt {
-        width: 295px;
-        height: 350px;
-    }
-    #clinic_bottom_banner .txt .top_line {
-        top: 40px;
-    }
-    #clinic_bottom_banner .txt p {
-        margin-top: 100px;
-    }
-    #clinic_bottom_banner .txt h1 {
-        font-size: 30px;
-    }
-    #clinic_bottom_banner .txt .bottom_line {
-        bottom: 40px;
-    }
-    #clinic_bottom_banner img {
-        width:48%;
-    }
-}
-
-@media all and (max-width: 700px) {
-    #clinic_bottom_banner .wrapper {
-        width: 295px !important
-    }
-    #clinic_bottom_banner img {
-        display: none;
-    }
-}
-
-/* //clinic-색소질환 CSS */
-
-/* clinic-항노화 CSS */
-.clinic_lifting_top {
-    background-image: url(/images/sub/new_clinic/clinic04_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-.lifting .program02 {
-    background-image: url(/images/sub/new_clinic/clinic_program_bg02.jpg) !important;
-}
-.lifting .program02 .text01 {
-    color: #d2ba96 !important;
-}
-.lifting .different02 {
-    margin-top: 0 !important;
-    background-image: url(/images/sub/new_clinic/clinic_different_bg02.jpg) !important;
-}
-@media all and (max-width: 1400px) {
-    .clinic_lifting_top {
-        background-position: 35%;
-    }
-    .lifting #explanation .img img {
-        width: 100%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_lifting_top {
-        background-position: 15%;
-    }
-}
-
-#totalcare ul li {
-    float: left;
-}
-#totalcare ul li.img {
-    width: 22%;
-}
-#totalcare ul li.img img {
-    width: 80%;
-}
-#totalcare ul li.img h1 {
-    margin-top: 25px;
-    padding: 10px 0;
-    width: 100%;
-    color: #fff;
-    background-color: #6b605d;
-    text-align: center;
-    font-size: 20px;
-    font-family: 'SCDream_Bold';
-}
-#totalcare ul li.img p {
-    padding: 15px;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-}
-#totalcare ul li.plus {
-    width: 4%;
-    height: 337px;
-}
-#totalcare ul li.plus p {
-    font-size: 35px;
-    font-family: 'SCDream_Bold';
-    color: #6b605d;
-    line-height: 220px;
-    text-align: center;
-}
-#totalcare .txt {
-    margin: 70px auto 0;
-    width: 80%;
-    line-height: 25px;
-    text-align: center;
-}
-@media all and (max-width: 1400px) {
-    #totalcare ul li.img {
-        width: 40%;
-    }
-    #totalcare ul li.img img {
-        width: 70%;
-    }
-    #totalcare ul li.img p.m_b {
-        margin-bottom: 30px;
-    }
-    #totalcare ul li.plus {
-        width: 20%;
-        height: 363px;
-    }
-    #totalcare ul li.n_plus {
-        display: none;
-    }
-    #totalcare ul li.plus p {
-        font-size: 40px;
-        line-height: 363px;
-    }
-}
-@media all and (max-width: 1060px) {
-    #totalcare ul li.img p {
-        padding: 20px;
-    }
-}
-@media all and (max-width: 700px) {
-    #totalcare ul li.img {
-        width: 45%;
-    }
-    #totalcare ul li.img img {
-        width: 85%;
-    }
-    #totalcare ul li.img h1 {
-        margin-top: 15px;
-        font-size: 18px;
-        font-family: 'SCDream_Medium';
-    }
-    #totalcare ul li.img p {
-        padding: 10px 0 0 0;
-    }
-    #totalcare ul li.img p.m_b {
-        margin-bottom: 0;
-    }
-    #totalcare ul li.plus {
-        width: 10%;
-        height: 35px;
-    }
-    #totalcare ul li.n_plus {
-        display: block;
-        width: 100%;
-        margin: 15px 0;
-    }
-    #totalcare ul li.plus p {
-        font-size: 35px;
-        color: #fff;
-        line-height: 35px;
-    }
-    #totalcare ul li.n_plus p {
-        color: #6b605d !important;
-    }
-    #totalcare .txt {
-        margin: 50px auto 0;
-        width: 100%;
-        font-size: 16px;
-    }
-}
-#sleep {
-    margin-top: 150px;
-    padding: 80px 0;
-    background-image: url(/images/sub/new_clinic/clinic_sleep_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#sleep img {
-    position: absolute;
-    bottom: 0;
-    right: 20%;
-}
-#sleep .sub_tit {
-    margin-bottom: 15px;
-    text-align: left;
-    color: #2f2f2f;
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0;
-}
-#sleep .tit {
-    margin-bottom: 70px;
-    font-size: 28px;
-    line-height: 38px;
-    text-align: left;
-}
-#sleep .tit span {
-    font-family: 'SCDream_Bold';
-}
-#sleep .t_txt {
-    line-height: 30px;
-}
-#sleep .t_txt span {
-    font-family: 'SCDream_Bold';
-}
-
-@media all and (max-width: 700px) {
-    #sleep {
-        margin-top: 70px;
-        padding: 100px 0;
-        background-image: url(/images/sub/new_clinic/clinic_sleep_bg.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    #sleep img {
-        position: absolute;
-        bottom: 0;
-        right: 50%;
-        transform: translateX(50%);
-    }
-    #sleep .wrapper {
-        background-color: #ffffff;
-        background-color: rgba( 255, 255, 255, 0.8 );
-        padding:5% 0;
-    }
-    #sleep .sub_tit {
-        text-align: center;
-        margin-bottom: 10px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-    #sleep .tit {
-        margin-bottom: 50px;
-        font-size: 23px;
-        line-height: 30px;
-        text-align: center;
-    }
-    #sleep .tit span {
-        font-family: 'SCDream_Bold';
-    }
-    #sleep .t_txt {
-        text-align: center;
-        line-height: 25px;
-    }
-}
-
-#anesthesia video {
-    width:100%;
-    margin-bottom: 100px
-}
-
-@media all and (max-width: 700px) {
-    #anesthesia video {
-        width:100%;
-        margin-bottom: 100px
-    }
-}
-
-/* // clinic-항노화 CSS */
-
-/* clinic-여드름 CSS */
-.clinic_acne_top {
-    background-image: url(/images/sub/new_clinic/clinic02_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-@media all and (max-width: 1400px) {
-    .clinic_acne_top {
-        background-position: 35%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_acne_top {
-        background-position: 15%;
-    }
-}
-/* // clinic-여드름 CSS */
-
-/* clinic-피부질환 CSS*/
-.clinic_disease_top {
-    background-image: url(/images/sub/new_clinic/clinic03_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-.disease #explanation ul li {
-    float: left;
-    margin-left: 2%;
-    width: 23.5%;
-}
-.disease #explanation ul li:first-of-type {
-    margin-left: 0;
-}
-.disease #explanation ul li img {
-    width: 100%;
-}
-.disease #explanation ul li p {
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 25px;
-    color: #fff;
-    font-family: 'SCDream_Medium';
-    background-color: #b69d86;
-}
-@media all and (max-width: 1400px) {
-    .clinic_disease_top {
-        background-position: 35%;
-    }
-    .disease #explanation ul li p {
-        padding: 15px 0;
-        font-size: 22px;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_disease_top {
-        background-position: 15%;
-    }
-    .disease #explanation ul li p {
-        padding: 15px 0;
-        font-size: 18px;
-    }
-}
-@media all and (max-width: 700px) {
-    .disease #explanation ul li {
-        margin-left: 2%;
-        width: 23.5%;
-    }
-    .disease #explanation ul li:nth-of-type(4) {
-        margin-left: 2%;
-    }
-    /* .disease #explanation ul li:nth-of-type(5) {
-        margin-top: 2%;
-    } */
-}
-/* //clinic-피부질환 CSS*/
-
-/* clinic-무좀 CSS*/
-.clinic_foot_top {
-    background-image: url(/images/sub/new_clinic/clinic04_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-#diagnosis {
-    padding-top: 100px;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic04_diagnosis_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#diagnosis .sub_tit_e {
-    color: #fff !important;
-}
-#diagnosis .tit span {
-    color: #fff;
-}
-#diagnosis .paper {
-    padding: 150px 0 100px;
-    margin: 0 auto;
-    width: 80%;
-    background-image: url(/images/sub/new_clinic/clinic04_diagnosis.png);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-#diagnosis .paper .check {
-    margin: 0 auto 50px;
-    width: 47%;
-    font-size: 20px;
-}
-#diagnosis .paper .check p {
-    line-height: 40px;
-}
-#diagnosis .paper .check p::before {
-    display: inline-block;
-    content: '';
-    margin-right: 10px;
-    width: 13px;
-    height: 13px;
-    background-color: #fff;
-    border: 1px solid #7a7a7a;
-}
-#diagnosis .paper .txt {
-    margin: 0 auto;
-    padding: 50px 30px;
-    width: 65%;
-    line-height: 30px;
-    text-align: center;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
-}
-#room {
-    padding: 100px 0;
-    width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic04_room_bg.jpg);
-    background-size: contain;
-    background-color: #f2f2f2;
-    background-position: left top;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
-#room .tit,
-#step .tit {
-    margin-bottom: 15px;
-}
-#room .tit span {
-    color: #c9a489;
-}
-#room .tit br,
-#room .txt br {
-    display: none;
-}
-#room .txt,
-#step .txt {
-    text-align: center;
-    margin-bottom: 70px;
-    letter-spacing: 0;
-}
-#room .room_img {
-    margin: 0 auto;
-    width: 60%;
-}
-#room .room_img p {
-    width: 100%;
-    padding: 20px 0;
-    color: #fff;
-    font-size: 22px;
-    font-family: 'SCDream_Bold';
-    background-color: #6a605e;
-    text-align: center;
-}
-#room .room_img img {
-    width: 100%;
-}
-#room .txt_bottom .text01 {
-    margin: 0 auto;
-    width: 75%;
-}
-
-@media all and (max-width: 1400px) {
-    .clinic_foot_top {
-        background-position: 35%;
-    }
-    #diagnosis .paper {
-        padding: 130px 0 77px;
-        width: 100%;
-        background-size: 100%;
-    }
-    #diagnosis .paper .check {
-        margin: 0 auto 30px;
-        width: 50%;
-        font-size: 18px;
-    }
-    #diagnosis .paper .txt {
-        padding: 30px;
-        width: 75%;
-    }
-    #room .room_img {
-        width: 85%;
-    }
-    #room .txt_bottom .text01 {
-        width: 100%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_foot_top {
-        background-position: 15%;
-    }
-    #diagnosis .paper {
-        padding: 110px 0 53px;
-    }
-    #diagnosis .paper .check {
-        width: 58%;
-    }
-    #diagnosis .paper .txt {
-        padding: 20px 30px;
-        width: 80%;
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #room {
-        background-size: auto 40%;
-        background-position: right top;
-    }
-    #room .tit br,
-    #room .txt br {
-        display: block;
-    }
-    #room .txt,
-    #step .txt {
-        line-height: 25px;
-    }
-}
-@media all and (max-width: 700px) {
-    #diagnosis {
-        padding-top: 70px;
-    }
-    #diagnosis .paper {
-        padding: 100px 0 50px;
-        background-size: 115% 100%;
-    }
-    #diagnosis .paper .check {
-        width: 90%;
-        font-size: 16px;
-    }
-    #diagnosis .paper .check p {
-        margin-top: 10px;
-        line-height: 25px;
-    }
-    #diagnosis .paper .check p:first-of-type {
-        margin-top: 0;
-    }
-    #diagnosis .paper .txt {
-        padding: 20px 10px;
-        width: 90%;
-    }
-    #room {
-        padding: 70px 0;
-    }
-    #room .txt,
-    #step .txt {
-        margin-bottom: 50px;
-    }
-    #room .room_img {
-        width: 100%;
-    }
-    #room .room_img p {
-        padding: 15px 0;
-        font-size: 20px;
-    }
-}
-/* //clinic-무좀 CSS*/
-
-/* clinic-피부질환 */
-.clinic_disease_top {
-    background-image: url(/images/sub/new_clinic/clinic03_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-@media all and (max-width: 1400px) {
-    .clinic_disease_top {
-        background-position: 35%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_disease_top {
-        background-position: 15%;
-    }
-}
-/* //clinic-피부질환 */
-
-/* clinic-흉터 모공 */
-.clinic_scar_top {
-    background-image: url(/images/sub/new_clinic/clinic06_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-.scar .loar_program ul.img2 {
-    margin: 20px auto 0;
-    width: 685px;
-    height: 287px;
-}
-.scar .loar_program ul.img2 li {
-    width: 49%;
-}
-@media all and (max-width: 1400px) {
-    .clinic_scar_top {
-        background-position: 35%;
-    }
-    .scar .loar_program ul.img2 {
-        margin: 15px auto 0;
-        width: 468px;
-        height: 205px;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_scar_top {
-        background-position: 15%;
-    }
-    .scar .loar_program ul.img2 {
-        width: 400px;
-        height: 182px;
-    }
-}
-@media all and (max-width: 700px) {
-    .scar .loar_program ul.img2 {
-        width: 65%;
-        height: auto;
-    }
-}
-/* //clinic-흉터 모공 */
-
-/* clinic-비만 CSS */
-.clinic_diet_top {
-    background-image: url(/images/sub/new_clinic/clinic07_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-@media all and (max-width: 1400px) {
-    .clinic_diet_top {
-        background-position: 35%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_diet_top {
-        background-position: 15%;
-    }
-}
-/* // clinic-비만 CSS */
-
-/* clinic-홍조 CSS */
-.clinic_flushing_top {
-    background-image: url(/images/sub/new_clinic/clinic05_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-@media all and (max-width: 1400px) {
-    .clinic_flushing_top {
-        background-position: 35%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_flushing_top {
-        background-position: 15%;
-    }
-}
-/* // clinic-홍조 CSS */
-
-/* clinic-제모 CSS */
-.clinic_waxing_top {
-    background-image: url(/images/sub/new_clinic/clinic07_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-#waxing_part {
-    padding: 100px 0;
-    background-color: #f4f4f4;
-}
-#waxing_part ul li {
-    float: left;
-    width: 50%;
-}
-#waxing_part ul li img {
-    width: 100%;
-}
-@media all and (max-width: 1400px) {
-    .clinic_waxing_top {
-        background-position: 35%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_waxing_top {
-        background-position: 15%;
-    }
-    #waxing_part {
-        padding: 70px 0;
-    }
-    #waxing_part ul li {
-        width: 100%;
-        margin-top: 30px;
-    }
-    #waxing_part ul li:first-of-type {
-        margin-top: 0;
-    }
-}
-
-
-/* // clinic-제모 CSS */
-
-/* clinic-문신 CSS */
-.clinic_tatoo_top {
-    background-image: url(/images/sub/new_clinic/clinic08_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-@media all and (max-width: 1400px) {
-    .clinic_tatoo_top {
-        background-position: 35%;
-    }
-}
-@media all and (max-width: 1060px) {
-    .clinic_tatoo_top {
-        background-position: 15%;
-    }
-}
-#premium_laser .f_wrap p {
-    float: left;
-    margin-left: 4%;
-    margin-top: 20px;
-    padding: 15px 0;
-    width: 48%;
-    text-align: center;
-    font-family: 'SCDream_Medium';
-    color: #fff;
-    background-color: #beac9d;
-    font-size: 20px;
-    box-sizing: border-box;
-}
-#premium_laser .f_wrap p:nth-of-type(1),
-#premium_laser .f_wrap p:nth-of-type(3) {
-    margin-left: 0;
-}
-#premium_laser .f_wrap p br {
-    display: none;
-}
-@media all and (max-width: 1400px) {
-    #premium_laser .f_wrap p {
-        font-size: 18px;
-        line-height: 25px;
-    }
-    #premium_laser .f_wrap p br {
-        display: block;
-    }
-}
-@media all and (max-width: 700px) {
-    #premium_laser .img img {
-        width: 100%;
-    }
-    #premium_laser .f_wrap p {
-        width: 100%;
-        margin-left: 0%;
-        font-size: 16px;
-        line-height: 23px;
-    }
-    #premium_laser .f_wrap p br {
-        display: none;
-    }
-}
-#tatoo_comparison {
-    padding: 100px 0;
-    background-color: #f2f2f2;
-}
-#tatoo_comparison ul li {
-    float: left;
-    width: 45%;
-}
-#tatoo_comparison ul li.laser01 h1 {
-    padding: 10px 0;
-    margin: 0 auto;
-    width: 413px;
-    font-size: 20px;
-    font-family: 'SCDream_Bold';
-    text-align: center;
-    background-color: #cdcdcd;
-}
-#tatoo_comparison ul li.laser02 h1 {
-    padding: 10px 0;
-    margin: 0 auto;
-    width: 413px;
-    font-size: 20px;
-    font-family: 'SCDream_Bold';
-    text-align: center;
-    background-color: #ab1919;
-    color: #fff;
-}
-#tatoo_comparison ul li.laser01 p {
-    padding: 10px 25px;
-    margin: 0 auto;
-    width: 413px;
-    text-align: center;
-    line-height: 25px;
-}
-#tatoo_comparison ul li.laser02 p {
-    padding: 10px 25px;
-    margin: 0 auto;
-    width: 413px;
-    text-align: center;
-    line-height: 25px;
-    font-family: 'SCDream_Medium';
-}
-#tatoo_comparison ul li.vs {
-    width: 10%;
-    height: 290px;
-}
-#tatoo_comparison ul li.vs p {
-    font-size: 35px;
-    text-align: center;
-    line-height: 290px;
-    font-family: 'SCDream_Bold';
-}
-@media all and (max-width: 1400px) {
-    #tatoo_comparison ul li {
-        width: 46%;
-    }
-    #tatoo_comparison ul li.vs {
-        width: 8%;
-    }
-    #tatoo_comparison ul li.vs p {
-        font-size: 25px;
-    }
-    #tatoo_comparison ul li img {
-        width: 100%;
-    }
-    #tatoo_comparison ul li.laser01 h1,
-    #tatoo_comparison ul li.laser02 h1 {
-        width: 100%;
-    }
-    #tatoo_comparison ul li.laser01 p,
-    #tatoo_comparison ul li.laser02 p {
-        padding: 10px 27px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
-@media all and (max-width: 1060px) {
-    #tatoo_comparison ul li.laser01 p,
-    #tatoo_comparison ul li.laser02 p {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-}
-@media all and (max-width: 700px) {
-    #tatoo_comparison {
-        padding: 70px 0;
-    }
-    #tatoo_comparison ul li {
-        width: 100%;
-    }
-    #tatoo_comparison ul li.vs {
-        width: 100%;
-        height: 45px;
-        margin: 20px 0;
-    }
-    #tatoo_comparison ul li.vs p {
-        font-size: 22px;
-        line-height: 45px;
-    }
-}
-#tatoo_picoway .wrap {
-    position: relative;
-}
-#tatoo_picoway .wrap img {
-    width: 100%;
-}
-#tatoo_picoway .wrap ul {
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-#tatoo_picoway .wrap ul li {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    font-size: 25px;
-    font-family: 'SCDream_Bold';
-    background-color: #6b605d;
-    color: #fff298;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
-    box-shadow: 0px 0px 20px 2px #b9b9b9;
-}
-#tatoo_picoway .wrap ul li.t_l {
-    top: 0;
-    left: 0;
-}
-#tatoo_picoway .wrap ul li.t_r {
-    top: 0;
-    right: 0;
-}
-#tatoo_picoway .wrap ul li.b_l {
-    bottom: 0;
-    left: 0;
-}
-#tatoo_picoway .wrap ul li.b_r {
-    bottom: 0;
-    right: 0;
-}
-#tatoo_picoway .txt {
-    text-align: center;
-    margin: 50px auto 0;
-    font-size: 20px;
-    line-height: 28px;
-    font-family: 'SCDream_Medium';
-}
-@media all and (max-width: 1400px) {
-    #tatoo_picoway .wrap ul {
-        width: 100%;
-    }
-    #tatoo_picoway .wrap ul li {
-        width: 150px;
-        height: 150px;
-        line-height: 150px;
-        font-size: 22px;
-    }
-}
-@media all and (max-width: 700px) {
-    #tatoo_picoway .wrap ul {
-        position: relative;
-        height: auto;
-    }
-    #tatoo_picoway .wrap ul::after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-    #tatoo_picoway .wrap ul li {
-        position: relative;
-        float: left;
-        padding: 32px 0;
-        margin-left: 3%;
-        width: 22.7%;
-        height: auto;
-        line-height: initial;
-        font-size: 18px;
-        box-sizing: border-box;
-    }
-    #tatoo_picoway .wrap ul li:first-of-type {
-        margin-left: 0;
-    }
-    #tatoo_picoway .txt {
-        font-size: 18px;
-        line-height: 25px;
-    }
-    #tatoo_picoway .txt br {
-        display: none;
-    }
-}
-/* // clinic-문신 CSS */
-
-
-/* 메디컬 스킨케어 */
-.medical .top_banner {
-    padding: 100px 0 110px 0;
-    background-color: #f5f2ef;
-}
-.medical .sub_title {
-    z-index:1;
-}
-.medical .visual_video {
-    width: 100%;
-    opacity: 0.9;
-}
-@media all and (max-width: 700px) {
-    .medical .visual_video {
-        width: 320%;
-        transform: translate(-35%,0);
-    }
-}
-#medical .tit {
-    margin-bottom: 30px;
-    font-size: 28px;
-    text-align: center;
-}
-#medical .tit span {
-    font-family: 'SCDream_Bold';
-}
-#medical .t_txt {
-    margin: 0 auto 40px;
-    width: 55%;
-    color: #5a5a5a;
-    text-align: center;
-    line-height: 25px;
-}
-#medical .t_txt span {
-    font-family: 'SCDream_Bold';
-}
-#medical .medical_box {
-    position: relative;
-    margin: 40px auto 0;
-    width: 80%;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    overflow: hidden;
-}
-#medical .medical_box video {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-40%, -50%);
-    width: 70%;
-}
-#medical .medical_box img {
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(10%, -50%);
-}
-#medical .medical_box:first-of-type {
-    margin: 0 auto;
-}
-#medical .medical_box .txt {
-    float: right;
-    padding: 50px 0 20px 50px;
-    width: 47%;
-    margin-right: 3%;
-    box-sizing: border-box;
-}
-#medical .medical_box .txt  h1 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-family: 'SCDream_Bold';
-}
-#medical .medical_box .txt .point{
-    margin: 30px 0;
-}
-#medical .medical_box .txt .point p {
-    float: left;
-    padding: 8px 25px;
-    margin-right: 10px;
-    font-size: 15px;
-    color: #6b605d;
-    background-color: #f2f2f2;
-    font-family: 'SCDream_Bold';
-}
-#medical .medical_box .txt > p {
-    margin-bottom: 30px;
-    font-size: 16.5px;
-    line-height: 25px;
-}
-
-@media all and (max-width: 1400px) {
-    #medical .wrapper {
-        width: 1100px !important;
-    }
-}
-@media all and (max-width: 1060px) {
-    #medical .wrapper {
-        width: 700px !important;
-    }
-    #medical .tit {
-        font-size: 25px;
-    }
-    #medical .t_txt {
-        width: 85%;
-    }
-    #medical .medical_box {
-        width: 90%;
-    }
-    #medical .medical_box .txt {
-        padding: 50px 0 35px 50px;
-        width: 100%;
-    }
-    #medical .medical_box img {
-        position: inherit;
-        top: 0;
-        left: 0;
-        transform: translateY(0);
-        width: 100%;
-    }
-    #medical .medical_box video {
-        position: inherit;
-        top: 0;
-        left: 0;
-        transform: translateY(0);
-        width: 100%;
-    }
-}
-@media all and (max-width: 700px) {
-    #medical {
-        padding: 70px 0;
-    }
-    #medical .wrapper {
-        width: 90% !important;
-    }
-    #medical .tit {
-        font-size: 23px;
-    }
-    #medical .t_txt {
-        width: 90%;
-        font-size: 16px;
-    }
-    #medical .medical_box {
-        width: 100%;
-    }
-    #medical .medical_box video {
-        top: 0;
-        left: 0;
-        transform: translateY(0);
-        width: 100%;
-    }
-    #medical .medical_box img {
-        top: 0;
-        left: 0;
-        transform: translateY(0);
-        width: 100%;
-    }
-    #medical .medical_box .txt {
-        padding: 20px 0 0 30px;
-    }
-    #medical .medical_box .txt > p {
-        font-size: 16px;
-    }
-    #medical .medical_box .txt .point p {
-        padding: 8px 15px;
-    }
-}
-
-#clinic_bottom_banner {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    height: 450px;
-    background-image: url(/images/sub/new_clinic/clinic_bottom_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
-#clinic_bottom_banner .wrapper {
-    width: 1350px !important;
-    height: inherit;
-}
-#clinic_bottom_banner .txt {
-    position: relative;
-    margin: 0 auto;
-    width: 450px;
-    height: 450px;
-    overflow: hidden;
-}
-#clinic_bottom_banner .txt .top_line {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-}
-#clinic_bottom_banner .txt .bottom_line {
-    position: absolute;
-    bottom: 50px;
-    width: 100%;
-}
-#clinic_bottom_banner .txt .top_line .left {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 10px;
-    height: 40px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt .top_line .right {
-    position: absolute;
-    top:0;
-    right:0;
-    width: 10px;
-    height: 40px;
-    background-color: #beac9d;
-
-}
-#clinic_bottom_banner .txt .top_line .top {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 10px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt .bottom_line .left {
-    position: absolute;
-    bottom:0;
-    left:0;
-    width: 10px;
-    height: 40px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt .bottom_line .right {
-    position: absolute;
-    bottom:0;
-    right:0;
-    width: 10px;
-    height: 40px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt .bottom_line .bottom {
-    position: absolute;
-    bottom:0;
-    left:0;
-    width: 100%;
-    height: 10px;
-    background-color: #beac9d;
-}
-#clinic_bottom_banner .txt p {
-    text-align: center;
-    color: #564b48;
-    line-height: 25px;
-    margin-top:145px;
-}
-#clinic_bottom_banner .txt .mid_line {
-    display: block;
-    width: 2px;
-    height: 40px;
-    background-color: #beac9d;
-    margin: 15px auto;
-    transform: rotate(30deg);
-}
-#clinic_bottom_banner .txt h1 {
-    text-align: center;
-    font-size: 38px;
-    font-family: 'SCDream_Bold';
-    color: #564b48;
-}
-#clinic_bottom_banner img.left_img {
-    position: absolute;
-    width: 30%;
-    bottom: 0;
-    left: 0;
-}
-#clinic_bottom_banner img.right_img {
-    position: absolute;
-    width: 25%;
-    bottom: 0;
-    right: 8%;
-}
-#clinic_bottom_banner img.right2_img {
-    position: absolute;
-    width: 25%;
-    bottom: 0;
-    right: -8%;
-}
-
-@media all and (max-width: 1400px) {
-    #clinic_bottom_banner .wrapper {
-        width: 960px !important;
-    }
-    #clinic_bottom_banner .txt {
-        width: 380px;
-    }
-    #clinic_bottom_banner img.left_img {
-        width: 33%;
-    }
-    #clinic_bottom_banner img.right_img {
-        width: 27%;
-    }
-    #clinic_bottom_banner img.right2_img {
-        width: 27%;
-    }
-}
-@media all and (max-width: 1060px) {
-    #clinic_bottom_banner {
-        height: 350px;
-    }
-    #clinic_bottom_banner .wrapper {
-        width: 620px !important
-    }
-    #clinic_bottom_banner .txt {
-        width: 295px;
-        height: 350px;
-    }
-    #clinic_bottom_banner .txt .top_line {
-        top: 40px;
-    }
-    #clinic_bottom_banner .txt p {
-        margin-top: 100px;
-    }
-    #clinic_bottom_banner .txt h1 {
-        font-size: 30px;
-    }
-    #clinic_bottom_banner .txt .bottom_line {
-        bottom: 40px;
-    }
-    #clinic_bottom_banner img {
-        width:48%;
-    }
-}
-
-@media all and (max-width: 700px) {
-    #clinic_bottom_banner .wrapper {
-        width: 295px !important
-    }
-    #clinic_bottom_banner img {
-        display: none;
-    }
-}
-
-/* //clinic-메디컬 스킨케어 CSS */
 
 
 /* 클리닉 서브 하단 (공통) */
 #clinic-bottom ul li {
     margin-top: 70px;
 }
+
 #clinic-bottom ul li img {
     float: left;
     width: 45%;
 }
+
 #clinic-bottom ul li.right img {
     float: right;
 }
+
 #clinic-bottom ul li .text {
     float: left;
     width: 55%;
     padding: 23px 50px;
     box-sizing: border-box;
 }
+
 #clinic-bottom ul li.right .text {
     padding: 50px 46px 50px 0;
 }
+
 #clinic-bottom ul li .text .text01 {
     font-size: 35px;
     line-height: 45px;
     font-family: 'SCDream_Bold';
 }
+
 #clinic-bottom ul li .text .text02 {
     margin: 20px 0 40px 0;
     font-size: 22px;
     color: #c4a589;
     font-family: 'SCDream_Medium';
 }
+
 #clinic-bottom ul li .text .text03 {
     line-height: 30px;
 }
+
 #clinic-bottom ul li .text .text03 span {
     display: block;
     margin-bottom: 20px;
@@ -3602,48 +265,60 @@
     #clinic-bottom ul li img {
         width: 60%;
     }
+
     #clinic-bottom ul li .text {
         width: 100%;
         padding: 35px 0 0 0;
     }
+
     #clinic-bottom ul li.right .text {
         text-align: right;
         padding: 35px 0 0 0;
     }
 }
+
 @media all and (max-width: 1060px) {
     #clinic-bottom ul li img {
         width: 100%;
     }
+
     #clinic-bottom ul li .text .text01 {
         font-size: 28px;
         line-height: 38px;
     }
+
     #clinic-bottom ul li .text .text02 {
         margin: 15px 0 20px 0;
     }
+
     #clinic-bottom ul li.right .text {
         text-align: left;
     }
+
     #clinic-bottom ul li .text .text03 {
         line-height: 28px
     }
+
     #clinic-bottom ul li .text .text03 span {
         margin-bottom: 10px
     }
 }
+
 @media all and (max-width: 700px) {
     #clinic-bottom ul li {
         margin-top: 50px;
     }
+
     #clinic-bottom ul li .text .text01 {
         font-size: 25px;
         line-height: 35px;
     }
+
     #clinic-bottom ul li .text .text02 {
         margin: 15px 0 20px 0;
         font-size: 18px;
     }
+
     #clinic-bottom ul li .text .text03 {
         font-size: 16px;
         line-height: 25px;
@@ -3652,1815 +327,68 @@
 
 #clinic_banner {
     padding: 100px 0;
-    background-image: url(/images/sub/new_clinic/clinic_bottom_bg.jpg);
+    background-image: url(../images/sub/new_clinic/clinic_bottom_bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
 }
+
 #clinic_banner .text01 {
     margin: 25px 0;
     font-size: 32px;
     color: #fff;
     line-height: 40px;
 }
+
 #clinic_banner .text01 span {
     color: #fff;
     font-family: 'SCDream_Bold';
 }
+
 #clinic_banner .text01 span.brown {
     color: #c4a589;
     font-family: 'SCDream_Bold';
 }
+
 #clinic_banner .text02 {
     color: #fff;
     line-height: 30px;
 }
+
 @media all and (max-width: 1060px) {
     #clinic_banner .text01 {
         margin: 20px 0;
         font-size: 28px;
     }
+
     #clinic_banner .text02 {
         line-height: 28px;
     }
 }
+
 @media all and (max-width: 700px) {
     #clinic_banner {
         padding: 70px 0;
     }
+
     #clinic_banner .text01 {
         font-size: 25px;
         line-height: 35px;
     }
+
     #clinic_banner .text02 {
         font-size: 16px;
         line-height: 25px;
     }
 }
+
 /* // 클리닉 서브 하단 (공통) */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------- SUB - 로아르 -------- */
-/* 브랜드 스토리 */
-.loar_brend_top {
-    height: 470px !important;
-    background-image: url(/images/sub/loar/loar01_top_bg.jpg);
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-}
-#mean .wrapper {
-    width: 885px;
-}
-#mean .left {
-    position: relative;
-    float: left;
-    margin-right: 30px;
-    width: 5px;
-    height: 85px;
-    background-color: #6b605e;
-}
-#mean .left::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 5px;
-    background-color: #6b605e;
-}
-#mean .left::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 20px;
-    height: 5px;
-    background-color: #6b605e;
-}
-#mean .right {
-    position: relative;
-    float: left;
-    margin-left: 30px;
-    width: 5px;
-    height: 85px;
-    background-color: #6b605e;
-}
-#mean .right::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 20px;
-    height: 5px;
-    background-color: #6b605e;
-}
-#mean .right::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 20px;
-    height: 5px;
-    background-color: #6b605e;
-}
-#mean .text01 {
-    float: left;
-    font-size: 75px;
-    line-height: 85px;
-    color: #6b605e;
-    font-family: 'SCDream_Bold';
-}
-#mean .text02 {
-    float: left;
-    margin-left: 35px;
-    padding-top: 15px;
-    line-height: 28px;
-}
-#brend_story {
-    position: relative;
-    padding: 100px 0;
-    background-image: url(/images/sub/loar/loar01_brend_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#brend_story .left_leaf {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 200px;
-    height: 475px;
-    background-image: url(/images/sub/loar/left_leaf.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#brend_story .right_leaf {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 200px;
-    height: 384px;
-    background-image: url(/images/sub/loar/right_leaf.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#brend_story .line {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 1px;
-    height: 80px;
-    background-color: #2f2f2f;
-    transform: translateY(-50%);
-}
-#brend_story .txt {
-    text-align: center;
-    line-height: 30px;
-}
-#brend_story .txt span {
-    display: block;
-    margin-top: 30px;
-    width: 100%;
-}
-.brend #explanation ul li {
-    float: left;
-    margin-left: 5%;
-    margin-top: 5%;
-    padding: 70px;
-    width: 45%;
-    height: auto;
-    border-radius: 0 70px 0 70px;
-    background: linear-gradient(90deg, #af9784, #cbbcb0);
-    box-sizing: border-box;
-}
-.brend #explanation ul li:nth-of-type(1),
-.brend #explanation ul li:nth-of-type(3) {
-    margin-left: 0;
-}
-.brend #explanation ul li:nth-of-type(1),
-.brend #explanation ul li:nth-of-type(2) {
-    margin-top: 0;
-}
-.brend #explanation ul li .line {
-    float: left;
-    width: 1px;
-    height: 140px;
-    background-color: #fff;
-}
-.brend #explanation ul li .txt {
-    margin-left: 35px;
-}
-.brend #explanation ul li .text01 {
-    color: #fff;
-    margin-bottom: 35px;
-    font-size: 25px;
-    font-family: 'SCDream_Medium';
-}
-.brend #explanation ul li .text01 span {
-    font-size: 45px;
-    font-family: 'Century';
-    color: #fff;
-}
-.brend #explanation ul li .text02 {
-    line-height: 30px;
-    color: #fff;
-}
-.brend .txt_bottom .text01 {
-    font-family: 'SCDream_Regular' !important;
-}
-.brend .txt_bottom .text01 span {
-    font-family: 'SCDream_Bold' !important;
-}
-@media all and (max-width: 1400px) {
-    .loar_brend_top {
-        background-position: 75%;
-    }
-    .brend #explanation ul li {
-        margin-left: 3%;
-        margin-top: 3%;
-        padding: 55px 53px;
-        width: 48%;
-        border-radius: 0 50px 0 50px;
-    }
-    .brend #explanation ul li .txt {
-        margin-left: 30px;
-    }
-    .brend #explanation ul li .line {
-        height: 170px;
-    }
-    .brend #explanation ul li .text01 {
-        margin-bottom: 45px;
-        font-size: 22px;
-    }
-    .brend #explanation ul li .text01 span {
-        font-size: 35px;
-    }
-    .brend #explanation ul li .text02 br {
-        display: none;
-    }
-}
-@media all and (max-width: 1060px) {
-    .loar_brend_top {
-        background-position: 80%;
-    }
-    #mean .wrapper {
-        width: 600px;
-    }
-    #mean .wrap {
-        width: 205px;
-        height: 70px;
-        margin: 0 auto;
-    }
-    #mean .left {
-        margin-right: 20px;
-        width: 4px;
-        height: 70px;
-    }
-    #mean .left::before {
-        width: 15px;
-        height: 4px;
-    }
-    #mean .left::after {
-        width: 15px;
-        height: 4px;
-    }
-    #mean .right {
-        margin-left: 20px;
-        width: 4px;
-        height: 70px;
-    }
-    #mean .right::before {
-        width: 15px;
-        height: 4px;
-    }
-    #mean .right::after {
-        width: 15px;
-        height: 4px;
-    }
-    #mean .text01 {
-        font-size: 60px;
-        line-height: 70px;
-    }
-    #mean .text02 {
-        margin-left: 0px;
-        padding-top: 25px;
-        width: 100%;
-        font-size: 16px;
-        line-height: 25px;
-        text-align: center;
-    }
-    #brend_story .left_leaf {
-        width: 150px;
-        height: 350px;
-    }
-    #brend_story .right_leaf {
-        width: 150px;
-        height: 280px;
-    }
-    #brend_story .txt {
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .brend #explanation ul li {
-        width: 100%;
-        margin-left: 0;
-        margin-top: 5%;
-        padding: 60px;
-    }
-    .brend #explanation ul li:nth-of-type(1),
-    .brend #explanation ul li:nth-of-type(2) {
-        margin-top: 5%;
-    }
-    .brend #explanation ul li .line {
-        height: 140px;
-    }
-    .brend #explanation ul li .text02 br {
-        display: block;
-    }
-}
-@media all and (max-width: 700px) {
-    #mean .wrapper {
-        width: 90%;
-    }
-    #mean .wrap {
-        width: 177px;
-        height: 60px;
-    }
-    #mean .left {
-        height: 60px;
-    }
-    #mean .right {
-        height: 60px;
-    }
-    #mean .text01 {
-        font-size: 50px;
-        line-height: 60px;
-    }
-    #mean .text02 br {
-        display: none;
-    }
-    #brend_story {
-        padding: 70px 0;
-    }
-    #brend_story .left_leaf {
-        display: none;
-    }
-    #brend_story .right_leaf {
-        width: 95px;
-        height: 185px;
-    }
-    #brend_story .txt br {
-        display: none;
-    }
-    #brend_story .txt span {
-        margin-top: 20px;
-    }
-    .brend #explanation ul li {
-        padding: 50px;
-    }
-    .brend #explanation ul li .line {
-        display: none;
-    }
-    .brend #explanation ul li .txt {
-        margin-left: 0;
-    }
-    .brend #explanation ul li .text02 br {
-        display: none;
-    }
-    .brend .txt_bottom .text01 br {
-        display: none;
-    }
-}
-
-/* 로아르 철학 */
-#philosophy .tit {
-    font-size: 35px;
-}
-#philosophy ul li img {
-    float: left;
-    width: 50%;
-}
-#philosophy ul li:nth-of-type(2) img,
-#philosophy ul li:nth-of-type(4) img {
-    float: right;
-}
-#philosophy ul li .text {
-    float: left;
-    width: 50%;
-    padding: 88px 0 88px 65px;
-    box-sizing: border-box;
-}
-#philosophy ul li .text .text01 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-family: 'SCDream_Bold';
-}
-#philosophy ul li .text span {
-    display: block;
-    margin-bottom: 40px;
-    width: 45px;
-    height: 3px;
-    background-color: #cbbcb0;
-}
-#philosophy ul li .text .text02 {
-    line-height: 30px;
-}
-@media all and (max-width: 1400px) {
-    #philosophy ul li img {
-        width: 100%;
-    }
-    #philosophy ul li .text {
-        width: 100%;
-        padding: 80px 0;
-    }
-}
-@media all and (max-width: 1060px) {
-    #philosophy .tit {
-        font-size: 30px;
-    }
-    #philosophy ul li .text .text01 {
-        font-size: 25px;
-    }
-}
-@media all and (max-width: 700px) {
-    #philosophy .tit {
-        font-size: 23px;
-    }
-    #philosophy ul li .text {
-        padding: 50px 0;
-    }
-    #philosophy ul li .text .text01 {
-        font-size: 22px;
-    }
-    #philosophy ul li .text .text02 {
-        font-size: 16px;
-        line-height: 25px;
-    }
-}
-
-
-/* 보유 장비 소개 */
-.loar_laser_top {
-    height: 710px !important;
-    background-image: url(/images/sub/loar/loar03_top_bg.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
-.loar_laser_top .sub_title {
-    top: 46% !important;
-}
-.loar_laser_top p span {
-    display: block;
-    margin-top: 20px;
-    font-family: 'SCDream_Bold';
-}
-#reason .tit {
-    color: #6a615c;
-}
-#reason ul li {
-    position: relative;
-    float: left;
-    width: 33.333%;
-    height: 515px;
-    box-sizing: border-box;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#reason ul li.reason01 {
-    background-image: url(/images/sub/loar/loar03_reason01.jpg);
-}
-#reason ul li.reason02 {
-    background-image: url(/images/sub/loar/loar03_reason02.jpg);
-}
-#reason ul li.reason03 {
-    background-image: url(/images/sub/loar/loar03_reason03.jpg);
-}
-#reason ul li .wrap {
-    position: absolute;
-    bottom: 50px;
-    left: 50px;
-}
-#reason ul li .num {
-    margin-bottom: 10px;
-    font-size: 55px;
-    color: #fff;
-    font-family: 'Bebas Kai';
-    opacity: .5;
-}
-#reason ul li .line {
-    display: block;
-    margin-bottom: 30px;
-    width: 45px;
-    height: 2px;
-    background-color: #beac9e;
-}
-#reason ul li .text01 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    color: #fff;
-    font-family: 'SCDream_Bold';
-}
-#reason ul li .text02 {
-    color: #fff;
-    line-height: 30px;
-}
-#laser_category .laser_wrapper {
-    margin: 0 auto;
-    width: 1330px;
-}
-#laser_category .c_eq {
-    float: left;
-    width: 32%;
-    margin-left: 2%;
-    margin-top: 4%;
-}
-#laser_category .c_eq:nth-child(3n-2) {
-    margin-left: 0;
-    clear: both;
-}
-#laser_category .c_eq > div {
-    height: 205px;
-}
-#laser_category .c_eq .title{
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    margin-bottom: 30px;
-}
-#laser_category img {
-    width: 100%;
-}
-#laser_category .c_eq .title span{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    text-align: center;
-    font-size: 23px;
-    font-family: 'SCDream_bold';
-    color: #fff;
-    padding: 25% 0;
-}
-#laser_category .c_eq .title:hover span {
-    top: 0;
-}
-#laser_category .c_eq .title a{
-    display:block;
-    font-size: 16px;
-    color: #fff;
-    margin-top: 15px;
-}
-#laser_category .text01 {
-    margin-bottom: 15px;
-    font-size: 23px;
-    font-family: 'SCDream_Bold';
-    text-align: center;
-}
-#laser_category span {
-    display: block;
-    margin-bottom: 15px;
-    text-align: center;
-    color: #c42836;
-    font-family: 'SCDream_Medium';
-    font-size: 16px;
-}
-#laser_category .text02 {
-    width: 85%;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 25px;
-    font-size: 16px;
-}
-#laser_category .text03 {
-    display: block;
-    width: 100%;
-    margin: 30px auto 0;
-    text-align: center;
-}
-#laser_category .text03 a {
-    padding: 10px 20px;
-    border: 1px solid #c7c7c7;
-    line-height: 25px;
-    font-size: 16px;
-}
-
-@media all and (max-width: 1400px)  {
-    #reason ul li {
-        height: 570px;
-    }
-    #reason ul li .text02 {
-        width: 90%;
-    }
-    #reason ul li .text02 br {
-        display: none;
-    }
-    #laser_category .tabnav li a {
-        font-size: 16px;
-    }
-    #laser_category .laser_wrapper {
-        width: 90%;
-    }
-    #laser_category .c_eq {
-        margin-top: 0;
-    }
-    #laser_category .c_eq > div {
-        height: 200px;
-    }
-    #laser_category .c_eq .title span{
-        font-size: 1.3rem;
-        color: #fff;
-        padding: 25% 0;
-    }
-    #laser_category .c_eq .title a{
-        font-size: .9rem;
-    }
-    #laser_category .text01 {
-        margin-bottom: 3%;
-        font-size: 1.3rem;
-    }
-    #laser_category span {
-        margin-bottom: 3%;
-        font-size: .9rem;
-    }
-    #laser_category .text02 {
-        width: 90%;
-        line-height: initial;
-        font-size: .9rem;
-    }
-    #laser_category .text03 {
-        margin: 30px auto;
-    }
-    #laser_category .text03 a {
-        line-height: initial;
-        font-size: .9rem;
-    }
-}
-@media all and (max-width: 1060px) {
-    .loar_laser_top {
-        height: 590px !important;
-        background-size:180%;
-        background-color: #f7f8fa;
-    }
-    .loar_laser_top .sub_title {
-        top: 50% !important;
-    }
-    #reason ul li {
-        width: 100%;
-        height: 450px;
-        background-position: right top;
-    }
-    #reason ul li .text02 {
-        width: auto;
-    }
-    #reason ul li .text02 br {
-        display: block;
-    }
-    #laser_category .c_eq {
-        margin-left: 0;
-        margin-top: 10%;
-        width: 100%;
-    }
-    #laser_category .c_eq:nth-child(1) {
-        margin-top: 0;
-    }
-    #laser_category .c_eq > div {
-        height: auto;
-    }
-    #laser_category .c_eq .title span{
-        font-size: 25px;
-        color: #fff;
-        padding: 25% 0;
-    }
-    #laser_category .c_eq .title a{
-        font-size: 18px;
-    }
-    #laser_category .text01 {
-        font-size: 25px;
-    }
-    #laser_category span {
-        font-size: 18px;
-    }
-    #laser_category .text02 {
-        font-size: 18px;
-        line-height: 30px;
-    }
-    #laser_category .text03 {
-        margin: 30px auto 0;
-    }
-    #laser_category .text03 a {
-        line-height: initial;
-        font-size: 18px;
-    }
-}
-@media all and (max-width: 700px) {
-    #reason ul li {
-        height: 530px;
-        background-position: center;
-    }
-    #reason ul li .num {
-        font-size: 45px;
-    }
-    #reason ul li .line {
-        width: 35px;
-    }
-    #reason ul li .text01 {
-        font-size: 25px;
-    }
-    #reason ul li .text02 {
-        font-size: 16px;
-        line-height: 25px;
-        width: 90%;
-    }
-    #reason ul li .text02 br {
-        display: none;
-    }
-    #laser_category .tabnav li {
-        width: 33.3%;
-    }
-    #laser_category .tabnav li a {
-        font-size: 15px;
-    }
-    #laser_category img {
-        margin-bottom: 30px;
-    }
-    #laser_category .c_eq > div {
-        height: auto;
-    }
-    #laser_category .c_eq .title span{
-        font-size: 23px;
-        color: #fff;
-        padding: 25% 0;
-    }
-    #laser_category .c_eq .title a{
-        font-size: 16px;
-    }
-    #laser_category .text01 {
-        margin-bottom: 20px;
-        font-size: 23px;
-    }
-    #laser_category span {
-        font-size: 16px;
-    }
-    #laser_category .text02 {
-        width: 90%;
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #laser_category .text03 {
-        margin: 30px auto 0;
-    }
-    #laser_category .text03 a {
-        line-height: initial;
-        font-size: 16px;
-    }
-}
-
-
-
-
-
-
-
-/* 남녀 2인 진료 시스템 */
-.doctor_system_top {
-    background-image: url(/images/sub/doctor/doctor01_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-#introduction .wrapper > img {
-    margin: 0 auto 40px;
-}
-#introduction .text01 {
-    margin-bottom: 40px;
-    font-size: 40px;
-    text-align: center;
-    color: #6b605c;
-    font-family: 'SCDream_Bold';
-}
-#introduction .text01 span {
-    color: #bead9c;
-}
-#introduction .text02 {
-    margin: 0 auto 70px;
-    width: 45%;
-    line-height: 30px;
-    text-align: center;
-}
-#introduction .text02 span {
-    display: block;
-    margin-bottom: 15px;
-}
-#introduction ul li {
-    position: relative;
-    float: left;
-    margin-left: 4%;
-    width: 48%;
-    height: auto;
-}
-#introduction ul li.doctor01 {
-    margin-left: 0;
-}
-#introduction ul li img {
-    width: 100%;
-}
-#introduction ul li .txt {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 25px;
-    background-color: #fff;
-}
-#introduction ul li .txt .field {
-    margin-bottom: 12px;
-}
-#introduction ul li .txt .name {
-    font-size: 25px;
-    font-family: 'SCDream_Bold';
-}
-#introduction ul li .txt .name span {
-    font-size: 35px;
-}
-#introduction ul li .txt .read_more {
-    display: block;
-    padding-top: 25px;
-    color: #c1c1c1;
-}
-#compete ul li {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-}
-#compete ul li img {
-    float: left;
-    width: 50%;
-}
-#compete ul li:nth-of-type(2) img {
-    float: right;
-}
-#compete ul li .wrap {
-    float: left;
-    padding: 75px;
-    width: 50%;
-    height: 250px;
-    background-image: url(/images/sub/doctor/doctor01_compete_txt_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-}
-#compete ul li .wrap .text01 {
-    margin-bottom: 20px;
-    font-size: 25px;
-    font-family: 'SCDream_Bold';
-    text-align: center;
-    color: #fff;
-}
-#compete ul li .wrap .text02 {
-    line-height: 30px;
-    text-align: center;
-    color: #fff;
-}
-
-@media all and (max-width: 1400px) {
-    #introduction .wrapper > img {
-        margin: 0 auto 30px;
-        width: 70px;
-    }
-    #introduction .text01 {
-        margin-bottom: 30px;
-        font-size: 35px;
-    }
-    #introduction .text02 {
-        width: 75%;
-    }
-    #introduction ul li .txt .name {
-        font-size: 20px;
-    }
-    #introduction ul li .txt .name span {
-        font-size: 30px;
-    }
-    #compete ul li {
-        height: 225px;
-    }
-    #compete ul li img {
-        height: 100%;
-    }
-    #compete ul li .wrap {
-        padding: 60px 45px;
-        height: 225px;
-    }
-    #compete ul li:nth-of-type(3) .wrap {
-        padding: 45px;
-    }
-}
-@media all and (max-width: 1060px) {
-    #introduction .wrapper > img {
-        margin: 0 auto 25px;
-    }
-    #introduction .text01 {
-        margin-bottom: 25px;
-        font-size: 30px;
-    }
-    #introduction .text02 {
-        width: 85%;
-    }
-    #introduction ul li .txt .field {
-        margin-bottom: 10px;
-    }
-    #introduction ul li .txt .name {
-        font-size: 18px;
-    }
-    #introduction ul li .txt .name span {
-        font-size: 25px;
-    }
-    #introduction ul li .txt .read_more {
-        padding-top: 20px;
-    }
-    #compete ul li {
-        margin-top: 30px;
-        height: auto;
-    }
-    #compete ul li:first-of-type {
-        margin-top: 0;
-    }
-    #compete ul li img {
-        width: 100%;
-        height: auto;
-    }
-    #compete ul li .wrap {
-        padding: 45px;
-        width: 100%;
-        height: auto;
-    }
-    #compete ul li .wrap .text01 {
-        margin-bottom: 15px;
-        font-size: 22px;
-    }
-
-}
-@media all and (max-width: 700px) {
-    #introduction .wrapper > img {
-        margin: 0 auto 20px;
-        width: 50px;
-    }
-    #introduction .text01 {
-        margin-bottom: 20px;
-        font-size: 25px;
-    }
-    #introduction .text02 {
-        margin: 0 auto 50px;
-        width: 100%;
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #introduction .text02 span {
-        margin-bottom: 10px;
-    }
-    #introduction ul li {
-        margin-left: 0;
-        margin-top: 10%;
-        width: 100%;
-    }
-    #introduction ul li.doctor01 {
-        margin-top: 0;
-    }
-    #compete ul li .wrap {
-        padding: 30px;
-    }
-    #compete ul li:nth-of-type(3) .wrap {
-        padding: 30px;
-    }
-    #compete ul li .wrap .text02 {
-        font-size: 16px;
-        line-height: 25px;
-    }
-}
-
-
-
-
-/* 의료진 소개 */
-.loar_doctor_top {
-    height: 470px !important;
-    background-image: url(/images/sub/doctor/doctor02_top_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#letter h1 {
-    margin-bottom: 40px;
-    font-size: 28px;
-    line-height: 35px;
-    text-align: center;
-}
-#doctor .img {
-    float: left;
-    width: 50%;
-}
-#doctor .mo_img {
-    display: none;
-}
-#doctor .txt {
-    float: left;
-    width: 45%;
-}
-#doctor .m_l {
-    margin-left: 5%;
-}
-#doctor .m_r {
-    margin-right: 5%;
-}
-#doctor .txt .text_img {
-    width: 100%;
-}
-#doctor .txt .text01 {
-    font-size: 20px;
-}
-#doctor .txt .text02 {
-    margin: 10px 0 20px;
-    font-size: 25px;
-    font-family: 'SCDream_Bold';
-}
-#doctor .txt .text02 span {
-    font-size: 40px;
-}
-#doctor .txt .line {
-    display: block;
-    margin-bottom: 25px;
-    width: 100%;
-    height: 1px;
-    background-color: #beab9c;
-}
-#doctor .txt .text03 p {
-    padding-left: 10px;
-    line-height: 30px;
-}
-#doctor .txt .text03 p::before {
-    position: absolute;
-    top: 12px;
-    left: 0px;
-    width: 5px;
-    height: 5px;
-    background-color: #beab9c;
-    transform: rotate(45deg);
-    content: '';
-}
-#doctor .txt .text04 {
-    font-size: 35px;
-    line-height: 40px;
-    margin: 25px 0 40px;
-}
-#doctor .txt .text04 span {
-    color: #beab9c;
-    font-family: 'SCDream_Bold';
-}
-.d_center .txt {
-    margin-left: 0;
-    width: 100% !important;
-}
-.d_center .txt .text04 {
-    text-align: center;
-}
-.d_center .txt .text04 br {
-    display: none;
-}
-.d_center .c_img img {
-    float: left;
-    width: 11.5%;
-    margin-left: 1%;
-    margin-top: 35px;
-    box-shadow: 3px 3px 3px #e5e5e5;
-}
-.d_center .c_img img:first-of-type {
-    margin-left: 0;
-}
-
-
-#history h1 {
-    text-align: center;
-    font-size: 22px;
-    font-family: 'SCDream_Bold';
-}
-#history .line {
-    margin-top: 40px;
-    width: 100%;
-    height: 1px;
-    background-color: #beab9c;
-}
-#history .box {
-    width: 100%;
-    background-color: #f5f1ee;
-    padding: 50px 30px;
-    box-sizing: border-box;
-}
-#history .box .b_txt {
-    font-family: 'SCDream_Medium';
-}
-#history .box span {
-    display: block;
-    margin-bottom: 30px;
-    font-size: 22px;
-    text-decoration: underline;
-    color: #cb1e1a;
-    font-family: 'SCDream_Bold';
-}
-#history .box p {
-    padding-bottom: 12px;
-    line-height: 25px;
-}
-@media all and (max-width: 1400px) {
-    #doctor .txt .text01 {
-        font-size: 18px;
-    }
-    #doctor .txt .text02 {
-        font-size: 22px;
-    }
-    #doctor .txt .text02 span {
-        font-size: 35px;
-    }
-    #doctor .txt .text03 p {
-        font-size: 16px;
-        line-height: 28px;
-    }
-    #doctor .txt .text04 {
-        font-size: 30px;
-        line-height: 38px;
-        margin: 25px 0 30px;
-    }
-    #history .box span {
-        font-size: 20px;
-    }
-    #history .box p {
-        margin-bottom: 8px;
-        font-size: 16px;
-    }
-}
-@media all and (max-width: 1060px) {
-    #letter h1 {
-        margin-bottom: 30px;
-        font-size: 22px;
-        line-height: 30px;
-    }
-    #letter img {
-        width: 700px;
-    }
-    #doctor .img {
-        width: 100%;
-    }
-    #doctor .mo_img {
-        display: block;
-    }
-    #doctor .pc_img {
-        display: none;
-    }
-    #doctor .txt {
-        margin-right: 0;
-        margin-left: 0;
-        margin-top: 60px;
-        width: 100%;
-    }
-    #doctor .txt .text_img {
-        width: 70%;
-        margin: 0;
-    }
-    #doctor .txt .text04 {
-        margin: 0 0 30px;
-    }
-
-    .d_center .c_img img {
-        width: 24%;
-        margin-top: 45px;
-    }
-
-    #history .box {
-        padding: 30px;
-    }
-}
-@media all and (max-width: 700px) {
-    #letter h1 {
-        margin-bottom: 25px;
-        font-size: 20px;
-        line-height: 25px;
-    }
-    #letter img {
-        width: 90%;
-    }
-    #doctor .txt {
-        margin-top: 50px;
-    }
-    #doctor .txt .text_img {
-        width: 100%;
-    }
-    #doctor .txt .text01 {
-        font-size: 18px;
-    }
-    #doctor .txt .text02 span {
-        font-size: 30px;
-    }
-    #doctor .txt .text03 p {
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #doctor .txt .text04 {
-        font-size: 25px;
-        line-height: 30px;
-    }
-    .d_center .c_img img {
-        margin-top: 25px;
-    }
-    #history .line {
-        margin-top: 20px;
-    }
-    #history .box {
-        padding: 15px;
-    }
-    #history .box p {
-        padding-bottom: 10px;
-        line-height: 22px;
-    }
-}
-
-
-
-
-/* 진료시간 */
-#clinic_time h1 {
-    padding: 20px 0;
-    font-family: 'Bebas Kai';
-    color: #fff;
-    font-size: 45px;
-    text-align: center;
-    letter-spacing: 10px;
-    background-color: #beac9e;
-}
-#clinic_time .line01 {
-    display: block;
-    width: 100%;
-    height: 5px;
-    background-color: #f8f0eb;
-}
-#clinic_time .line02 {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #beac9e;
-}
-#clinic_time .time01,
-#clinic_time .time02 {
-    padding: 20px 0;
-}
-#clinic_time .time01 {
-    background-color: #f5f1ee;
-}
-#clinic_time .time02 {
-    background-color: #ede8e4;
-}
-#clinic_time .day {
-    display: inline-block;
-    margin-left: 390px;
-    font-size: 22px;
-}
-#clinic_time .day01 span {
-    display: inline-block;
-    width: 40px;
-}
-#clinic_time .day02 span {
-    display: inline-block;
-    width: 10px;
-}
-#clinic_time .time {
-    margin-left: 50px;
-    display: inline-block;
-    font-size: 22px;
-    font-family: 'SCDream_Bold';
-}
-#clinic_time .text_wrap {
-    width: 59%;
-    margin: 15px auto 0;
-}
-#clinic_time .text_wrap p {
-    display: inline-block;
-    margin-left: 25px;
-}
-#clinic_time .text_wrap p:first-of-type {
-    margin-left: 0;
-}
-@media all and (max-width: 1400px) {
-    #clinic_time .day {
-        margin-left: 220px;
-    }
-    #clinic_time .text_wrap {
-        width: 84%;
-    }
-}
-@media all and (max-width: 1060px) {
-    #clinic_time h1 {
-        padding: 15px 0;
-        font-size: 40px;
-    }
-    #clinic_time .day {
-        margin-left: 180px;
-    }
-    #clinic_time .time {
-        margin-left: 30px;
-    }
-    #clinic_time .text_wrap {
-        width: 96%;
-    }
-}
-@media all and (max-width: 700px) {
-    #clinic_time h1 {
-        font-size: 32px;
-        letter-spacing: 5px;
-    }
-    #clinic_time .day{
-        margin-left: 20px;
-        font-size: 20px;
-    }
-    #clinic_time .time {
-        margin-left: 15px;
-        font-size: 20px;
-    }
-    #clinic_time .text_wrap {
-        width: 100%;
-    }
-    #clinic_time .text_wrap p {
-        padding-bottom: 5px;
-        margin-left: 0;
-    }
-}
-
-#reservation .wrapper > div {
-    float: left;
-    width: 48%;
-}
-#reservation .call {
-    background-color: #beac9e;
-}
-#reservation .kakao {
-    margin-left: 4%;
-    background-color: #3c2628;
-}
-#reservation img {
-    width: 100%;
-}
-
-@media all and (max-width: 1060px) {
-    #reservation .wrapper > div {
-        width: 100%;
-    }
-    #reservation .kakao {
-        margin-left:0;
-        margin-top: 50px;
-    }
-    #reservation img {
-        width: 70%;
-    }
-}
-@media all and (max-width: 700px) {
-    #reservation img {
-        width: 100%;
-    }
-}
-#way_guidance .pc_img {
-    width: 100%;
-}
-#way_guidance .mo_img {
-    display: none;
-}
-#way_guidance .txt {
-    width: 100%;
-    padding: 50px;
-    background-color: #322e2b;
-    box-sizing: border-box;
-}
-#way_guidance .road {
-    float: left;
-    width: 48%;
-}
-#way_guidance h1 {
-    font-size: 25px;
-    color: #fff;
-    font-family: 'SCDream_Bold';
-}
-#way_guidance .line {
-    margin: 15px 0 25px;
-    width: 100%;
-    height: 1px;
-    background-color: #bdab9d;
-}
-#way_guidance .text01 {
-    margin-bottom: 15px;
-    font-size: 20px;
-    color: #fff;
-    font-family: 'SCDream_Medium';
-}
-#way_guidance .text02 {
-    color: #fff;
-    line-height: 25px;
-}
-#way_guidance .text02 span {
-    color: #fffd32;
-    font-family: 'SCDream_Medium';
-}
-#way_guidance .text03 {
-    font-size: 18px;
-    padding-left: 45px;
-    margin-bottom: 15px;
-    color: #fff;
-}
-#way_guidance .naverplace {
-    margin: 25px 0;
-}
-#way_guidance .parking {
-    float: left;
-    margin-left: 2%;
-    width: 48%;
-}
-#way_guidance h2 img {
-    display: inline-block;
-}
-#way_guidance h2 p {
-    display: inline-block;
-    margin-top: 8px;
-    margin-left: 8px;
-    vertical-align: top;
-    font-family: 'SCDream_Medium';
-    font-size: 20px;
-    color: #fff;
-}
-#way_guidance .p01 {
-    margin-top: 5px;
-    padding-left:40px;
-    font-size: 20px;
-    font-family: 'SCDream_Bold';
-    color: #cda175;
-}
-#way_guidance .p_text01 {
-    padding-top: 10px;
-    padding-left: 40px;
-    font-size: 18px;
-    font-family: 'SCDream_Medium';
-    color: #fff;
-}
-#way_guidance .p_text02 {
-    padding-top: 8px;
-    padding-left: 40px;
-    font-size: 18px;
-    color: #fff;
-}
-#way_guidance .p02 {
-    margin-top: 5px;
-    padding-left:40px;
-    font-size: 20px;
-    font-family: 'SCDream_Bold';
-    color: #468ac7;
-}
-@media all and (max-width: 1400px) {
-    #way_guidance .road {
-        width: 100%;
-    }
-    #way_guidance .parking {
-        margin-top: 45px;
-        margin-left: 0;
-        width: 100%;
-    }
-}
-@media all and (max-width: 700px) {
-    #way_guidance .pc_img {
-        display: none;
-    }
-    #way_guidance .mo_img {
-        display: block;
-        width: 100%;
-    }
-    #way_guidance .txt {
-        padding: 35px 25px;
-    }
-    #way_guidance h1 {
-        font-size: 22px;
-    }
-    #way_guidance .text01 {
-        font-size: 18px;
-    }
-    #way_guidance .text02 {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    #way_guidance .text03 {
-        font-size: 16px;
-        line-height: 25px;
-    }
-    #way_guidance .naverplace {
-        margin: 20px 0;
-    }
-    #way_guidance .naverplace img {
-        width: 100%;
-    }
-    #way_guidance .p_text02 {
-        font-size: 16px;
-        line-height: 25px;
-    }
-    
-}
-
-/* gallery - CSS */
-.gallery .wrapper {
-    width: 1200px !important;
-}
-.gallery_top {
-    height: 470px !important;
-    background-image: url(/images/sub/gallery/gallery_top_bg.jpg);
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-}
-.g_wrap {
-    width: 100%;
-}
-@media all and (max-width: 1250px) {
-    .gallery .wrapper {
-        width: 90% !important;
-    }
-}
-
-/* 진료프로세스 */
-#process {
-    background-color: #f5f2ef;
-    padding: 100px 0;
-}
-#process .tit {
-    margin-bottom:30px;
-    font-size: 28px;
-    text-align: center;
-}
-#process .txt {
-    margin: 0 auto 40px;
-    width: 55%;
-    text-align: center;
-    line-height: 25px;
-    color: #5a5a5a;
-}
-#process .txt>span {
-    font-family: 'SCDream_Bold';
-}
-#process ul {
-    height: 762px;
-}
-#process ul>li {
-    position: relative;
-    float: left;
-    width:33.16%;
-    border: 1px solid #d3d3d3;
-    background-color: #fff;
-    overflow: hidden;
-}
-#process ul>li .img_wrap {
-    display: block;
-    text-align: center;
-}
-#process ul>li .img_wrap img {
-    width: 100%;
-}
-#process ul>li .box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:110px;
-    height:30px;
-    background-color: #2f2f2f
-}
-#process ul>li div .step {
-    color: #fff;
-    text-align: center;
-    margin: 6px;
-    font-size: 16px;
-    font-family: 'SCDream_Bold';
-}
-#process ul>li div .text01 {
-    margin: 25px 10px 0 10px;
-    font-size: 22px;
-    font-family: 'SCDream_Bold';
-    color: #2f2f2f
-}
-#process ul>li div .text01>span {
-    font-size: 18px;
-    color: #2f2f2f
-}
-#process ul>li div .text02 {
-    margin: 25px 10px;
-    font-size:16px;
-    line-height:23px;
-    color: #2f2f2f;
-}
-#process ul>li:first-child div .text02 {
-    margin: 25px 0 48px 10px;
-}
-
-#process ul>li div p br.mo {
-    display: none;
-}
-
-#process ul>li div p br.pc {
-    display: block;
-}
-
-@media all and (max-width: 1400px) {
-    #process {
-        padding: 70px 0;
-    }    
-    #process .tit {
-        font-size: 23px;
-    }
-    #process .txt {
-        width: 100%;
-        font-size: 16px;
-    }
-    #process ul>li {
-        width:33%;
-    }
-    #process ul>li div .text01 {
-        font-size: 18px;
-    }
-    #process ul>li div .text01>span {
-        font-size: 13px;
-    }
-}
-@media all and (max-width: 1060px) {
-    #process {
-        padding: 70px 0;
-    }    
-    #process .tit {
-        font-size: 23px;
-    }
-    #process .txt {
-        width: 100%;
-        font-size: 16px;
-    }
-    #process ul {
-        height: 2383px;
-    }
-    #process ul>li {
-        width:100%;
-        margin-bottom: 10px;
-    }
-}
-@media all and (max-width: 700px) {
-    #process {
-        padding: 70px 0;
-    }    
-    #process .tit {
-        font-size: 23px;
-    }
-    #process .txt {
-        width: 100%;
-        font-size: 16px;
-    }
-    #process ul {
-        height: 762px;
-    }
-    #process ul>li {
-        width:100%;
-        margin-bottom: 10px;
-    }
-    #process ul>li div p br.mo {
-        display: block;
-    }
-    #process ul>li div p br.pc {
-        display: none;
-    }
-}
-
-.loar_event_top {
-    height: 470px !important;
-    background-image: url(/images/sub/event/event_top_bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#event ul.tabs{
-    display: flex;
-    justify-content: space-between;
-	margin-bottom: 50px;
-	padding: 0px;
-	list-style: none;
-    text-align: center;
-    background-color: #f5f1ee;
-    align-items: center;
-}
-#event ul.tabs li{
-	display: inline-block;
-	padding: 15px 0;
-	cursor: pointer;
-    flex: 1;
-}
-#event ul.tabs li>a{
-	background: none;
-	color: #2f2f2f;
-    font-family: 'SCDream_Medium';
-    font-size: 16px;
-}
-
-#event ul.tabs li.on{
-	background: #c1ac9b;
-}
-#event ul.tabs li.on>a{
-    font-family: 'SCDream_Medium';
-    font-size: 16px;
-	color: #fff;
-}
-
-#event .tab-content{
-	display: none;
-}
-
-#event .tab-content.current{
-	display: inherit;
-}
-
-#event .tab_content {
-    overflow: hidden;
-}
-
-#event .tab_content img {
-    width: 100%;
-}
-
-@media all and (max-width: 1400px) {
-    #event ul.tabs{
-        flex-flow: wrap;
-    }
-}
-
-@media all and (max-width: 1060px) {
-    #event ul.tabs{
-        flex-flow: wrap;
-    }
-}
-
-
-@media all and (max-width: 700px) {
-    #event ul.tabs{
-        flex-flow: wrap;
-    }
-    #event ul.tabs li{
-        width:25%;
-        margin: 0 auto;
-        padding: 15px 0;
-        flex: auto;
-    }
-    #event ul.tabs li>a{
-        padding: 0;
-    }
-}
-
-
-/* clinic-색소질환 CSS */
+/* clinic-울써마지 CSS */
 .clinic_ulthermage_top {
-    background-image: url(/images/sub/new_clinic/clinic10_top_bg.jpg);
+    background-image: url(../images/sub/new_clinic/clinic10_top_bg.jpg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -5556,7 +484,134 @@
         line-height: 25px;
     }
 }
-
+/* 이유있는 자신감 */
+#confidence {
+    margin-top: 100px;
+}
+#confidence .f_wrap .txt {
+    float: left;
+    width: 39%;
+    margin-top: 70px;
+}
+#confidence .text01 {
+    font-size: 38px;
+    color: #6a605e;
+    line-height: 48px;
+}
+#confidence .text01 span {
+    color: #6a605e;
+    font-family: 'SCDream_Bold';
+}
+#confidence .text02 {
+    margin-top: 30px;
+    line-height: 30px;
+}
+#confidence .f_wrap .img {
+    float: right;
+}
+@media all and (max-width: 1400px) {
+    #confidence .f_wrap .txt {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    #confidence .f_wrap .img {
+        width: 100%;
+    }
+    #confidence .f_wrap .img img {
+        display: block;
+        margin: 50px auto 0;
+    }
+}
+@media all and (max-width: 1060px) {
+    #confidence .text01 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    #confidence .text02 {
+        margin-top: 20px;
+        line-height: 28px;
+    }
+}
+@media all and (max-width: 700px) {
+    #confidence {
+        margin-top: 70px;
+    }
+    #confidence .text01 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    #confidence .text02 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #confidence .f_wrap .img img {
+        width: 90%;
+    }
+}
+/* 프로그램 */
+#program {
+    padding: 110px 0;
+    width: 100%;
+    background-image: url(../images/sub/new_clinic/clinic_program_bg.jpg);
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+#program .wrapper {
+    text-align: center;
+}
+#program .text01 {
+    color: #c4a589;
+    font-size: 25px;
+    font-family: 'SCDream_Medium';
+}
+#program .text02 {
+    margin: 20px 0 40px 0;
+    font-size: 32px;
+    font-family: 'SCDream_Bold';
+}
+#program .text02 span {
+    font-family: 'SCDream_Light';
+}
+#program .text03 {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+@media all and (max-width: 1400px) {
+    #program .text03 {
+        width: 80%;
+    }
+}
+@media all and (max-width: 1060px) {
+    #program .text01 {
+        font-size: 22px;
+    }
+    #program .text02 {
+        margin: 15px 0 25px 0;
+        font-size: 28px;
+    }
+    #program .text03 {
+        line-height: 28px;
+    }
+}
+@media all and (max-width: 700px) {
+    #program {
+        padding: 70px 0;
+    }
+    #program .text01 {
+        font-size: 20px;
+    }
+    #program .text02 {
+        font-size: 23px;
+    }
+    #program .text03 {
+        width: 100%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
 /* 울써마지 리프팅 */
 #product {
     padding: 100px 0;
@@ -5674,7 +729,7 @@
     margin: 15px auto 0;
     width: 80%;
     border: 1px solid #ddd;
-    background-image: url(/images/sub/new_clinic/clinic10_img06_bg.jpg);
+    background-image: url(../images/sub/new_clinic/clinic10_img06_bg.jpg);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
@@ -5813,7 +868,7 @@
 #effect {
     padding: 110px 0;
     width: 100%;
-    background-image: url(/images/sub/new_clinic/clinic_effect_bg.jpg);
+    background-image: url(../images/sub/new_clinic/clinic_effect_bg.jpg);
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
@@ -5922,7 +977,7 @@
 }
 
 #genuine {
-    background-image: url(/images/sub/new_clinic/clinic10_genuine_bg.jpg);
+    background-image: url(../images/sub/new_clinic/clinic10_genuine_bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6015,7 +1070,7 @@
 }
 @media (max-width:768px){
     #genuine {
-        background-image: url(/images/sub/new_clinic/clinic10_genuine_bg.jpg); 
+        background-image: url(../images/sub/new_clinic/clinic10_genuine_bg.jpg); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -6105,7 +1160,7 @@
     }
 }
 #lifting_process {
-    background-image: url(/images/sub/new_clinic/clinic10_process_bg.jpg);
+    background-image: url(../images/sub/new_clinic/clinic10_process_bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6138,7 +1193,7 @@
 }
 @media (max-width:768px){
     #lifting_process {
-        background-image: url(/images/sub/new_clinic/clinic10_process_bg.jpg); 
+        background-image: url(../images/sub/new_clinic/clinic10_process_bg.jpg); 
         background-size: cover; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -6481,5 +1536,1359 @@
     }
     #anesthesia .btn p>span {
         font-family: 'SCDream_Bold';
+    }
+}
+
+.sub_laser img {
+    width: 100%;
+    max-width: 1903px;
+}
+
+.sec01 {
+    background-image: url(../images/sub/laser/thermage/thermage_02_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+
+.sec01 .title {
+    width: 600px;
+}
+
+.sec01 .title p,
+.sec01 .title h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sec01 .title p {
+    font-size: 20px;
+}
+
+.sec01 .title p:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    margin: 30px auto;
+}
+
+.sec01 .title h2 {
+    font-size: 60px;
+    font-family: 'SCDream_Bold';
+    margin: 0 0 50px;
+}
+
+.sec01 .box {
+    width: 600px;
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.sec01 .box p {
+    font-size: 20px;
+    color: #2f2f2f;
+    text-align: center;
+    line-height: 1.5;
+    padding: 100px;
+}
+
+.sec01 .box p>span {
+    font-family: 'SCDream_Medium';
+}
+
+.sec02 {
+    background: rgba(232, 224, 214, 0.5);
+    padding: 150px 0;
+}
+
+.sec02 .title p,
+.sec02 .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec02 .title p {
+    font-size: 20px;
+}
+
+.sec02 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec02 .title h2>span {
+    color: #972e84;
+}
+
+.sec02 .img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.sec02 .img:after {
+    content: "";
+    position: absolute;
+    top: 84%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: #949494;
+    margin: 10px auto;
+}
+
+.sec02 .img p {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.sec03 {
+    background-image: url(../images/sub/laser/thermage/thermage_04_bg.jpg);
+    background-size: cover;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+    padding: 300px 0 150px;
+}
+
+.sec03 .wrapper .txt {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 0 100px 0;
+}
+
+.sec03 .wrapper .txt>span {
+    font-family: 'SCDream_Medium';
+    color: #fff;
+}
+
+.sec03 .img {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sec03 .img figure {
+    outline: 1px solid #fff;
+    border: 1px solid #fff;
+}
+
+.sec03 .img figure p {
+    margin: 30px 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.sec04 {
+    background: rgba(232, 224, 214, 0.5);
+    padding: 150px 0;
+}
+
+.sec04:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-image: url(../images/sub/laser/thermage/thermage_05_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sec04 .box {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+}
+
+.sec04 .box>div {
+    flex: 1;
+}
+
+.sec04 .box .line {
+    display: block;
+    width: 2px;
+    height: 200px;
+    margin: auto 0;
+    background: #e8e0d6;
+    flex: none;
+}
+
+.sec04 .box .tit {
+    font-size: 20px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec04 .box .tit>span {
+    color: #972e84;
+}
+
+.sec04 .box .txt {
+    font-size: 20px;
+    margin: 30px 0 50px;
+    line-height: 1.5;
+}
+
+.sec04 .box .txt>span {
+    font-size: 18px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec04 .cont {
+    margin-top: 100px;
+}
+
+.sec04 .cont p,
+.sec04 .cont h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec04 .cont p {
+    font-size: 20px;
+}
+
+.sec04 .cont h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec04 .cont h2>span {
+    color: #972e84;
+}
+
+.sec04 .cont .txt>figure {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.sec04 .cont .txt>figure:last-child {
+    margin-bottom: 0;
+}
+
+.sec04 .cont .txt>figure>img {
+    flex: 1;
+}
+
+.sec04 .cont .txt>figure>.tip {
+    flex: 2;
+}
+
+.sec04 .cont .txt>figure>.tip>p {
+    text-align: left;
+    font-size: 20px;
+    margin: 30px 0 30px 50px;
+    line-height: 1.5;
+}
+
+.sec04 .cont .txt>figure>.tip>p:nth-of-type(3) {
+    font-size: 18px;
+}
+
+.sec04 .cont .txt>figure>.tip>p>span {
+    font-family: 'SCDream_Bold';
+}
+
+.sec05 {
+    background: rgba(232, 224, 214, 1);
+    padding: 150px 0 0;
+}
+
+.sec05 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec05 .title h2>span {
+    color: #972e84;
+}
+
+.sec05 .img>figure {
+    width: 500px;
+    mix-blend-mode: darken;
+}
+
+.sec05 .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.sec05 .txt>p {
+    font-size: 20px;
+    margin: 70px 0;
+}
+
+.sec05 .txt>p:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #949494;
+    vertical-align: middle;
+    margin-right: 200px;
+}
+
+.sec05 .txt>p:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 170px;
+    height: 2px;
+    background: #949494;
+}
+
+.sec06 {
+    background-image: url(../images/sub/laser/thermage/thermage_07_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+.sec06 .title p,
+.sec06 .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec06 .title p {
+    font-size: 20px;
+}
+
+.sec06 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec06 .title h2>span {
+    color: #972e84;
+}
+
+.sec06 .img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec06 .img p {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: 'SCDream_Bold';
+    line-height: 1.5;
+    background: #972e84;
+    color: #fff;
+    text-align: center;
+}
+
+.sec06 .txt p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ff0000;
+}
+
+.sec06 .btn {
+    margin-top: 100px;
+}
+
+.sec06 .btn a {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #972e84;
+}
+
+.sec06 .btn p {
+    margin: 20px 0;
+    font-family: 'SCDream_Medium';
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #972e84;
+}
+
+.sec06 .btn:hover a {
+    background: #972e84;
+}
+
+.sec06 .btn:hover a p {
+    color: #fff;
+}
+
+.sec06 .btn:hover a p>span {
+    color: #fff;
+}
+
+.sec07 {
+    background-image: url(../images/sub/laser/thermage/thermage_08_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+.sec07 .title p,
+.sec07 .title h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sec07 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+}
+
+.sec07 .title p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 30px 0 50px;
+}
+
+.sec07 .img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec07 .img p {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+
+.sec08 {
+    background: #fff;
+    padding: 150px 0;
+}
+
+.sec08 .title p,
+.sec08 .title h2 {
+    text-align: center;
+}
+
+.sec08 .title p {
+    font-size: 20px;
+    color: #2f2f2f;
+}
+
+.sec08 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+    color: #972e84;
+}
+
+.sec08 .title:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #949494;
+    margin: 100px auto;
+    transform: rotate(-45deg);
+}
+
+.sec08 .txt p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.sec08 .img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sec09 {
+    background: rgba(232, 224, 214, 1);
+    padding: 150px 0;
+}
+
+.sec09 .wrapper {
+    z-index: 1;
+}
+
+.sec09 .title p,
+.sec09 .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec09 .title p {
+    font-size: 20px;
+}
+
+.sec09 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec09 .title h2>span {
+    color: #972e84;
+}
+
+.sec09 .box {
+    width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 300px auto 0;
+}
+
+.sec09 .box p {
+    font-size: 20px;
+    color: #2f2f2f;
+    text-align: center;
+    line-height: 1.5;
+    padding: 50px;
+}
+
+.sec09 .img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec10 {
+    padding: 150px 0;
+}
+
+.sec10 .title p,
+.sec10 .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec10 .title p {
+    font-size: 20px;
+}
+
+.sec10 .title p>span {
+    color: #b80e0e;
+}
+
+.sec10 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec10 .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec10 .box figure {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.sec10 .txt {
+    background: rgba(232, 224, 214, 0.2);
+}
+
+.sec10 .txt p {
+    font-size: 20px;
+    color: #2f2f2f;
+    text-align: center;
+    line-height: 1.5;
+    padding: 100px 0;
+}
+
+.sec10 .txt p>span {
+    color: #b80e0e;
+}
+
+.sec10 .img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sec10 .btn {
+    margin-top: 100px;
+}
+
+.sec10 .btn a {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #2f2f2f;
+}
+
+.sec10 .btn p {
+    margin: 20px 0;
+    font-family: 'SCDream_Medium';
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #2f2f2f;
+}
+
+.sec10 .btn p>span {
+    font-family: 'SCDream_Bold';
+}
+
+.sec10 .btn:hover a {
+    background: #2f2f2f;
+}
+
+.sec10 .btn:hover a p {
+    color: #fff;
+}
+
+.sec10 .btn:hover a p>span {
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .pc_br {
+        display: none;
+    }
+
+    .mo_br {
+        display: block;
+    }
+
+    .sub_laser img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sec01 {
+        background-position: 100%;
+        padding: 50px 0;
+    }
+
+    .sec01 .title {
+        width: 100%;
+    }
+
+    .sec01 .title p,
+    .sec01 .title h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+    .sec01 .title p {
+        font-size: 14px;
+    }
+
+    .sec01 .title p:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 2px;
+        background: #fff;
+        margin: 30px auto;
+    }
+
+    .sec01 .title h2 {
+        font-size: 22px;
+        font-family: 'SCDream_Bold';
+        margin: 0 0 50px;
+    }
+
+    .sec01 .box {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8)
+    }
+
+    .sec01 .box p {
+        font-size: 14px;
+        color: #2f2f2f;
+        text-align: center;
+        line-height: 1.5;
+        padding: 50px;
+    }
+
+    .sec01 .box p>span {
+        font-family: 'SCDream_Medium';
+    }
+
+    .sec02 {
+        padding: 50px 0;
+    }
+
+    .sec02 .title p {
+        font-size: 14px;
+    }
+
+    .sec02 .title h2 {
+        font-size: 20px;
+        margin: 20px 0 50px;
+    }
+
+    .sec02 .img {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .sec02 .img:after {
+        content: "";
+        position: absolute;
+        top: 70%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 1px;
+        background: #949494;
+        margin: 10px auto;
+    }
+
+    .sec02 .img p {
+        margin: 30px 0;
+        font-size: 14px;
+    }
+
+    .sec03 {
+        background-size: 200%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #000;
+        padding: 50px 0;
+    }
+
+    .sec03 .wrapper .txt {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 100px 0;
+    }
+
+    .sec03 .img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .sec03 .img figure {
+        width: 40%;
+        margin-bottom: 20px;
+        outline: 1px solid #fff;
+        border: 1px solid #fff;
+    }
+
+    .sec03 .img figure:last-child {
+        margin-bottom: 0;
+    }
+
+    .sec03 .img figure p {
+        margin: 15px 0;
+        font-size: 12px;
+    }
+
+    .sec04 {
+        background: rgba(232, 224, 214, 0.5);
+        padding: 50px 0;
+    }
+
+    .sec04:after {
+        background-image: none;
+    }
+
+    .sec04 .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .sec04 .box>div {
+        flex: 1;
+    }
+
+    .sec04 .box .line {
+        display: block;
+        width: 200px;
+        height: 2px;
+        margin: auto 0;
+        background: #e8e0d6;
+        flex: none;
+    }
+
+    .sec04 .box .tit {
+        font-size: 16px;
+        font-family: 'SCDream_Bold';
+        margin: 15px 0;
+    }
+
+    .sec04 .box .tit>span {
+        color: #972e84;
+    }
+
+    .sec04 .box .txt {
+        font-size: 14px;
+        margin: 15px 0;
+        line-height: 1.5;
+    }
+
+    .sec04 .box .txt>span {
+        font-size: 16px;
+        font-family: 'SCDream_Bold';
+        margin: 30px 0 50px;
+    }
+
+    .sec04 .cont {
+        margin-top: 50px;
+    }
+
+    .sec04 .cont p,
+    h2 {
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec04 .cont p {
+        font-size: 14px;
+    }
+
+    .sec04 .cont h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+    }
+
+    .sec04 .cont h2>span {
+        color: #972e84;
+    }
+
+    .sec04 .cont .txt>figure {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .sec04 .cont .txt>figure:last-child {
+        margin-bottom: 0;
+    }
+
+    .sec04 .cont .txt>figure>img {
+        flex: 1;
+    }
+
+    .sec04 .cont .txt>figure>.tip {
+        flex: 2;
+    }
+
+    .sec04 .cont .txt>figure>.tip>p {
+        text-align: left;
+        font-size: 14px;
+        margin: 30px 0;
+        line-height: 1.5;
+    }
+
+    .sec04 .cont .txt>figure>.tip>p:nth-of-type(3) {
+        font-size: 14px;
+    }
+
+    .sec04 .cont .txt>figure>.tip>p>span {
+        font-family: 'SCDream_Bold';
+    }
+
+    .sec05 {
+        background: rgba(232, 224, 214, 1);
+        padding: 50px 0 0;
+    }
+
+    .sec05 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec05 .title h2>span {
+        color: #972e84;
+    }
+
+    .sec05 .img>figure {
+        width: 50%;
+        mix-blend-mode: darken;
+    }
+
+    .sec05 .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+    }
+
+    .sec05 .txt>p {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    .sec05 .txt>p:before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #949494;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .sec05 .txt>p:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: none;
+        width: 170px;
+        height: 2px;
+        background: #949494;
+    }
+
+    .sec06 {
+        background-image: url(../images/sub/laser/thermage/thermage_07_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+    }
+
+    .sec06 .title p,
+    .sec06 .title h2 {
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec06 .title p {
+        font-size: 14px;
+    }
+
+    .sec06 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+    }
+
+    .sec06 .title h2>span {
+        color: #972e84;
+    }
+
+    .sec06 .img {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec06 .img figure {
+        width: 50%;
+    }
+
+    .sec06 .img p {
+        margin-bottom: 30px;
+        padding: 10px 0;
+        font-size: 14px;
+        font-family: 'SCDream_Bold';
+        line-height: 1.5;
+        background: #972e84;
+        color: #fff;
+        text-align: center;
+    }
+
+    .sec06 .txt p {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        color: #ff0000;
+    }
+
+    .sec06 .btn {
+        margin-top: 50px;
+    }
+
+    .sec06 .btn a {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        border: 1px solid #972e84;
+    }
+
+    .sec06 .btn p {
+        margin: 20px 0;
+        font-family: 'SCDream_Medium';
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        color: #972e84;
+    }
+
+    .sec07 {
+        background-image: url(../images/sub/laser/thermage/thermage_08_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+    }
+
+    .sec07 .title p,
+    .sec07 .title h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+    .sec07 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+    }
+
+    .sec07 .title p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 30px 0 50px;
+    }
+
+    .sec07 .img {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .sec07 .img figure {
+        width: 48%;
+    }
+
+    .sec07 .img p {
+        margin-bottom: 30px;
+        padding: 20px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #fff;
+        text-align: center;
+    }
+
+    .sec08 {
+        background: #fff;
+        padding: 50px 0 0;
+    }
+
+    .sec08 .title p,
+    .sec08 .title h2 {
+        text-align: center;
+    }
+
+    .sec08 .title p {
+        font-size: 14px;
+        color: #2f2f2f;
+    }
+
+    .sec08 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+        color: #972e84;
+    }
+
+    .sec08 .title:after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #949494;
+        margin: 50px auto;
+        transform: rotate(-45deg);
+    }
+
+    .sec08 .txt p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .sec08 .img {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .sec09 {
+        background: rgba(232, 224, 214, 1);
+        padding: 50px 0 0;
+    }
+
+    .sec09 .title p,
+    .sec09 .title h2 {
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec09 .title p {
+        font-size: 14px;
+    }
+
+    .sec09 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+    }
+
+    .sec09 .title h2>span {
+        color: #972e84;
+    }
+
+    .sec09 .box {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+    }
+
+    .sec09 .box p {
+        font-size: 14px;
+        color: #2f2f2f;
+        text-align: center;
+        line-height: 1.5;
+        padding: 20px;
+    }
+
+    .sec09 .img {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .sec10 {
+        padding: 50px 0;
+    }
+
+    .sec10 .title p,
+    .sec10 .title h2 {
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec10 .title p {
+        font-size: 14px;
+    }
+
+    .sec10 .title p>span {
+        color: #b80e0e;
+    }
+
+    .sec10 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 30px 0 50px;
+    }
+
+    .sec10 .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .sec10 .box figure {
+        width: 32%;
+        margin-bottom: 20px;
+    }
+
+    .sec10 .txt {
+        background: rgba(232, 224, 214, 0.2);
+    }
+
+    .sec10 .txt p {
+        font-size: 14px;
+        color: #2f2f2f;
+        text-align: center;
+        line-height: 1.5;
+        padding: 20px 0;
+    }
+
+    .sec10 .txt p>span {
+        color: #b80e0e;
+    }
+
+    .sec10 .img {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        display: none;
+    }
+
+    .sec10 .btn {
+        margin-top: 50px;
+    }
+
+    .sec10 .btn a {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        border: 1px solid #2f2f2f;
+    }
+
+    .sec10 .btn p {
+        margin: 20px 0;
+        font-family: 'SCDream_Medium';
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        color: #2f2f2f;
+    }
+
+    .sec10 .btn p>span {
+        font-family: 'SCDream_Bold';
+    }
+}
+
+#caution {
+    margin-bottom: 150px;
+    padding: 100px 0;
+    background-image: url(../images/sub/new_clinic/clinic_caution_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#caution .wrapper {
+    position: relative;
+}
+
+#caution .text01 {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'SCDream_Medium';
+}
+
+#caution .line {
+    display: block;
+    margin: 20px 0 50px;
+    width: 50px;
+    height: 3px;
+    background-color: #c4a589;
+}
+
+#caution .text02 {
+    width: 32%;
+    color: #fff;
+    line-height: 30px;
+}
+
+#caution .box {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 30px 30px 50px 0px rgb(0 0 0 / 10%);
+}
+
+#caution .box p {
+    line-height: 45px;
+}
+
+#caution .box p::before {
+    display: inline-block;
+    margin: 0 8px 5px 0;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #c4a589;
+    transform: rotate(45deg);
+}
+
+@media all and (max-width: 1400px) {
+    #caution {
+        margin-bottom: 290px;
+        padding: 80px 0 140px;
+    }
+
+    #caution .text01 {
+        text-align: center;
+    }
+
+    #caution .line {
+        margin: 20px auto 30px;
+    }
+
+    #caution .text02 {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    #caution .box {
+        bottom: -330px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media all and (max-width: 1060px) {
+    #caution .text02 {
+        width: 70%;
+    }
+
+    #caution .box {
+        padding: 35px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    #caution {
+        margin-bottom: 70px;
+        padding: 70px 0;
+    }
+
+    #caution .text01 {
+        font-size: 20px;
+    }
+
+    #caution .box {
+        position: relative;
+        bottom: 0;
+        padding: 20px 30px;
+        margin-top: 40px;
+    }
+
+    #caution .text02 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #caution .box p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #caution .box p:first-of-type {
+        margin-top: 0;
     }
 }
