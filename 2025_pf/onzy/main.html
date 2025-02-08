@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="의사한의사 복수면허 옥진아 원장, 부산중구 남포동 재활치료, 도수치료, 프롤로치료, 한의원, 남포동정형외과">
+    <meta name="author" content="온지프롤로의원">
+    <meta name="keywords" content="의사한의사 복수면허 옥진아 원장, 부산중구 남포동 재활치료, 도수치료, 프롤로치료, 한의원, 남포동정형외과">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="온지프롤로의원">
+    <meta property="og:description" content="의사한의사 복수면허 옥진아 원장, 부산중구 남포동 재활치료, 도수치료, 프롤로치료, 한의원, 남포동정형외과">
+    <meta property="og:image" content="http://onzyprolo.com/img/og_image.jpg">
+    <meta property="og:url" content="http://onzyprolo.com/">
+    <link rel="canonical" href="http://onzyprolo.com/">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png">
+    <title>온지프롤로의원</title>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/slick.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="header pc-only">
+        <div class="container">
+            <div class="h_logo"><a href="#"><img src="./img/main/h_logo.png" alt="로고"></a></div>
+            <div class="menu">
+                <ul class="row">
+                    <li class="gnb">
+                        <a href="#sec01">온지 프롤로의원·한의원 소개</a>
+                    </li>
+                    <li class="gnb">
+                        <a href="#sec03">진료내용</a>
+                    </li>
+                    <li class="gnb">
+                        <a href="#sec04">양한방통합치료란</a>
+                    </li>
+                    <li class="gnb">
+                        <a href="#sec06">비수술통증치료</a>
+                    </li>
+                    <li class="gnb">
+                        <a href="#sec07">도수·추나 클리닉</a>
+                    </li>
+                    <li class="gnb">
+                        <a href="#sec08">항노화 클리닉</a>
+                    </li>
+                    <li class="gnb">
+                        <a href="#info">진료 안내 및 오시는 길</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모바일 헤더 메뉴바 -->
+    <div class="m-header mobile-only">
+        <div class="m-top-bar">
+            <div class="m-top-logo"><a href="#"><img src="./img/main/h_logo.png" alt="모바일_로고"></a></div>
+            <nav class="m-global-nav">
+                <div class="m-menu-ico">
+                    <div><img src="./img/mo_menu_b.png" alt="모바일 햄버거 메뉴"></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 모바일 다운 메뉴 -->
+    <div class="m-menu-wrap mobile-only" menu-now-animating="N">
+        <div class="m-menu-container">
+            <ul>
+                <li>
+                    <a class="m_menu_01" href="#sec01">온지 프롤로의원·한의원 소개</a>
+                </li>
+                <li>
+                    <a class="m_menu_02" href="#sec03">진료내용</a>
+                </li>
+                <li>
+                    <a class="m_menu_03" href="#sec04">양한방통합치료란</a>
+                </li>
+                <li>
+                    <a class="m_menu_04" href="#sec06">비수술통증치료</a>
+                </li>
+                <li>
+                    <a class="m_menu_05" href="#sec07">도수·추나 클리닉</a>
+                </li>
+                <li>
+                    <a class="m_menu_06" href="#sec08">항노화 클리닉</a>
+                </li>
+                <li>
+                    <a class="m_menu_07" href="#info">진료 안내 및 오시는 길</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        // 모바일 토글 메뉴바
+        $('.m-header > .m-top-bar > .m-global-nav >.m-menu-ico').click(function () {
+            var nowAnimating = $('.m-menu-wrap').attr('menu-now-animating');
+
+            if (nowAnimating == "Y") {
+                return;
+                /* 함수를 리턴하여 다시 안눌리게 한다 */
+            }
+
+            $('.m-menu-wrap').attr('menu-now-animating', 'Y');
+            $(this).closest('.m-header').siblings('.m-menu-wrap').toggleClass('active');
+
+            setTimeout(function () {
+                $('.m-menu-wrap').attr('menu-now-animating', 'N');
+            }, 500);
+        });
+        $(document).ready(function () {
+            $(".m-menu-ico").addClass("click");
+        })
+
+        $('.m-menu-wrap ul>li').click(function () {
+            $('.m-menu-wrap').removeClass('active')
+        })
+    </script>
+
+    <!-- 메인배너 -->
+    <section id="main_visual">
+        <figure class="bg"></figure>
+        <div class="container">
+            <div class="title">
+                <span><em class="sky">양·한방 진료</em>를 모두 만날 수 있는</span>
+                <h1>온지<span class="blue">프롤로의원</span></h1>
+                <p>양한방의 해박한 지식과 풍부한 경험으로 복합적이고 면밀한 치료</p>
+            </div>
+            <figure class="img01">
+                <img src="./img/main/main_img01.jpg" alt="메인이미지">
+            </figure>
+            <figure class="img02">
+                <img src="./img/main/main_img02.jpg" alt="메인이미지">
+            </figure>
+            <figure class="img03">
+                <img src="./img/main/main_img03.jpg" alt="메인이미지">
+            </figure>
+        </div>
+    </section>
+    <section id="notice">
+        <div class="notice_box">
+            <div class="container">
+                <h2 class="title">온지프롤로 언론보도 ｜</h2>
+                <div class="notice_link">
+                    <div class="01"><a href="https://www.medisobizanews.com/news/articleView.html?idxno=113473" target="_blank">온지프롤로의원, 퇴행성관절염 개선 ‘무릎 자가골수줄기세포 치료’ 시행</a>
+                        <p>2024.01.22</p>
+                    </div>
+                    <div class="02"><a href="https://mdtoday.co.kr/news/view/1065591909961704" target="_blank">봄철 부상으로 인한 허리디스크, 도수치료 등 초기 치료 중요</a>
+                        <p>2024.04.24</p>
+                    </div>
+                    <div class="03"><a href="https://www.mediafine.co.kr/news/articleView.html?idxno=59914" target="_blank">인대 손상으로 인한 발목 통증, 제때 치료해야 [옥진아 원장 칼럼]</a>
+                        <p>2024.06.05</p>
+                    </div>
+                    <div class="04"><a href="https://www.mediafine.co.kr/news/articleView.html?idxno=61769" target="_blank">여름철 기력 저하에 따른 어지럼증, 후유증 남지 않게 치료해야 [옥진아 원장 칼럼]</a>
+                        <p>2024.08.02</p>
+                    </div>
+                    <div class="05"><a href="https://www.medisobizanews.com/news/articleView.html?idxno=120111" target="_blank">가을철 무리한 야외 활동, 무릎ㆍ발목 통증 야기해…치료는 어떻게?</a>
+                        <p>2024.10.16</p>
+                    </div>
+                </div>
+
+                <div class="slider_option">
+                    <i class='xi-angle-up'></i>
+                    <i class='xi-angle-down'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lecture">
+        <div class="container">
+            <p>ONZY INTEGRATIVE MEDICINE CLINIC</p>
+            <h3><span>“</span>의사를 강의하는 <em>의사</em><span>”</span></h3>
+            <span class="s_tit">온지프롤로의원은 의사에게 강의를 진행하는 의사를 만나볼 수 있는 공간입니다.</span>
+            <div class="box">
+                <figure class="img01">
+                    <img src="./img/main/lecture_img01.jpg" alt="메인이미지">
+                </figure>
+                <figure class="img02">
+                    <img src="./img/main/lecture_img02.jpg" alt="메인이미지">
+                </figure>
+                <figure class="img03">
+                    <img src="./img/main/lecture_img03.jpg" alt="메인이미지">
+                </figure>
+                <figure class="img04">
+                    <img src="./img/main/lecture_img04.jpg" alt="메인이미지">
+                </figure>
+            </div>
+            <span class="s_txt">[통증LIVE: 녹십자 라이넥 주관 강의 참여 모습]</span>
+        </div>
+    </section>
+    <section id="sec01">
+        <div class="container">
+            <figure class="tit_img"><img src="./img/main/sec01_title_bg.png" alt="sec01 타이틀 배경 이미지">
+                <div class="title">
+                    <span>DOCTOR</span>
+                    <h2>의료진 소개</h2>
+                    <p>ONZY Integrative Medicine Clinic</p>
+                </div>
+            </figure>
+            <div class="sec_logo">
+                <figure><img src="./img/main/logo_icon.png" alt="sec01로고"></figure>
+                <div class="name">
+                    <h2>옥진아</h2>
+                    <p>대표원장<br><span>의사·한의사 복수면허의</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <img src="./img/main/sec01_banner_bg.jpg" alt="띠배너">
+            <h3>의사&한의사 면허를 모두 보유하고 있는 <br class="mo_br"><span>복수면허 의사</span></h3>
+        </div>
+        <div class="history">
+            <figure><img src="./img/main/sec01_history_bg.jpg" alt="약력"></figure>
+            <figure class="certification01"><img src="./img/main/sec01_certification01.jpg" alt="옥진아원장님 자격증"></figure>
+            <figure class="certification02"><img src="./img/main/sec01_certification02.jpg" alt="박진영원장님 자격증"></figure>
+            <div class="wrap p1">
+                <div class="group">
+                    <div class="pattern">
+                        <span>학력 및 약력</span>
+                    </div>
+                    <div class="txt">
+                        <p>
+                            · 부산대학교 의과대학 졸업<br>
+                            · 동의대학교 한의과대학 졸업<br>
+                            · 동의대 한의학 박사 취득<br>
+                            · 現&#41; 부산대학교 한의학전문대학원 외래교수<br>
+                            · 現&#41; 동의대 한의과대학 외부임상실습교수<br>
+                            · 前&#41; 제일한방병원 진료원장<br>
+                            · 前&#41; 대구프롤로의원 진료원장<br>
+                            · 前&#41; 국민한의원프롤로의원 진료원장
+                        </p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="pattern">
+                        <span>학회활동</span>
+                    </div>
+                    <div class="txt">
+                        <p>
+                            · RMSK &#40;미국 초음파 전문의 자격&#41; 취득<br>
+                            · CG 바이오 조직재생연구 키닥터<br>
+                            · IMPAS &#40;통합대체의학회&#41; 학술이사<br>
+                            · 대한근골격계초음파학회 정회원<br>
+                            · 대한정맥통증학회 정회원<br>
+                            · 시리악스 정형의학회 정회원<br>
+                            · 대한한방비만학회 정회원<br>
+                            · 대한레이저피부모발학회 정회원
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap p2">
+                <div class="group">
+                    <div class="pattern">
+                        <span>박진영 원장님</span>
+                    </div>
+                    <div class="txt">
+                        <p>
+                            · 前&#41; 전국한의대동아리 '동감' 동의대 대표<br>
+                            · 前&#41; 척추신경추나의학회 정회원<br>
+                            · 前&#41; 그랜드자연요양병원 한방진료과장<br>
+                            · 前&#41; 금강한의원 원장<br>
+                            · 前&#41; 함안지리산쌍계한의원 원장<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="pattern">
+                        <span>학회활동</span>
+                    </div>
+                    <div class="txt">
+                        <p>
+                            · 미국 근골격계 초음파검사 자격증 RMSK자격취득<br>
+                            · 대한명상의학회 회원<br>
+                            · 대한동의방약학회 수료
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec02">
+        <div class="container">
+            <div class="left">
+                <span>MEDIA</span>
+                <h3>온지<em class="tit">
+                        <p>의 원</p>
+                        <p>한 의 원</p>
+                    </em>프롤로</h3>
+                <p class="s_tit">유튜브와 방송 출연 영상을 통해<br>통증에 대한 양질의 컨텐츠를 확인해보세요.</p>
+            </div>
+            <div class="right">
+                <div class="youtube">
+                    <img src="./img/main/sec02_youtube_title.png" alt="유튜브 title 이미지">
+                    <div class="slider">
+                        <div class="case">
+                            <a href="#!"><img src="./img/main/youtube_img06.jpg" alt=""></a>
+                        </div>
+                        <div class="case">
+                            <a href="#!"><img src="./img/main/youtube_img07.jpg" alt=""></a>
+                        </div>
+                        <div class="case">
+                            <a href="#!"><img src="./img/main/youtube_img06.jpg" alt=""></a>
+                        </div>
+                        <div class="case">
+                            <a href="#!"><img src="./img/main/youtube_img07.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <i class="xi-angle-left-thin"></i>
+                        <i class="xi-angle-right-thin"></i>
+                    </div>
+                </div>
+                <div class="telecast">
+                    <img src="./img/main/sec02_onzyair_title.png" alt="방송 title 배경 이미지">
+                    <div class="slider">
+                        <div class="case">
+                            <a href="#!"><img src="./img/main/tv_img01.jpg" alt=""></a>
+                        </div>
+                        <div class="case">
+                            <a href="#!"><img src="./img/main/tv_img02.jpg" alt=""></a>
+                        </div>
+                        <div class="case">
+                            <a href="#!"><img src="./img/main/tv_img03.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="arrows">
+                        <i class="xi-angle-left-thin"></i>
+                        <i class="xi-angle-right-thin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec03">
+        <figure>
+            <img src="./img/main/sec03_bg.png" alt="bg">
+            <div class="title">
+                <p>ONZY Integrative Medicine Clinic</p>
+                <h3><img src="./img/main/logo_icon2.png" alt="sec01로고"><span>진료</span>내용</h3>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="img01">
+                        <img src="./img/main/sec03_icon01.png" alt="목어깨질환">
+                        <img src="./img/main/sec03_icon01_h.png" alt="목어깨질환" class="hover">
+                    </li>
+                    <li class="img02">
+                        <img src="./img/main/sec03_icon02.png" alt="허리질환">
+                        <img src="./img/main/sec03_icon02_h.png" alt="허리질환" class="hover">
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <ul>
+                    <li class="img03">
+                        <img src="./img/main/sec03_icon03.png" alt="무릎질환">
+                        <img src="./img/main/sec03_icon03_h.png" alt="무릎질환" class="hover">
+                    </li>
+                    <li class="img04">
+                        <img src="./img/main/sec03_icon04.png" alt="팔손목질환">
+                        <img src="./img/main/sec03_icon04_h.png" alt="팔손목질환" class="hover">
+                    </li>
+                    <li class="img05">
+                        <img src="./img/main/sec03_icon05.png" alt="발발목질환">
+                        <img src="./img/main/sec03_icon05_h.png" alt="발발목질환" class="hover">
+                    </li>
+                </ul>
+            </div>
+        </figure>
+    </section>
+    <section id="sec04">
+        <div class="container">
+            <h3>ONZY INTEGRATIVE MEDICINE CLINIC</h3>
+            <div class="box">
+                <img src="./img/main/sec04_img.png" alt="양한방">
+            </div>
+            <div class="icon">
+                <li><img src="./img/main/sec04_icon01.png" alt="01">
+                    <p>비수술통증치료</p>
+                </li>
+                <li><img src="./img/main/sec04_icon02.png" alt="02">
+                    <p>도수·추나 클리닉</p>
+                </li>
+                <li><img src="./img/main/sec04_icon03.png" alt="03">
+                    <p>주사 클리닉</p>
+                </li>
+                <li><img src="./img/main/sec04_icon04.png" alt="04">
+                    <p>한방 클리닉</p>
+                </li>
+            </div>
+            <div class="txt">
+                <p class="main_t">'현대 의학X전통 한의학'<em>의 장점을 모은 체계적인 개선 플랜</em></p>
+                <div class="circle circle01"></div>
+                <div class="circle circle02"></div>
+                <div class="circle circle03"></div>
+                <span class="sub_t"><em>온지 의원·한의원 프롤로</em>는 의사·한의사복수면허의가 <br class="pc_br"><br class="mo_br">
+                    양·한방 통합 치료와 다양한 관리 시스템을 바탕으로 <br class="pc_br"><br class="mo_br">
+                    체질과 증상을 고려한 개인별 1:1 맞춤 진료를 <br class="mo_br">
+                    제공하고 있습니다.
+                </span>
+            </div>
+        </div>
+    </section>
+    <section id="sec05">
+        <div class="container">
+            <p>ONZY INTEGRATIVE MEDICINE CLINIC</p>
+            <h3><em>양·한방</em> 통합치료란?</h3>
+            <div class="wrap">
+                <div class="left">
+                    <li>
+                        <img src="./img/main/sec05_img01.jpg" alt="의사면허증">
+                        <p>의사 면허증</p>
+                    </li>
+                    <li>
+                        <img src="./img/main/sec05_img02.jpg" alt="한의사면허증">
+                        <p>한의사 면허증</p>
+                    </li>
+                </div>
+                <div class="right">
+                    <h4>한의학 & 현대의학</h4>
+                    <div class="box">
+                        <li>
+                            <p>침 · 한약</p>
+                        </li>
+                        <li>
+                            <p>도수 · 추나</p>
+                        </li>
+                        <li>
+                            <p>공진단 · 경옥고</p>
+                        </li>
+                        <div class="clear"></div>
+                        <li>
+                            <p>엑스레이</p>
+                        </li>
+                        <li>
+                            <p>초음파 검사</p>
+                        </li>
+                        <li>
+                            <p>약물 처방</p>
+                        </li>
+                    </div>
+                    <p>
+                        의사 면허와 한의사 면허를 모두 보유하고 있는 <br>
+                        복수면허의 의료진이 양·한방을 아우르는 관점에서 <br>
+                        한의학적 진단과 현대의학적 진단을 복합적으로 진행하는 치료 방법
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec06">
+        <div class="container">
+            <div class="title">
+                <span class="s_tit">
+                    통증에 대한 심도 깊은 이해를 바탕으로 진행되는<br>
+                    <em>양 · 한방 복합 비수술 치료</em>
+                </span>
+                <h3>온지<em class="tit">
+                        <p>의 원</p>
+                        <p>한 의 원</p>
+                    </em>프롤로</h3>
+                <p>ONZY INTEGRATIVE MEDICINE CLINIC</p>
+            </div>
+            <div class="box">
+                <li>
+                    <img src="./img/main/sec06_box01.png" alt="재생 약재 활용">
+                </li>
+                <li>
+                    <img src="./img/main/sec06_box02.png" alt="면밀한 진단&시술">
+                </li>
+                <li>
+                    <img src="./img/main/sec06_box03.png" alt="체계적인 시스템">
+                </li>
+            </div>
+            <div class="icon">
+                <h4 class="title"><em>비수술</em>통증치료</h4>
+                <div class="txt">
+                    <ul>
+                        <li>목/어깨 통증</li>
+                        <li>허리통증</li>
+                        <li>팔꿈치, 손목, 손 통증</li>
+                        <li>고관절 통증</li>
+                        <li>무릎,발목, 발 통증</li>
+                    </ul>
+                </div>
+                <div class="img">
+                    <img src="./img/main/sec06_icon.png" alt="주사 icon">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec07">
+        <div class="title">
+            <img src="./img/main/sec07_bg.jpg" alt="배경 이미지">
+            <div class="txt">
+                <span class="s_tit">보건복지부 <em>2023 신의료기술 선정</em></span>
+                <h3>자가골수줄기세포 주사</h3>
+                <p>2023. 7. 11 보건복지부 신의료기술의 안정성 · 유효성 평가결과 고시 제2023-128호 918번</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="img_wrap">
+                <figure class="img"><img src="./img/main/sec07_img.jpg" alt="통증 아이콘"></figure>
+                <div class="txt">
+                    <p class="main_t">'무릎 골관절염에 대한 골수 흡인 농축물 관절강내 주사'</em></p>
+                    <div class="circle circle01"></div>
+                    <div class="circle circle02"></div>
+                    <div class="circle circle03"></div>
+                    <span class="sub_t">보건복지부에서 '무릎 골관절염에 대한 골수 흡인 농축물 관절강내 주사'를 <br class="pc_br">
+                        <em>2023년 신의료기술</em>로 선정하며 <em>퇴행성관절염</em>에 대한 <br class="pc_br">
+                        자가골수줄기세포 주사치료가 <em>안정성</em>과 <em>유효성</em>을 인증 받았습니다.
+                    </span>
+                </div>
+            </div>
+            <div class="icon">
+                <ul>
+                    <li>
+                        <img src="./img/main/sec07_icon01.png" alt="인증 아이콘">
+                        <p>보건복지부 인증</p>
+                    </li>
+                    <li>
+                        <img src="./img/main/sec07_icon02.png" alt="통증 개선 아이콘">
+                        <p>무릎 통증 개선</p>
+                    </li>
+                    <li>
+                        <img src="./img/main/sec07_icon03.png" alt="줄기세포 아이콘">
+                        <p>자가 골수 줄기세포</p>
+                    </li>
+                    <li>
+                        <img src="./img/main/sec07_icon04.png" alt="관절염 치료 아이콘">
+                        <p>2~3기 관절염 치료</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="check">
+                <img src="./img/main/sec07_check_img01.png" alt="체크리스트 이미지">
+            </div>
+        </div>
+    </section>
+    <section id="sec08">
+        <div class="title">
+            <span>Prolotherapy</span>
+            <h3>정통 <em>프롤로</em></h3>
+            <p><em>만성 통증을 위한 프롤로 주사</em><br>
+                인대, 힘줄, 근육 등의 결손 부위에 약물을 적용하여<br>
+                주변 조직의 강화 · 재생을 유도하는 방법으로<br>
+                일시적인 통증 경감이 아닌 만성 통증 개선을 기대할 수 있습니다.
+            </p>
+        </div>
+        <div class="container">
+            <div class="box_wrap">
+                <ul>
+                    <li>
+                        <img src="./img/main/sec08_img01.png" alt="라이넥주사">
+                        <div class="txt">
+                            <h4>라이넥주사</h4>
+                            <p>
+                                태반추출물로 근감소증 예방과<br>
+                                근육세포 개선에 도움을 주며<br>
+                                콜라겐 등 인대 재생 관련<br>
+                                단백질 생성 유도로 손상된 인대 조직<br>
+                                재생에도 적용이 가능합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/main/sec08_img02.png" alt="DNA 프롤로">
+                        <div class="txt">
+                            <h4>DNA 프롤로</h4>
+                            <p>
+                                PDRN이라는 연어에서 추출한<br>
+                                재생 물질을 활용하여 인체의<br>
+                                성장인자를 자극하는 원리로<br>
+                                손상된 조직의 재생을 유도합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/main/sec08_img03.png" alt="콜라겐 프롤로">
+                        <div class="txt">
+                            <h4>콜라겐 프롤로</h4>
+                            <p>
+                                생체 조직의 30% 이상을 차지하는<br>
+                                필수단백질인 콜라겐 성분을<br>
+                                손상된 조직에 직접 적용하여<br>
+                                조직 재생과 회복을 유도합니다.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/main/sec08_img04.png" alt="PRP 주사">
+                        <div class="txt">
+                            <h4>PRP 주사</h4>
+                            <p>
+                                자가혈 조직재생 치료법으로<br>
+                                특수한 장비를 통해 본인의 혈액 속<br>
+                                성장인자를 분리 및 농축 시켜<br>
+                                손상된 부위에 적용하여<br>
+                                부작용이 없습니다.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="img_wrap">
+                <div class="left">
+                    <img src="./img/main/sec08_clinic_img01.png" alt="도수치료">
+                    <div class="txt">
+                        <h4>도수 치료</h4>
+                        <p>근골격계 질환 개선하는 물리치료</p>
+                        <div class="line"></div>
+                        <span>
+                            손상된 근육, 관절 등의 통증과 운동 기능 개선을 위해 <br>
+                            생리학적 지식을 가진 물리치료사가 손과 도구를 이용해 <br>
+                            <em>연부조직, 관절의 위치를 바로 잡는데 도움</em>을 주는 치료입니다.
+                        </span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./img/main/sec08_clinic_img02.png" alt="추나요법">
+                    <div class="txt">
+                        <h4>추나 요법</h4>
+                        <p>근육의 긴장과 틀어진 관절의 교정</p>
+                        <div class="line"></div>
+                        <span>
+                            밀 추 (推), 잡아당긴 나 (拿)를 합친 단어로 <br>
+                            한의사가 신체 또는 보조기구를 통해 <em>통증 부위를 밀고 당겨 <br>
+                            척추 및 관절, 근육 등의 부정렬을 교정</em>하는 요법입니다.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec09">
+        <div class="container">
+            <div class="title">
+                <span>Anti-aging Clinic</span>
+                <h3>항노화 클리닉</h3>
+            </div>
+            <div class="anti">
+                <div class="box">
+                    <div class="img"><img src="./img/main/sec09_img01.jpg" alt="킬레이션"></div>
+                    <div class="txt">
+                        <h4>킬레이션 주사</h4>
+                        <div class="line"></div>
+                        <div class="list">
+                            <li>
+                                <p>혈액순환개선</p>
+                            </li>
+                            <li>
+                                <p>체내중금속제거</p>
+                            </li>
+                            <li>
+                                <p>심혈관질환예방</p>
+                            </li>
+                        </div>
+                        <p>EDTA라는 작은 아미노산을 주입하는 <br class="mo_br">주사 치료로 <br class="pc_br">
+                            미세혈관&뇌혈관에 축적된 <br class="mo_br">중금속·독성물질과 결합하여 <br class="pc_br">
+                            소변의 형태로 <br class="mo_br">체외로 배출 시키는 치료입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img"><img src="./img/main/sec09_img02.jpg" alt="줄기세포 주사"></div>
+                    <div class="txt">
+                        <h4>줄기세포 주사</h4>
+                        <div class="line"></div>
+                        <div class="list">
+                            <li>
+                                <p>손상 세포 재생</p>
+                            </li>
+                            <li>
+                                <p>산소·영양공급</p>
+                            </li>
+                            <li>
+                                <p>신체기능개선</p>
+                            </li>
+                        </div>
+                        <p>한 개의 세포가 다양한 종류의 조직 세포를 <br class="mo_br">만들 수 있는 <br class="pc_br">
+                            줄기세포를 주입해 재생이 <br class="mo_br">불가능한 세포를 대체하거나 <br class="pc_br">
+                            유도하여 <br class="mo_br">손상 부위를 개선하는 치료입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img"><img src="./img/main/sec09_img03.jpg" alt="영양 수액 주사"></div>
+                    <div class="txt">
+                        <h4>영양 수액 주사</h4>
+                        <div class="line"></div>
+                        <div class="list">
+                            <li>
+                                <p>피로회복</p>
+                            </li>
+                            <li>
+                                <p>필수영양분</p>
+                            </li>
+                            <li>
+                                <p>관절·신경통</p>
+                            </li>
+                        </div>
+                        <p>다양한 영양소로 이루어진 수액을 <br class="mo_br">개인의 상태와 필요에 맞춰 <br class="pc_br">
+                            적용하는 주사로 <br class="mo_br">정맥을 통해 주입하기 때문에 영양제에 비해 <br class="pc_br"><br class="mo_br">
+                            흡수가 용이하다는 장점이 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec10">
+        <div class="container">
+            <div class="title">
+                <span>Oriental<br>Medicin</span>
+                <h3>한방</h3>
+            </div>
+            <div class="img">
+                <ul>
+                    <li>
+                        <img src="./img/main/sec10_icon01.png" alt="한약">
+                    </li>
+                    <li>
+                        <img src="./img/main/sec10_icon02.png" alt="침,뜸">
+                    </li>
+                    <li>
+                        <img src="./img/main/sec10_icon03.png" alt="공진단">
+                    </li>
+                    <li>
+                        <img src="./img/main/sec10_icon04.png" alt="경옥고">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="line">
+        <div class="txt_slider">
+            <p> &nbsp;ONZY Integrative Medicine Clinic &nbsp;</p>
+            <p> &nbsp;ONZY Integrative Medicine Clinic &nbsp;</p>
+            <p> &nbsp;ONZY Integrative Medicine Clinic &nbsp;</p>
+            <p> &nbsp;ONZY Integrative Medicine Clinic &nbsp;</p>
+            <p> &nbsp;ONZY Integrative Medicine Clinic &nbsp;</p>
+        </div>
+    </section>
+    <section id="sec11">
+        <div class="container">
+            <div class="title">
+                <h3><em>온지</em> POINT.4</h3>
+                <p>ONZY INTEGRATIVE MEDICINE CLINIC</p>
+            </div>
+            <div class="point">
+                <ul>
+                    <li>
+                        <p>의사+한의사 복수면허 의사 <em>1인 진료</em></p>
+                    </li>
+                    <li>
+                        <p><em>1:1 개인별</em> 맞춤형 치료 플랜 제안</p>
+                    </li>
+                    <li>
+                        <p><em>다양한 종류</em>의 시술 & 치료 진행</p>
+                    </li>
+                    <li>
+                        <p>풍부한 경험을 통한 <em>심도 있는 상담 </em></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="info">
+            <div class="left">
+                <div class="map">
+                    <!-- * 카카오 지도 시작 -->
+                    <!-- 1. 지도 노드 -->
+                    <div id="daumRoughmapContainer1697705265614" class="root_daum_roughmap root_daum_roughmap_landing">
+                    </div>
+                    <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
+                    <script charset="UTF-8" class="daum_roughmap_loader_script"
+                        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                    <!-- 3. 실행 스크립트 -->
+                    <script charset="UTF-8">
+                        new daum.roughmap.Lander({
+                            "timestamp": "1697705265614",
+                            "key": "2gieu",
+                            "mapWidth": "auto",
+                            "mapHeight": "300"
+                        }).render();
+                    </script>
+                    <!-- 카카오 지도 끝 -->
+                </div>
+            </div>
+            <div class="right">
+                <div class="float">
+                    <div class="way">
+                        <p>오시는 길</p>
+                        <span>부산 중구 구덕로 5, 은과빛메디컬빌딩 2층</span>
+                        <span>*남포역 4번출구 앞에 위치해 있습니다.</span>
+                    </div>
+                    <div class="parking">
+                        <p>주차안내</p>
+                        <span>은과빛 주차타워</span>
+                        <span>부산광역시 중구 남포동 1가 45</span>
+                        <span>*SUV 주차 가능</span>
+                    </div>
+                </div>
+                <div class="float">
+                    <div class="time">
+                        <div class="day">
+                            <p>진료안내</p>
+                            <span>월/화/목/금</span>
+                            <span>수/토</span>
+                            <span>점심시간</span>
+                            <span>정기휴무</span>
+                        </div>
+                        <div class="hour">
+                            <span>AM 09:30 ~ PM 06:30</span>
+                            <span>AM 09:30 ~ PM 01:30</span>
+                            <span>PM 01:00 ~ PM 02:00</span>
+                            <span>일요일 및 공휴일 휴진</span>
+                        </div>
+                    </div>
+                    <div class="counseling">
+                        <span>상담문의</span>
+                        <p style="text-decoration: underline;">051.246.0222</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo"><img src="./img/main/f_logo.png"></div>
+            <div class="top">
+                <p>의료기관: 온지프롤로의원</p>
+                <br class="mo">
+                <span class="line"></span>
+                <p>대표: 옥진아</p>
+                <br class="mo">
+                <span class="line"></span>
+                <p><meta name="format-detection" content="telephone=no">사업자번호: [의원]591-02-01533 / [한의원]842-98-00788</p>
+                <br class="mo">
+                <span class="line"></span>
+                <p><meta name="format-detection" content="telephone=no">TEL: 051.246.0222</p>
+                <br class="mo">
+                <span class="line"></span>
+                <a href="#!" target="_blank" style="color:#fff; text-decoration: underline;">비급여항목고지</a>
+            </div>
+            <div class="bottom">
+                <p class="f_address">부산광역시 중구 구덕로 5, 은과빛메디컬빌딩 2층</p>
+            </div>
+            <p class="copyright">COPYRIGHT 2023 온지프롤로의원 ALL RIGHT RESERVED.</p>
+        </div>
+    </footer>
+    <script>
+        AOS.init({
+            easing: 'linear',
+            duration: 500,
+        });
+    </script>
+</body>
+
+</html>
