@@ -40,6 +40,7 @@
   <script type="text/javascript" src="../../js/close_pop.js"></script>
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ifzs3kdr0v"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Tangerine:wght@400;700&display=swap');
@@ -263,30 +264,19 @@
       </div>
   </div>
 </section>
-<section id="sec" class="about01 img_pc">
-  <div class="container hours">
-      <img src="../../img/sub/about/about01_hours_pc.jpg" style="width: 100%;">
-  </div>
-</section>
-<section id="sec" class="about01 img_mo">
-  <div class="container hours">
-      <img src="../../img/sub/about/about01_hours_mo.jpg" style="width: 100%;">
-  </div>
-</section>
 <section id="sec" class="about01">
   <div class="container sec_02">
-      <div class="active-on-visible" data-active-on-visible-callback-func-name="Circle__run">
-          <div class="second circle" circleProgress='2'>
-              <strong class="circle-percent"></strong>
-          </div>
-      </div>
-      <div class="txt">
-          <h4><em>피부과전문의란?</em></h4>
-          <p>
-          국가고시를 통한 의사면허 취득 및 보건복지부에서 인증하는 최종 전문의 시험을 합격한 후<br>
-          4년간의 수련 과정을 거친 의료진으로 대한민국 의사 중 <em>약 2%</em>만이 전문의 자격을 보유하고 있습니다.
-          </p>
-      </div>
+    <div class="chart-container">
+      <canvas id="donutChart"></canvas>
+      <div class="chart-text">약 2%</div>
+    </div>
+    <div class="txt">
+      <h4><em>피부과전문의란?</em></h4>
+      <p>
+        국가고시를 통한 의사면허 취득 및 보건복지부에서 인증하는 최종 전문의 시험을 합격한 후<br>
+        4년간의 수련 과정을 거친 의료진으로 대한민국 의사 중 <em>약 2%</em>만이 전문의 자격을 보유하고 있습니다.
+      </p>
+    </div>
   </div>
 </section>
 <section id="sec" class="about01" style="background-color: #f7f7f7;">

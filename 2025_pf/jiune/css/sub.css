@@ -202,25 +202,18 @@
     display: flex;
     justify-content: space-evenly;
 }
-.about01 .sec_02 .second {
-    position:relative;
-    width:200px;
-    height:200px;
+.about01 .sec_02 .chart-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
 }
-.about01 .sec_02 .second>canvas{
-    width:100%;
-}
-.about01 .sec_02 .second > strong {
-    position:absolute; 
-    top:50%; 
-    left:50%; 
-    transform:translatex(-50%) translatey(-50%);
-    font-size:30px;
-    font-weight: 700;
-    color: #183f26;
-}
-.about01 .sec_02 .second > strong>i {
-    color: #183f26;
+.about01 .sec_02 .chart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
 }
 .about01 .sec_02 .txt {
     margin:auto 0;
@@ -249,28 +242,19 @@
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .about01 .sec_02 .active-on-visible {
-        text-align: center;
+    .about01 .sec_02 .chart-container {
+        position: relative;
+        width:50%;
+        height:50%;
+        margin: 0 auto;
     }
-    .about01 .sec_02 .second {
-        position:relative;
-        width:100%;
-        height:100%;
-    }
-    .about01 .sec_02 .second>canvas{
-        width:100%;
-    }
-    .about01 .sec_02 .second > strong {
-        position:absolute; 
-        top:50%; 
-        left:50%; 
-        transform:translatex(-50%) translatey(-50%);
-        font-size:20px;
-        font-weight: 700;
-        color: #183f26;
-    }
-    .about01 .sec_02 .second > strong>i {
-        color: #183f26;
+    .about01 .sec_02 .chart-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: bold;
     }
     .about01 .sec_02 .txt {
         margin:30px 0 0 0;
@@ -4570,14 +4554,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.anti05 .arrows .xi-angle-left-thin, .anti05 .xi-angle-right-thin {
+.anti05 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .anti05 .sec_03_tit {
@@ -5516,14 +5498,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.scar01 .arrows .xi-angle-left-thin, .scar01 .xi-angle-right-thin {
+.scar01 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .scar01 .sec_05_tit {
@@ -6146,14 +6126,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.scar02 .arrows .xi-angle-left-thin, .scar02 .xi-angle-right-thin {
+.scar02 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .scar02 .sec_02_tit {
@@ -6500,14 +6478,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.scar03 .arrows .xi-angle-left-thin, .scar03 .xi-angle-right-thin {
+.scar03 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .scar03 .sec_03_tit {
@@ -7147,14 +7123,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.scar04 .arrows .xi-angle-left-thin, .scar04 .xi-angle-right-thin {
+.scar04 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .scar04 .sec_03_tit {
@@ -8220,14 +8194,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.disease01 .arrows .xi-angle-left-thin, .disease01 .xi-angle-right-thin {
+.disease01 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .disease01 .sec_02_tit {
@@ -9508,14 +9480,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.disease02 .arrows .xi-angle-left-thin, .disease02 .xi-angle-right-thin {
+.disease02 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .disease02 .sec_05_tit {
@@ -11859,14 +11829,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.disease03 .arrows .xi-angle-left-thin, .disease03 .xi-angle-right-thin {
+.disease03 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .disease03 .sec_32_tit {
@@ -16050,14 +16018,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.skin05 .arrows .xi-angle-left-thin, .skin05 .xi-angle-right-thin {
+.skin05 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .skin05 .sec_02_tit {
@@ -16904,14 +16870,12 @@
     left: 25%;
     transform: translateX(-50%);    
 }
-.skin06 .arrows .xi-angle-left-thin, .skin06 .xi-angle-right-thin {
+.skin06 .arrows img{
     display: block;
-    font-size: 25px;
-    padding:15px;
+    width: 100%;
+    margin:15px 0;
     border-radius: 50%;
     background-color: #264130;
-    color: #fff;
-    margin:15px 0;
 }
 @media all and (max-width: 700px) {
     .skin06 .sec_04_tit {
