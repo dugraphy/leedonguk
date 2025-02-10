@@ -62,7 +62,7 @@ contentSlider01.on("afterChange", function(event,slick,current){
 
 //----------- 모바일 다단메뉴
 
-$('.xi-bars').on('click', function(){
+$('.bars').on('click', function(){
   $(this).toggleClass('on');
   $('.gnb').toggleClass('on');
  });
@@ -77,14 +77,14 @@ $('.xi-bars').on('click', function(){
 
 
 $('html, body').css({'overflow': 'hidden', 'height': '100%'});
-$('.xi-bars').on('scroll touchmove mousewheel', function(e) {
+$('.bars').on('scroll touchmove mousewheel', function(e) {
   e.preventDefault();
   e.stopPropagation();
   return false;
 });
 
 $('html, body').css({'overflow': 'auto', 'height': '100%'});
-$('.xi-bars').off('scroll touchmove mousewheel');
+$('.bars').off('scroll touchmove mousewheel');
 
 
 
@@ -98,20 +98,20 @@ $(window).on('resize', function(){
 
 
 //----------- 서치메뉴
-$('.right_menu .xi-search').on('click', function(){
+$('.right_menu .s_btn').on('click', function(){
   $('.search_background').show();
 });
 
-$('.search .xi-close').on('click', function(){
+$('.search .close').on('click', function(){
   $('.search_background').hide();
 });
 
-$('.right_menu .xi-search').on('click', function(){
+$('.right_menu .s_btn').on('click', function(){
   $('.search').toggleClass('on');
   $(this).toggleClass('on');
 });
 
-$('.xi-close').on('click', function(){
+$('.close').on('click', function(){
   $('.search').toggleClass('on');
   $(this).toggleClass('on');
 });
