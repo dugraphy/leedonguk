@@ -22,8 +22,10 @@ body {font-size: 0.8rem;}
 
 .top_nav ol {display: flex;}
 .top_nav ol>li a {font-size: 0.7rem; font-weight: 300;}
-.top_nav ol>li~li a:before {content: ""; display: inline-block; width: 1px; height: 0.4rem; margin: 0 0.3rem;  background: #ddd;}
+.top_nav ol>li~li a:before {content: ""; display: inline-block; width: 1px; height: 0.4rem; margin: 0 0.3rem;  background: #fff;}
 .top_nav ol>li a i {vertical-align: text-bottom; font-size: 1rem;}
+/* .top_nav ol>.category .list_bars {width: 0.8rem; font-size: 0;} */
+.top_nav ol>.category .list_bars img {width: 0.8rem; font-size: 0;}
 
 .mopen {display: none;}
 
@@ -286,6 +288,7 @@ body {font-size: 0.8rem;}
     .header .search {display: block; position: fixed; top: 0; right: 17vw; opacity: 0; z-index: 1000;}
     .header .search.on {opacity: 1;transition: 0.5s 0.2s;}
     .header .search input {outline: none; width: 30vw; height: 1.5rem; border: 1px solid #333 ; border-radius: 50px;}
+
     .header .search button {border: none; background: none;}
 
     .top_nav ol {display: flex; padding-right:2.25rem;}
@@ -295,7 +298,7 @@ body {font-size: 0.8rem;}
     .top_nav ol>li~li a::before {content: ""; display: none; width: 1px; height: 0.4rem; margin: 0 0.3rem;  background: #ddd;}
     .top_nav ol>.category {display: none; vertical-align: sub; font-size: 0.8rem;}
 
-    .mopen {display: block; position: fixed; top: 1.75rem; right: 0.75rem; font-size: 1rem; padding: 5px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; color: #333; z-index: 1000;}
+    .mopen {display: block; position: fixed; top: 1.75rem; right: 0.75rem; width: 1rem; padding: 5px; background: rgba(255, 255, 255, 0.5); border-radius: 50%; color: #333; z-index: 1000;}
 
 
     .bottom_menu {position: fixed; top: 0; right: -100%; background: #fff; border-left: 1px solid #ddd; width:calc(100% - 20%); height: 100vh; z-index: 998;}

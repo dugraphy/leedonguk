@@ -21,21 +21,21 @@ $('.gnb>li>a').on('click', function(e){
       $('.mypage').toggleClass('on');
   });
 
-  $('.top_nav .xi-bars').on('click', function(){
+  $('.top_nav .list_bars').on('click', function(){
    $(this).toggleClass('on');
    $('.pc_bottom_menu').toggleClass('on');
  });
 
  
 $('body').css({'overflow': 'hidden', 'height': '100%'});
-$('.xi-bars').on('scroll touchmove mousewheel', function(e) {
+$('.list_bars').on('scroll touchmove mousewheel', function(e) {
   e.preventDefault();
   e.stopPropagation();
   return false;
 });
 
 $('body').css({'overflow': 'auto', 'height': '100%'});
-$('.xi-bars').off('scroll touchmove mousewheel');   
+$('.list_bars').off('scroll touchmove mousewheel');   
 
 
     $(window).on('resize',function(){
