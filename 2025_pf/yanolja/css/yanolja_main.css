@@ -13,18 +13,20 @@
 
 #header .right_icon ul {display: flex; justify-content: center;}
 #header .right_icon ul>li>a {display: block; font-size: 18px; font-weight: 300;}
+#header .right_icon ul>li>a>img { content: url(../img/search_w.png); width: 20px;}
+#header.on .right_icon ul>li>a>img { content: url(../img/search_b.png); width: 20px;}
 #header .right_icon ul>li:first-child {padding: 0 15px}
 #header .right_icon ul>li~li {position: relative; padding-left: 15px}
 #header .right_icon ul>li~li:before {content: ""; display: block; position: absolute; top: 50%; left: 0; width: 1px; height: 15px; background: #ccc; transform: translate(0, -50%);}
 
 #header .mopen {display: none;}
 
-
+#main_slider {position: relative;}
 #main_slider figure {height: 800px;}
 #main_slider .main01 {background: url(../img/main_visual01.jpg) no-repeat center center/cover;}
 #main_slider .container {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1200px; padding: 0 15px; text-align: center;}
 #main_slider h2 {font-size: 30px; font-weight: 500; letter-spacing: -0.025em; color: #fff;}
-#main_slider .container>a {display: block; width: 170px; border: 1px solid #fff; border-radius: 25px;margin: 50px auto 100px auto; line-height: 50px; color: #fff; transition: 0.2s;}
+#main_slider .container>a {display: block; width: 170px; border: 1px solid #fff; border-radius: 25px;margin: 50px auto; line-height: 50px; color: #fff; transition: 0.2s;}
 #main_slider .container>a:hover {background: #fff; color: #ff3478; transition: 0.2s;}
 
 #section01 {padding: 100px 0;}
