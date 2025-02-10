@@ -223,24 +223,24 @@ $('.list_bars').off('scroll touchmove mousewheel');
 
 
 
-$('.product02 .main_pd i.xi-arrow-left').on('click', function(){
+$('.product02 .main_pd .left').on('click', function(){
    $('.pr_slider01').slick('slickPrev');
 });
-$('.product02 .main_pd i.xi-arrow-right').on('click', function(){
+$('.product02 .main_pd .right').on('click', function(){
    $('.pr_slider01').slick('slickNext');
 });
 
-$('.product03 .main_pd i.xi-arrow-left').on('click', function(){
+$('.product03 .main_pd .left').on('click', function(){
    $('.pr_slider02').slick('slickPrev');
 });
-$('.product03 .main_pd i.xi-arrow-right').on('click', function(){
+$('.product03 .main_pd .right').on('click', function(){
    $('.pr_slider02').slick('slickNext');
 });
 
-$('.product04 .main_pd i.xi-arrow-left').on('click', function(){
+$('.product04 .main_pd .left').on('click', function(){
    $('.pr_slider03').slick('slickPrev');
 });
-$('.product04 .main_pd i.xi-arrow-right').on('click', function(){
+$('.product04 .main_pd .right').on('click', function(){
    $('.pr_slider03').slick('slickNext');
 });
   
