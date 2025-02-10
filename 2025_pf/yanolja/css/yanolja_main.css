@@ -154,7 +154,8 @@
     #header .right_icon ul>li~li:before {content: ""; display: block; position: absolute; top: 50%; left: 0; width: 1px; height: 15px; background: #ccc; transform: translate(0, -50%);}
     
     #header .right_icon .mopen {display: block;margin-left: 15px;}
-    
+    #header .right_icon .mopen .bars {content: url(../img/bars_w.png); width: 15px;}
+    #header.on .right_icon .mopen .bars {content: url(../img/bars_b.png); width: 15px;}
     
     #main_slider {position: relative;}
     #main_slider figure {height: 400px;}
