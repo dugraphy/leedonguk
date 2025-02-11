@@ -19,14 +19,15 @@ body {font-size: 0.8rem;}
 
 .section01 {padding: 0 0 0 5rem;}
 .section01 .container {width: 100%; height: calc(100vh - 5rem); overflow: hidden;}
+.section01 .container video {width: 100%;}
 
 
 
 
 .section02 {padding: 0 0 0 5rem;}
 .section02 .container {margin: 0 auto}
-.section02 .container .link .icon {display: flex; justify-content: space-between;border: 1px solid #ccc;}
-.section02 .container .link .icon a {display: inline-block; width: 16rem; height: 4rem; background: #fff; padding: 0.25rem 0.5rem 0.25rem 2rem; position: relative;}
+.section02 .container .link .icon {display: flex;border: 1px solid #ccc;}
+.section02 .container .link .icon a {display: inline-block; width: 100%; height: 4rem; background: #fff; padding: 0.25rem 0.5rem 0.25rem 2rem; position: relative;}
 .section02 .container .link .icon a~a::before {content: ""; display: block; width: 1px; height: 4rem; background: #ccc; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
 .section02 .container .link .icon .last { margin: 0}
 .section02 .container .link .icon a:after {content: ""; display: inline-block; height: 100%; line-height: 0; vertical-align: middle; font-size: 0; margin: 0; padding: 0; border: 0;}
@@ -61,7 +62,7 @@ body {font-size: 0.8rem;}
 .section03 .con02_left .title span {display: block; font-size: 1.2rem; font-weight: 400; margin-bottom: 1.5rem;} 
 .section03 .con02_left .title a {display: inline-block; font-size: 0.8rem; font-weight: 400;} 
 
-.section03 .con02_right {flex: 3}
+.section03 .con02_right {flex: 3; overflow: hidden;}
 .section03 .con02_right .tab_menu {display: flex; width: 100%; border-right: 1px solid #ccc;}
 .section03 .con02_right .tab_menu>li {position: relative; flex: 1; text-align: center; height: 7rem; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;}
 .section03 .con02_right .tab_menu>li .img01 {display: block; width: 5rem; height: 5rem; margin: 1rem auto; background: url(../img/school_icon_01.png) no-repeat center center/cover;}
@@ -76,12 +77,13 @@ body {font-size: 0.8rem;}
 .section03 .con02_right .tab_menu>li.on a {background: #fff;}
 .section03 .con02_right .tab_menu>li.on h4 {display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.2rem; font-weight: 700;}
 
-.section03 .con02_right .tab_content {position: relative; height: 21.6rem; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; overflow: hidden;}
+.section03 .con02_right .tab_content {position: relative; height: 100%; border-right: 1px solid #ccc; overflow: hidden;}
 .section03 .con02_right .tab_content>div {opacity: 0; visibility: hidden; width: 100%; height: 100%; position: absolute; top:0; left:0; transform:translateY(200px); transition: 0.5s;}
 .section03 .con02_right .tab_content>div.on {opacity: 1; transform:translateY(0); visibility: visible;}
+.section03 .con02_right .tab_content figure {height: inherit;}
 .section03 .con02_right .tab_content figure img {width: 100%; height: 100%;}
 
-.section03 .con02_right .tab_content .more {display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center;}
+.section03 .con02_right .tab_content .more {display: block; position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center;}
 .section03 .con02_right .tab_content .more span {display: block;font-size: 1rem; font-weight: 400; margin-bottom: 0.8rem; letter-spacing: 0.25em;}
 .section03 .con02_right .tab_content .more em {display: block;font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; letter-spacing: 0.15em}
 .section03 .con02_right .tab_content .more a {font-size: 0.8rem; font-weight: 400;}
@@ -90,15 +92,15 @@ body {font-size: 0.8rem;}
 .section04 {padding: 2.5rem 1rem 5rem 5rem;}
 .section04 .newsroom {display: flex;}
 .section04 .con03_left {flex: 3; display: flex; flex-flow: row wrap;margin: 0 auto;}
-.section04 .con03_left .news {border: 1px solid #ccc; width: 32.5rem;}
+.section04 .con03_left .news {border: 1px solid #ccc; width: 45%;}
 .section04 .con03_left .news01 {margin: 0 0.5rem 0.5rem 0}
 .section04 .con03_left .news02 {margin: 0 0 0.5rem 0.5rem}
 .section04 .con03_left .news03 {margin: 0.5rem 0.5rem 0 0}
 .section04 .con03_left .news04 {margin: 0.5rem 0 0 0.5rem}
 
-.section04 .con03_left .news span {display: block;font-size: 1.2rem; font-weight: 700; line-height: 1.5; text-align: left; padding: 0 5rem; margin: 2.5rem 0}
+.section04 .con03_left .news span {display: block;font-size: 1.2rem; font-weight: 700; line-height: 1.5; text-align: left; padding: 0 5rem; margin: 5rem 0 2.5rem 0}
 .section04 .con03_left .news em {display: inline-block; font-size: 0.75rem; font-weight: 300;padding: 0 5rem; position: relative;}
-.section04 .con03_left .news em:after {content: ""; display: block; width: 51px; height: 12px; background-image: url(../img/arrows_img01.png); background-repeat: no-repeat; background-size: contain; position: absolute; top: 0; left: 22.4rem; transform: translateX(100%);}
+.section04 .con03_left .news em:after {content: ""; display: block; width: 50px; height: 12px; background-image: url(../img/arrows_img01.png); background-repeat: no-repeat; background-size: contain; position: absolute; top: 0; left: 50%; transform: translateX(100%);}
 .section04 .con03_left .news:hover em:after {background-image: url(../img/hover_arrows_img01.png); background-repeat: no-repeat; background-size: contain;}
 
 .section04 .con03_right {flex: 1; position: relative; border: 1px solid #ccc; margin-left: 1rem;}
@@ -128,7 +130,7 @@ body {font-size: 0.8rem;}
 .section06 .con04_left .title a {display: inline-block; font-size: 0.8rem; font-weight: 400;} 
 
 .section06 .con04_right {flex: 3; position: relative}
-.section06 .con04_right .event_slider {display: block; width: 66.8rem; text-align: center;}
+.section06 .con04_right .event_slider {display: block; width: 66.8rem; text-align: center; margin: 0 auto;}
 .section06 .con04_right .event_slider figure {padding: 0 0.75rem; opacity: 0.3; transform: scale(0.7);transition: 0.2s;}
 .section06 .con04_right .event_slider figure.on {opacity: 1; transform: scale(1)}
 .section06 .con04_right .event_slider figure img {width: 100%;}
