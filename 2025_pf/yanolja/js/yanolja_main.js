@@ -74,10 +74,10 @@ $(function(){
          vertical:true,
      });
     
-     $('#notice i.xi-angle-left-thin').on('click', function(){
+     $('#notice i.left').on('click', function(){
          $('.notice_link').slick('slickPrev');
      });
-     $('#notice i.xi-angle-right-thin').on('click', function(){
+     $('#notice i.right').on('click', function(){
          $('.notice_link').slick('slickNext');
      });
      $('.notice_link').on("afterChange", function(event,slick,current){
