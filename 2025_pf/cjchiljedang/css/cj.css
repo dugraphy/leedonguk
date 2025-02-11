@@ -109,7 +109,7 @@ body {font-size: 0.8rem;}
 .introduce .descriptiont p {font-size: 0.9rem; font-weight: 400; letter-spacing: -0.025em;margin-bottom: 20px; line-height: 1.2rem; color:#fff;}
 .introduce .descriptiont a {color:#fff;}
 .introduce .descriptiont a:hover {color:#ff9700; transition: 0.4s;}
-.introduce .descriptiont a i {font-size: 1rem; padding: 5px; background: #aaa096; vertical-align: middle; margin-left: 10px;}
+.introduce .descriptiont a i {font-size: 1.2rem; padding: 5px; background: #aaa096; vertical-align: sub; margin-left: 10px;}
 
 .brands_logo .logo_slider {background: rgba(0, 0, 0, 0.4);}
 
@@ -132,7 +132,8 @@ body {font-size: 0.8rem;}
 .footer .top_footer .container .right .family_site {text-align: center;}
 
 .footer .top_footer .container .sns {text-align: center; margin: 0.75rem 0;}  
-.footer .top_footer .container .sns a i {display: inline-block; font-size: 1.5rem; margin: 0.5rem}  
+.footer .top_footer .container .sns a i {display: inline-block; margin: 0.5rem}  
+.footer .top_footer .container .sns a i>img {width: 1.5rem;}
 
 .footer .bottom_footer .container {display: block;}
 .footer .bottom_footer:before {content:""; display:inline-block; width:100% ;height: 1px; background: #aaa}
@@ -287,9 +288,8 @@ body {font-size: 0.8rem;}
     .footer .top_footer .container .right .family_site {text-align: center;}
 
     .footer .top_footer .container .sns {text-align: center; margin: 0}  
-    .footer .top_footer .container .sns a i {display: inline-block; font-size: 1.5rem; margin: 0 0 0 0.75rem}  
-
-
+    .footer .top_footer .container .sns a i {display: inline-block; margin: 0 0 0 0.75rem}  
+    .footer .top_footer .container .sns a i>img {width: 1.5rem;}
 
     .footer .bottom_footer .container {display: block;}
     .footer .bottom_footer::before {content:""; display:inline-block; width:100% ;height: 1px; background: #aaa}
