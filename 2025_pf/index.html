@@ -24,7 +24,6 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
     <script src="./js/main.js?ver=1.6"></script> <!-- 메인JS 최종 수정 25.01.15 -->
 </head>
-
 <body>
     <header id="header">
         <div class="inner flex">
@@ -106,11 +105,11 @@
                 </div>
             </div>
             <div class="right">
-                <div data-aos="fade-up" data-aos-duration="150"><img src="./img/confirm.jpg" alt=""></div>
-                <div data-aos="fade-up" data-aos-duration="150"><img src="./img/jiune.jpg" alt=""></div>
-                <div data-aos="fade-up" data-aos-duration="150"><img src="./img/loar.jpg" alt=""></div>
-                <div data-aos="fade-up" data-aos-duration="150"><img src="./img/onzy.jpg" alt=""></div>
-                <div data-aos="fade-up" data-aos-duration="150"><img src="./img/loar_logo.jpg" alt=""></div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="200" data-aos-once="true"><img src="./img/confirm.jpg" alt=""></div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="200" data-aos-once="true"><img src="./img/jiune.jpg" alt=""></div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="200" data-aos-once="true"><img src="./img/loar.jpg" alt=""></div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="200" data-aos-once="true"><img src="./img/onzy.jpg" alt=""></div>
+                <div data-aos="fade-up" data-aos-offset="50" data-aos-duration="200" data-aos-once="true"><img src="./img/loar_logo.jpg" alt=""></div>
             </div>
         </div>
     </section>
@@ -425,6 +424,11 @@
         <div><img src="./img/sns/14/03.jpg" alt=""></div>
     </div>
 </div>
+
 <script>
-    AOS.init();
+    AOS.init({
+        once: true,
+        offset: 100,
+        duration: 500
+    });
 </script>
