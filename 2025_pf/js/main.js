@@ -108,94 +108,143 @@ $(function () {
       initializeSlider(); // 슬라이더 다시 초기화
     });
 
-  const section04 = document.querySelector(".sec-04"); // sec-04 섹션 선택
-  const content04 = section04.querySelector(".content"); // sec-04 콘텐츠 컨테이너
-  const loading04 = section04.querySelector(".loading"); // sec-04 로딩 컨테이너
-  
-  let totalItems04 = 30; // sec-04의 아이템 총 개수 제한
-  let loadedItems04 = 3; // sec-04의 초기 로드된 아이템 수 (3개로 시작)
-  const itemsPerRow04 = 3; // sec-04 한 줄에 아이템 개수
-  let isLoading04 = false; // sec-04 로딩 중인지 확인
-  
-  // 로드될 이미지 경로 리스트 (sec-04 전용)
-  const imagePaths04 = [
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-    "./img/loar_logo.jpg",
-  ]; // 필요하면 이미지를 더 추가
-  
-  // 더미 데이터를 생성하는 함수 (sec-04 전용)
-  function loadMoreItems04() {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        const newItems = [];
-        for (let i = 0; i < itemsPerRow04; i++) {
-          if (loadedItems04 >= totalItems04) break; // 아이템 수 제한 확인
-  
-          // 아이템 요소 생성
-          const item = document.createElement("div");
-          item.className = "pagination-item";
-  
-          // 이미지 추가
-          const img = document.createElement("img");
-          img.src = imagePaths04[loadedItems04 % imagePaths04.length]; // 순환적으로 이미지 사용
-          img.alt = `Poster ${loadedItems04 + 1}`;
-          img.style.width = "100%";
-          img.style.borderRadius = "20px";
-  
-          // 아이템에 이미지 추가
-          item.appendChild(img);
-          newItems.push(item);
-          loadedItems04++;
-        }
-        resolve(newItems);
-      }, 500); // 3초 지연 후 데이터 추가
+    var scrollPosition = 0; // 현재 스크롤 위치 저장 변수
+
+    // 스크롤 잠금 함수 (위치 유지)
+    function lockScroll() {
+      scrollPosition = $(window).scrollTop(); // 현재 스크롤 위치 저장
+      $('html, body').css({
+        position: 'fixed',
+        top: `-${scrollPosition}px`,
+        width: '100%'
+      });
+    }
+    
+    
+    const section04 = document.querySelector(".sec-04"); // sec-04 섹션 선택
+    const content04 = section04.querySelector(".content"); // sec-04 콘텐츠 컨테이너
+    const loading04 = section04.querySelector(".loading"); // sec-04 로딩 컨테이너
+    
+    let totalItems04 = 30; // 아이템 총 개수 제한
+    let loadedItems04 = 0; // 처음부터 JavaScript로 로드
+    const itemsPerRow04 = 3; // 한 줄에 3개씩 로드
+    let isLoading04 = false; // 로딩 중인지 확인
+    
+    // 현재 스크롤 위치 저장 변수
+    let scrollPosition1 = 0;
+
+    // 로드될 이미지 경로 리스트 (poster_1.jpg ~ poster_30.jpg)
+    const imagePaths04 = Array.from({ length: 30 }, (_, i) => `./img/poster/poster_${i + 1}.jpg`);
+
+    // 스크롤 잠금 (팝업 열릴 때)
+    function lockScroll() {
+      scrollPosition = window.scrollY; // 현재 스크롤 위치 저장
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollPosition1}px`;
+      document.body.style.width = '100%';
+    }
+    
+    // 스크롤 잠금 해제 (위치 유지)
+    function unlockScroll() {
+      $('html, body').css({
+        position: '',
+        top: '',
+        width: ''
+      });
+      $(window).scrollTop(scrollPosition1); // 저장된 위치로 복귀
+    }
+
+   // 더미 데이터를 생성하는 함수
+    function loadMoreItems04() {
+      return new Promise((resolve) => {
+          setTimeout(() => {
+              const newItems = [];
+              for (let i = 0; i < itemsPerRow04; i++) {
+                  if (loadedItems04 >= totalItems04) break;
+
+                  // 아이템 요소 생성
+                  const item = document.createElement("div");
+                  item.className = "pagination-item";
+
+                  // 이미지 추가
+                  const img = document.createElement("img");
+                  img.src = imagePaths04[loadedItems04 % imagePaths04.length]; // 순환적으로 이미지 사용
+                  img.alt = `Poster ${loadedItems04 + 1}`;
+                  img.style.width = "100%";
+                  img.style.borderRadius = "20px";
+
+                  // 클릭 시 팝업 열기 이벤트 추가
+                  img.addEventListener("click", function () {
+                      popup.style.display = "flex";  // 팝업 표시
+                      popupImg.src = img.src; // 클릭한 이미지의 src 값을 팝업 이미지로 설정
+                      lockScroll(); // 스크롤 잠금
+                  });
+
+                  // 아이템에 이미지 추가
+                  item.appendChild(img);
+                  newItems.push(item);
+                  loadedItems04++;
+              }
+              resolve(newItems);
+          }, 500);
+      });
+    }
+    
+    // 스크롤 이벤트 핸들러
+    async function onScroll04() {
+      const lastItem = content04.querySelector(".pagination-item:last-child");
+      if (!lastItem) return;
+
+      const lastItemRect = lastItem.getBoundingClientRect();
+      if (
+          lastItemRect.bottom <= window.innerHeight &&
+          !isLoading04 &&
+          loadedItems04 < totalItems04
+      ) {
+          isLoading04 = true;
+          loading04.style.display = "block";
+
+          const newItems = await loadMoreItems04();
+          newItems.forEach((item) => content04.appendChild(item));
+
+          loading04.style.display = "none";
+          isLoading04 = false;
+
+          if (loadedItems04 >= totalItems04) {
+              window.removeEventListener("scroll", onScroll04);
+              loading04.textContent = "No more items to load.";
+          }
+      }
+    }
+    
+   // 초기에 첫 3개 이미지 로드
+    async function init04() {
+      const firstItems = await loadMoreItems04();
+      firstItems.forEach((item) => content04.appendChild(item));
+
+      if (loadedItems04 < totalItems04) {
+          window.addEventListener("scroll", onScroll04);
+      }
+    }
+    
+    // 팝업 관련 코드
+    const popup = document.getElementById("poster-popup");
+    const popupImg = document.getElementById("popupImg");
+    const closeBtn = document.querySelector(".close");
+
+    // 팝업 닫기
+    closeBtn.addEventListener("click", function () {
+        popup.style.display = "none";
+        unlockScroll(); // 스크롤 원래 위치로 복귀
     });
-  }
-  
-// 스크롤 이벤트 핸들러
-async function onScroll04() {
-  const lastItem = content04.querySelector(".pagination-item:last-child"); // 마지막 아이템
-  if (!lastItem) return; // 아이템이 없으면 반환
 
-  // 마지막 아이템이 뷰포트 하단에 도달했는지 확인
-  const lastItemRect = lastItem.getBoundingClientRect();
-  if (
-    lastItemRect.bottom <= window.innerHeight && // 마지막 아이템이 화면 하단에 도달
-    !isLoading04 && // 로딩 중이 아닐 때만 실행
-    loadedItems04 < totalItems04 // 로드 가능한 아이템이 남아있을 때
-  ) {
-    isLoading04 = true; // 로딩 상태 설정
-    loading04.style.display = "block"; // 로딩 표시
-    document.body.style.overflow = "hidden"; // 스크롤 비활성화
-
-    const newItems = await loadMoreItems04();
-    newItems.forEach((item) => content04.appendChild(item));
-
-    loading04.style.display = "none"; // 로딩 숨김
-    isLoading04 = false; // 로딩 상태 초기화
-    document.body.style.overflow = "auto"; // 스크롤 활성화
-
-    // 모든 아이템 로드 완료 시 스크롤 이벤트 제거
-    if (loadedItems04 >= totalItems04) {
-      window.removeEventListener("scroll", onScroll04);
-      loading04.textContent = "No more items to load.";
-    }}
-  }
-
-// 초기화 함수
-function init04() {
-  if (loadedItems04 < totalItems04) {
-    window.addEventListener("scroll", onScroll04); // 스크롤 이벤트 등록
-  }
-}
+    // 팝업 바깥 클릭 시 닫기
+    popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+            unlockScroll(); // 스크롤 원래 위치로 복귀
+        }
+    });
 
 // 초기화 실행
 init04();
