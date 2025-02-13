@@ -437,6 +437,7 @@ body::-webkit-scrollbar-thumb {
     border: none;
     box-shadow: none;
     background: transparent;
+    margin-bottom: 0;
   }
   #sec.sec-03 .inner .box figure {
     padding: 50px 0;
@@ -883,7 +884,55 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
- 
+#poster-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+#poster-popup  .popup-content {
+    max-width: 30%;
+}
+#poster-popup .close {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 999;
+}
+@media (max-width:768px) {
+    #poster-popup {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+    #poster-popup  .popup-content {
+        max-width: 90%;
+    }
+    #poster-popup .close {
+        position: absolute;
+        top: 20px;
+        right: 16px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 999;
+    }
+}
+
 .pop-img {
     visibility: hidden;
     position: fixed;
