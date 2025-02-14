@@ -64,7 +64,7 @@ $(function () {
 
     // 공통 슬라이더 설정
     function initializeSlider() {
-      $('.sec-03 .left-box .slider').bxSlider({
+      $('#sec-03 .left-box .slider').bxSlider({
         mode: 'vertical',
         shrinkItems: true,
         slideWidth: getSlideWidth(), // 동적으로 너비 설정
@@ -75,7 +75,7 @@ $(function () {
         speed: 10000,
       });
   
-      $('.sec-03 .right-box .slider').bxSlider({
+      $('#sec-03 .right-box .slider').bxSlider({
         mode: 'vertical',
         shrinkItems: true,
         slideWidth: getSlideWidth(), // 동적으로 너비 설정
@@ -98,7 +98,7 @@ $(function () {
   
     // 창 크기 변경 시 슬라이드 크기 재조정
     $(window).resize(function () {
-      $('.sec-03 .slider').each(function () {
+      $('#sec-03 .slider').each(function () {
         const sliderInstance = $(this).data('bxSlider'); // 기존 bxSlider 인스턴스 가져오기
         if (sliderInstance) {
           sliderInstance.destroySlider(); // 기존 슬라이더 삭제
@@ -121,7 +121,7 @@ $(function () {
     }
     
     
-    const section04 = document.querySelector(".sec-04"); // sec-04 섹션 선택
+    const section04 = document.querySelector("#sec-04"); // sec-04 섹션 선택
     const content04 = section04.querySelector(".content"); // sec-04 콘텐츠 컨테이너
     const loading04 = section04.querySelector(".loading"); // sec-04 로딩 컨테이너
     
@@ -250,7 +250,7 @@ $(function () {
 init04();
 
 
-var slider = $('.sec-05 .slider').bxSlider({
+var slider = $('#sec-05 .slider').bxSlider({
   auto: true,
   slideWidth: 300,
   slideMargin: 10,
