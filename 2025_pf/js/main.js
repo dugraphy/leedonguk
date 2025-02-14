@@ -171,7 +171,7 @@ $(function () {
                   img.src = imagePaths04[loadedItems04 % imagePaths04.length]; // 순환적으로 이미지 사용
                   img.alt = `Poster ${loadedItems04 + 1}`;
                   img.style.width = "100%";
-                  img.style.borderRadius = "10px";
+                  img.style.borderRadius = "5px";
 
                   // 클릭 시 팝업 열기 이벤트 추가
                   img.addEventListener("click", function () {
