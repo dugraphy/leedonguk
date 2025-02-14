@@ -310,7 +310,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
 }
 #sec-01 .inner .right div img {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 @media (max-width:768px) {
     #sec-01 .inner {
@@ -368,7 +368,7 @@ body::-webkit-scrollbar-thumb {
         margin-left: auto;
     }
     #sec-01 .inner .right div img {
-        border-radius: 20px;
+        border-radius: 10px;
     }
 }
 
@@ -390,7 +390,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
 }
 #sec-02 .inner .img-box img {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 @media (max-width:768px) {
     #sec-02 {
@@ -421,7 +421,7 @@ body::-webkit-scrollbar-thumb {
         margin: 0 0 20px 10px;
     }
     #sec-02 .inner .img-box img {
-        border-radius: 20px;
+        border-radius: 10px;
     }
 }
 
@@ -445,7 +445,7 @@ body::-webkit-scrollbar-thumb {
 #sec-03 .inner .box figure img {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 #sec-03 .inner .box .bx-wrapper .bx-viewport {
     width: 100% !important;
@@ -477,13 +477,19 @@ body::-webkit-scrollbar-thumb {
         border: none;
         box-shadow: none;
         background: transparent;
+        margin-bottom: 0;
     }
     #sec-03 .inner .box {
       width: 100%;
     }
     #sec-03 .inner .box figure {
         padding: 20px 0;
-    }  
+    }
+    #sec-03 .inner .box figure img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
     #sec-03 .inner .center-box .title {
       font-size: 0.9rem;
       line-height: 1.5rem;
@@ -520,7 +526,7 @@ body::-webkit-scrollbar-thumb {
     width: 33.3%;
 }
 #sec-04 .inner .pagination .content .pagination-item img {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 #sec-04 .inner .pagination .loading {
     width: 100px;
@@ -562,7 +568,7 @@ body::-webkit-scrollbar-thumb {
         width: 33%;
     }
     #sec-04 .inner .pagination .content .pagination-item img {
-        border-radius: 20px;
+        border-radius: 10px;
     }
     #sec-04 .inner .pagination .loading {
         width: 100px;
@@ -679,7 +685,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
 }
 #sec-06 .inner .profile .img-box img {
-    border-radius: 20px;
+    border-radius: 10px;
 }
 #sec-06 .inner .profile .text {
     margin: auto 0 auto 50px;
@@ -746,7 +752,7 @@ body::-webkit-scrollbar-thumb {
         flex: 1;
     }
     #sec-06 .inner .profile .img-box img {
-        border-radius: 20px;
+        border-radius: 10px;
     }
     #sec-06 .inner .profile .text {
         margin: auto 0 auto 30px;

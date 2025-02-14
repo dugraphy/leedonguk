@@ -131,7 +131,7 @@ $(function () {
     let isLoading04 = false; // 로딩 중인지 확인
     
     // 현재 스크롤 위치 저장 변수
-    let scrollPosition1 = 0;
+    let scrollPosition01 = 0;
 
     // 로드될 이미지 경로 리스트 (poster_1.jpg ~ poster_30.jpg)
     const imagePaths04 = Array.from({ length: 30 }, (_, i) => `./img/poster/poster_${i + 1}.jpg`);
@@ -140,7 +140,7 @@ $(function () {
     function lockScroll() {
       scrollPosition = window.scrollY; // 현재 스크롤 위치 저장
       document.body.style.position = 'fixed';
-      document.body.style.top = `-${scrollPosition1}px`;
+      document.body.style.top = `-${scrollPosition01}px`;
       document.body.style.width = '100%';
     }
     
@@ -151,7 +151,7 @@ $(function () {
         top: '',
         width: ''
       });
-      $(window).scrollTop(scrollPosition1); // 저장된 위치로 복귀
+      $(window).scrollTop(scrollPosition01); // 저장된 위치로 복귀
     }
 
    // 더미 데이터를 생성하는 함수
@@ -171,7 +171,7 @@ $(function () {
                   img.src = imagePaths04[loadedItems04 % imagePaths04.length]; // 순환적으로 이미지 사용
                   img.alt = `Poster ${loadedItems04 + 1}`;
                   img.style.width = "100%";
-                  img.style.borderRadius = "20px";
+                  img.style.borderRadius = "10px";
 
                   // 클릭 시 팝업 열기 이벤트 추가
                   img.addEventListener("click", function () {
