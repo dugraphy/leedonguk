@@ -256,7 +256,7 @@ body::-webkit-scrollbar-thumb {
 
 #sec-01 .inner {
     position: relative;
-    height: 300vh;
+    height: 250vh;
     overflow: visible;
 }
 #sec-01 .inner .left {
@@ -312,6 +312,12 @@ body::-webkit-scrollbar-thumb {
 #sec-01 .inner .right div img {
     border-radius: 10px;
 }
+#sec-01 .inner .right div .loar-img {
+    content: url(../img/loar.jpg);
+}
+#sec-01 .inner .right div .loar-img:hover {
+    content: url(../img/loar-guide.jpg);
+}
 @media (max-width:768px) {
     #sec-01 .inner {
         position: relative;
@@ -361,7 +367,7 @@ body::-webkit-scrollbar-thumb {
         right: 0;
     }
     #sec-01 .inner .right div {
-        width: 50%;
+        width: 100%;
         padding: 20px 0;
     }
     #sec-01 .inner .right div:nth-child(2n) {
