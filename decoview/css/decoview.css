@@ -329,9 +329,9 @@ body {font-size: 0.8rem;}
     .main_slider .text {display: block; position: relative; text-align: center; padding-top:20%}
 
 
-    .main_slider .text p {font-size: 1.5rem;font-weight: 100; letter-spacing: 0.1em;line-height: 2; color: #fff;}
-    .main_slider .text h2 {font-size: 2.5rem;font-weight: 500; letter-spacing: 0.05em; margin-bottom: 2rem;  color: #fff;}
-    .main_slider .text strong {font-size: 1rem; font-weight: 300; letter-spacing: -0.025em; line-height: 2; color: #fff;}
+    .main_slider .text p {font-size: 1rem;font-weight: 100; letter-spacing: 0.1em;line-height: 2; color: #fff;}
+    .main_slider .text h2 {font-size: 1.5rem;font-weight: 500; letter-spacing: 0.05em; margin-bottom: 2rem;  color: #fff;}
+    .main_slider .text strong {font-size: 0.9rem; font-weight: 300; letter-spacing: -0.025em; line-height: 2; color: #fff;}
     .main_slider .text span {font-size: 0.75rem;color:#fff; margin-top: 2rem;}
     .main_slider .text a {font-size: 1rem;color:#fff; margin-top: 1rem;}
 
