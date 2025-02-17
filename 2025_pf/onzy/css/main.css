@@ -483,10 +483,7 @@
 }
 #lecture:before {
     content: "";
-    background-image: url(../img/main/lecture_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: inherit;
-    background-size: cover;
+    background: url(../img/main/lecture_bg.jpg) no-repeat 100% 50%;
     position: absolute;
     top: 0;
     right: 0;
@@ -541,10 +538,7 @@
     }
     #lecture:before {
         content: "";
-        background-image: url(../img/main/lecture_bg.jpg);
-        background-repeat: no-repeat;
-        background-position: inherit;
-        background-size: cover;
+        background: url(../img/main/lecture_bg.jpg) no-repeat 100% 100%/cover;
         position: absolute;
         top: 0;
         right: 0;
@@ -689,9 +683,6 @@
 #sec01 .banner {
     position: relative;
 }
-#sec01 .banner img {
-    width: 100%;
-}
 #sec01 .banner>h3 {
     position: absolute;
     top:50%;
@@ -709,9 +700,6 @@
 }
 #sec01 .history {
     position: relative;
-}
-#sec01 .history figure>img {
-    width: 100%;
 }
 #sec01 .history .certification01 {
     position: absolute;
@@ -897,9 +885,6 @@
         overflow: hidden;
         z-index: 1;
     }
-    #sec01 .banner img {
-        width: 100%;
-    }
     #sec01 .banner>h3 {
         position: absolute;
         top:50%;
@@ -920,9 +905,6 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
-    }
-    #sec01 .history figure>img {
-        width: 100%;
     }
     #sec01 .history .certification01 {
         position: absolute;
@@ -1083,7 +1065,7 @@
 
 #sec02 {
     background: url(../img/main/sec02_bg.jpg) no-repeat left bottom/50%;
-    height: 800px;
+    height: 1228px;
 }
 #sec02 .container {
     width: 1338px;
@@ -1187,7 +1169,7 @@
 }
 @media all and (max-width: 700px) {
     #sec02 {
-        background: url(../img/main/sec02_bg.jpg) no-repeat left 20%/100%;
+        background: url(../img/main/sec02_bg.jpg) no-repeat left 0/100%;
         height: auto;
     }
     #sec02 .link {
@@ -1305,21 +1287,12 @@
 
 #sec03 figure {
     position: relative;
-    height: 1300px;
-    overflow: hidden;
 }
 #sec03 figure::before {
     content: "";
-    background: url(../img/main/sec03_top_bg.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    background: url(../img/main/sec03_top_bg.png) no-repeat center top/cover;
     display: block;
-    width: 100%;
     height: 100px;
-}
-#sec03 figure>img {
-    width: 100%;
 }
 #sec03 figure .title {
     position: absolute;
@@ -1387,13 +1360,15 @@
     #sec03 figure {
         position: relative;
         overflow: hidden;
-        height: 120vh;
     }
     #sec03 figure::before {
         content: "";
         background: url(../img/main/sec03_top_bg.png) no-repeat center top/cover;
         display: block;
         height: 70px;
+    }
+    #sec03 figure>img {
+        height: 100vh;
     }
     #sec03 figure .title {
         position: absolute;
@@ -1428,27 +1403,25 @@
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
         text-align: center;
     }
     #sec03 figure ul {
-        display: inline-block;
+        display: block;
     }
     #sec03 figure .clear {
         clear: both;
     }
     #sec03 figure li {
         float:left;
-        width: 50%;
-        margin: 0;
+        width: 40%;
+        margin: 5%;
         position: relative
     }
     #sec03 figure li>img {
         width: 100%;
     }
-    
-    
     #sec03 figure li .hover {
         position: absolute;
         top: 0px;
@@ -2084,9 +2057,6 @@
 }
 #sec07 .title {
     position: relative;
-}
-#sec07 .title>img {
-    width: 100%;
 }
 #sec07 .title>.txt {
     position: absolute;
