@@ -302,42 +302,92 @@ body::-webkit-scrollbar-thumb {
     bottom: 0;
     right: 0;
 }
-#sec-01 .inner .right div {
+#sec-01 .inner .right>div {
+    position: relative;
+    overflow: hidden;
     width: 50%;
-    padding: 50px 0;
+    margin: 100px 0;
 }
-#sec-01 .inner .right div:nth-child(2n) {
+#sec-01 .inner .right>div:nth-child(2n) {
     margin-left: auto;
 }
-#sec-01 .inner .right div img {
+#sec-01 .inner .right>div img {
     border-radius: 5px;
 }
-#sec-01 .inner .right div .confirm-img {
-    content: url(../img/confirm.jpg);
+#sec-01 .inner .right>div .text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10% 0;
+    transition: 0.5s;
 }
-#sec-01 .inner .right div .confirm-img:hover {
-    content: url(../img/confirm-guide.jpg);
+#sec-01 .inner .right>div .text .name {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
 }
-#sec-01 .inner .right div .jiune-img {
-    content: url(../img/jiune.jpg);
-    transition: all 0.5s;
+#sec-01 .inner .right>div .text .web {
+    display: block;
+    margin: 10px auto 15px auto;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #fff;
 }
-#sec-01 .inner .right div .jiune-img:hover {
-    content: url(../img/jiune-guide.jpg);
+#sec-01 .inner .right>div .text .time {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
 }
-#sec-01 .inner .right div .loar-img {
-    content: url(../img/loar.jpg);
-    transition: all 0.5s;
+#sec-01 .inner .right>div .text .line {
+    display: block;
+    margin: 15px auto;
+    width: 20%;
+    height: 3px;
+    background-color: #fff;
 }
-#sec-01 .inner .right div .loar-img:hover {
-    content: url(../img/loar-guide.jpg);
+#sec-01 .inner .right>div .text .contribution {
+    display: block;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
 }
-#sec-01 .inner .right div .onzy-img {
-    content: url(../img/onzy.jpg);
-    transition: all 0.5s;
+#sec-01 .inner .right>div .text .tool {
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 70%;
+    height: 30px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
 }
-#sec-01 .inner .right div .onzy-img:hover {
-    content: url(../img/onzy-guide.jpg);
+#sec-01 .inner .right>div:nth-child(1) .text {
+    background-color: #22284c;
+} 
+#sec-01 .inner .right>div:nth-child(2) .text {
+    background-color: #c8a774;
+} 
+#sec-01 .inner .right>div:nth-child(3) .text {
+    background-color: #beab9c;
+} 
+#sec-01 .inner .right>div:nth-child(4) .text {
+    background-color: #045c80;
+} 
+#sec-01 .inner .right>div:nth-child(5) .text {
+    background-color: #045c80;
+} 
+#sec-01 .inner .right>div:hover .text {
+    top: 0;
 }
 @media (max-width:768px) {
     #sec-01 .inner {
@@ -427,8 +477,8 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: 100%;
     left: 0;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.9);
@@ -440,8 +490,8 @@ body::-webkit-scrollbar-thumb {
 #sec-02 .inner .img-box .img p i {
     display: block;
     margin-top: 15px;
-    font-size: 0.75rem;
-    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 400;
 }
 #sec-02 .inner .img-box .img:hover p {
     top: 0;
@@ -525,25 +575,95 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     box-sizing: border-box;
 }
-#sec-03 .inner .box figure {
-    padding: 50px 0;
+#sec-03 .inner .box .reference figure {
+    position: relative;
+    overflow: hidden;
+    margin: 100px 0;
 }
-#sec-03 .inner .box figure img {
+#sec-03 .inner .box .reference figure img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
+#sec-03 .inner .box .reference .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.9);
+    padding-top: 40%;
+    transition: 0.5s;
+    visibility: hidden;
+}
+#sec-03 .inner .box .reference .text .name {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+#sec-03 .inner .box .reference .text .contribution {
+    display: block;
+    margin: 15px auto;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
+}
+#sec-03 .inner .box .reference .text .line {
+    display: block;
+    margin: 15px auto;
+    width: 20%;
+    height: 3px;
+    background-color: #fff;
+}
+#sec-03 .inner .box .reference .text .sales {
+    display: block;
+    margin: 15px auto;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
+}
+#sec-03 .inner .box .reference .text .review {
+    display: block;
+    margin: 15px auto;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
+}
+#sec-03 .inner .box .reference .text a {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+#sec-03 .inner .box .reference:hover .text {
+    visibility: visible;
+}
 #sec-03 .inner .right-box {
     transform: rotate(180deg);    
 }  
-#sec-03 .inner .right-box figure {
+#sec-03 .inner .right-box .reference figure {
     transform: rotate(180deg);
 }
-#sec-03 .inner .center-box .title {
+#sec-03 .inner .right-box .reference .text {
+    transform: rotate(180deg);
+}
+#sec-03 .inner .right-box .reference .text {
+    padding-bottom: 20%;
+}
+#sec-03 .inner .center-box .title>h2 {
     text-align: center;
     font-family: 's-core-dream-medium';
     font-size: 2rem;
     line-height: 4rem;
+}
+#sec-03 .inner .center-box .title>a {
+    text-align: center;
+    font-family: 's-core-dream-medium';
+    font-size: 0.7rem;
+    text-decoration: underline;
 }
 @media (max-width: 768px) {
     #sec-03 {
