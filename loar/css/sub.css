@@ -1,0 +1,2894 @@
+/* -------- SUB - 공통 -------- */
+.pc_br {
+    display: block;
+}
+
+.mo_br {
+    display: none;
+}
+
+@media all and (max-width: 700px) {
+    .pc_br {
+        display: none;
+    }
+
+    .mo_br {
+        display: block;
+    }
+}
+
+.sub_tit {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+.sub_tit_e {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 4px;
+}
+
+.tit {
+    margin-bottom: 70px;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.tit span {
+    font-family: 'SCDream_Bold';
+}
+
+.b_tit {
+    margin-bottom: 20px !important;
+}
+
+.b_sub_txt {
+    width: 60%;
+    margin: 0 auto 70px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+    color: #525252;
+}
+
+.program_tit {
+    width: 35%;
+    margin: 0 auto 35px;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'SCDream_Bold';
+    text-align: center;
+    background-color: #6b605d;
+}
+
+/* .tit span.red {
+    color: #cd2524;
+} */
+.txt_bottom {
+    margin-top: 70px;
+}
+
+.txt_bottom .text01 {
+    margin-bottom: 30px;
+    line-height: 35px;
+    font-size: 25px;
+    font-family: 'SCDream_Bold';
+    text-align: center;
+}
+
+.txt_bottom .text02 {
+    margin: 0 auto 30px;
+    width: 80%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.txt_bottom .text02 span {
+    font-family: 'SCDream_Bold';
+}
+
+.txt_bottom .text03 {
+    line-height: 35px;
+    font-size: 25px;
+    font-family: 'SCDream_Medium';
+    text-align: center;
+    color: #c4a589;
+}
+
+.c00_mo {
+    display: none;
+}
+
+@media all and (max-width: 1400px) {
+    .b_sub_txt {
+        width: 90%;
+    }
+
+    .program_tit {
+        width: 55%;
+    }
+
+    .c00_mo {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1060px) {
+    .tit {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .txt_bottom .text01 {
+        margin-bottom: 20px;
+        line-height: 25px;
+        font-size: 22px;
+    }
+
+    .txt_bottom .text02 {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .txt_bottom .text03 {
+        line-height: 30px;
+        font-size: 22px;
+    }
+
+    .c00_mo {
+        display: none;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .sub_tit {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .sub_tit_e {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 2px;
+    }
+
+    .tit {
+        font-size: 23px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+
+    .program_tit {
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .b_sub_txt {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .txt_bottom {
+        margin-top: 50px;
+    }
+
+    .txt_bottom .text01 {
+        font-size: 20px;
+    }
+
+    .txt_bottom .text02 {
+        width: 100%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .txt_bottom .text03 {
+        font-size: 20px;
+    }
+
+    .c00_mo {
+        display: block;
+    }
+}
+
+/* clinic-menu CSS */
+/* 서브 탑배너 이미지 */
+#top_banner {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* 클리닉 서브 하단 (공통) */
+#clinic-bottom ul li {
+    margin-top: 70px;
+}
+
+#clinic-bottom ul li img {
+    float: left;
+    width: 45%;
+}
+
+#clinic-bottom ul li.right img {
+    float: right;
+}
+
+#clinic-bottom ul li .text {
+    float: left;
+    width: 55%;
+    padding: 23px 50px;
+    box-sizing: border-box;
+}
+
+#clinic-bottom ul li.right .text {
+    padding: 50px 46px 50px 0;
+}
+
+#clinic-bottom ul li .text .text01 {
+    font-size: 35px;
+    line-height: 45px;
+    font-family: 'SCDream_Bold';
+}
+
+#clinic-bottom ul li .text .text02 {
+    margin: 20px 0 40px 0;
+    font-size: 22px;
+    color: #c4a589;
+    font-family: 'SCDream_Medium';
+}
+
+#clinic-bottom ul li .text .text03 {
+    line-height: 30px;
+}
+
+#clinic-bottom ul li .text .text03 span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: 1400px) {
+    #clinic-bottom ul li img {
+        width: 60%;
+    }
+
+    #clinic-bottom ul li .text {
+        width: 100%;
+        padding: 35px 0 0 0;
+    }
+
+    #clinic-bottom ul li.right .text {
+        text-align: right;
+        padding: 35px 0 0 0;
+    }
+}
+
+@media all and (max-width: 1060px) {
+    #clinic-bottom ul li img {
+        width: 100%;
+    }
+
+    #clinic-bottom ul li .text .text01 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    #clinic-bottom ul li .text .text02 {
+        margin: 15px 0 20px 0;
+    }
+
+    #clinic-bottom ul li.right .text {
+        text-align: left;
+    }
+
+    #clinic-bottom ul li .text .text03 {
+        line-height: 28px
+    }
+
+    #clinic-bottom ul li .text .text03 span {
+        margin-bottom: 10px
+    }
+}
+
+@media all and (max-width: 700px) {
+    #clinic-bottom ul li {
+        margin-top: 50px;
+    }
+
+    #clinic-bottom ul li .text .text01 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    #clinic-bottom ul li .text .text02 {
+        margin: 15px 0 20px 0;
+        font-size: 18px;
+    }
+
+    #clinic-bottom ul li .text .text03 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+#clinic_banner {
+    padding: 100px 0;
+    background-image: url(../images/sub/new_clinic/clinic_bottom_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#clinic_banner .text01 {
+    margin: 25px 0;
+    font-size: 32px;
+    color: #fff;
+    line-height: 40px;
+}
+
+#clinic_banner .text01 span {
+    color: #fff;
+    font-family: 'SCDream_Bold';
+}
+
+#clinic_banner .text01 span.brown {
+    color: #c4a589;
+    font-family: 'SCDream_Bold';
+}
+
+#clinic_banner .text02 {
+    color: #fff;
+    line-height: 30px;
+}
+
+@media all and (max-width: 1060px) {
+    #clinic_banner .text01 {
+        margin: 20px 0;
+        font-size: 28px;
+    }
+
+    #clinic_banner .text02 {
+        line-height: 28px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    #clinic_banner {
+        padding: 70px 0;
+    }
+
+    #clinic_banner .text01 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    #clinic_banner .text02 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+/* // 클리닉 서브 하단 (공통) */
+
+
+/* clinic-울써마지 CSS */
+.clinic_ulthermage_top {
+    background-image: url(../images/sub/new_clinic/clinic10_top_bg.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+#top_banner .sub_title {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+#top_banner .sub_title h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+#top_banner .sub_title h2 {
+    margin-bottom: 25px;
+    font-size: 42px;
+    font-family: 'SCDream_Bold';
+
+}
+#top_banner .sub_title .line {
+    display: block;
+    margin: 0 auto 50px;
+    width: 45px;
+    height: 2px;
+    background-color: #2f2f2f;
+}
+#top_banner .sub_title p {
+    margin: auto 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+@media all and (max-width: 1400px) {
+    .clinic_ulthermage_top {
+        background-position: 35%;
+    }
+}
+@media all and (max-width: 1060px) {
+    .clinic_ulthermage_top {
+        background-position: 15%;
+    }
+    #top_banner .sub_title {
+        padding: 50px 70px;
+        width: 60%;
+        background-color: rgba(255, 255, 255, 0.9)
+    }
+    #top_banner .sub_title h3 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    #top_banner .sub_title h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+    }
+    #top_banner .sub_title .line {
+        margin: 0 auto 30px;
+        width: 35px;
+    }
+    #top_banner .sub_title p br {
+        display: none;
+    }
+}
+@media all and (max-width: 700px) {
+    .clinic_ulthermage_top::after {
+        content: '';
+        position: absolute;
+        background: white;
+        z-index: 0;
+        inset: 0;
+        opacity: 0.4;
+      }
+    #top_banner .sub_title {
+        background-color: rgba(0,0,0,0);
+    }
+    #top_banner .sub_title {
+        padding: 30px 25px;
+        width: 90%;
+        box-sizing: border-box;
+    }
+    #top_banner .sub_title h3 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+    #top_banner .sub_title h2 {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }
+    #top_banner .sub_title p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+/* 이유있는 자신감 */
+#confidence {
+    margin-top: 100px;
+}
+#confidence .f_wrap .txt {
+    float: left;
+    width: 39%;
+    margin-top: 70px;
+}
+#confidence .text01 {
+    font-size: 38px;
+    color: #6a605e;
+    line-height: 48px;
+}
+#confidence .text01 span {
+    color: #6a605e;
+    font-family: 'SCDream_Bold';
+}
+#confidence .text02 {
+    margin-top: 30px;
+    line-height: 30px;
+}
+#confidence .f_wrap .img {
+    float: right;
+}
+@media all and (max-width: 1400px) {
+    #confidence .f_wrap .txt {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    #confidence .f_wrap .img {
+        width: 100%;
+    }
+    #confidence .f_wrap .img img {
+        display: block;
+        margin: 50px auto 0;
+    }
+}
+@media all and (max-width: 1060px) {
+    #confidence .text01 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    #confidence .text02 {
+        margin-top: 20px;
+        line-height: 28px;
+    }
+}
+@media all and (max-width: 700px) {
+    #confidence {
+        margin-top: 70px;
+    }
+    #confidence .text01 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    #confidence .text02 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #confidence .f_wrap .img img {
+        width: 90%;
+    }
+}
+/* 프로그램 */
+#program {
+    padding: 110px 0;
+    width: 100%;
+    background-image: url(../images/sub/new_clinic/clinic_program_bg.jpg);
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+#program .wrapper {
+    text-align: center;
+}
+#program .text01 {
+    color: #c4a589;
+    font-size: 25px;
+    font-family: 'SCDream_Medium';
+}
+#program .text02 {
+    margin: 20px 0 40px 0;
+    font-size: 32px;
+    font-family: 'SCDream_Bold';
+}
+#program .text02 span {
+    font-family: 'SCDream_Light';
+}
+#program .text03 {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+@media all and (max-width: 1400px) {
+    #program .text03 {
+        width: 80%;
+    }
+}
+@media all and (max-width: 1060px) {
+    #program .text01 {
+        font-size: 22px;
+    }
+    #program .text02 {
+        margin: 15px 0 25px 0;
+        font-size: 28px;
+    }
+    #program .text03 {
+        line-height: 28px;
+    }
+}
+@media all and (max-width: 700px) {
+    #program {
+        padding: 70px 0;
+    }
+    #program .text01 {
+        font-size: 20px;
+    }
+    #program .text02 {
+        font-size: 23px;
+    }
+    #program .text03 {
+        width: 100%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+/* 울써마지 리프팅 */
+#product {
+    padding: 100px 0;
+    background-color: #f8f6f4;
+}
+#product .title p {
+    font-size: 25px;
+}
+#product .title p,#product .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+#product .title h2 {
+    font-size: 32px;
+    font-family: 'SCDream_Bold';
+    margin: 20px 0 40px;
+}
+#product .main_box {
+    position: relative;
+    margin: 40px auto 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+#product .main_box img {
+    float: left;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+#product .main_box .txt {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    line-height: 30px;
+}
+#product .ulthermage_box {
+    position: relative;
+    margin: 40px auto 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+#product .ulthermage_box:first-of-type {
+    margin: 0 auto;
+}
+#product .ulthermage_box .txt {
+    float: left;
+    padding: 50px 0 50px 50px;
+    width: 57%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+#product .ulthermage_box .txt  h1 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: 'SCDream_Bold';
+}
+#product .ulthermage_box .txt h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'SCDream_Medium';
+    color: #c4a589;
+    line-height: 25px;
+}
+#product .ulthermage_box .txt > p {
+    margin-bottom: 30px;
+    font-size: 16.5px;
+    line-height: 25px;
+}
+#product .ulthermage_box .txt .point p {
+    float: left;
+    padding: 8px 25px;
+    margin-right: 10px;
+    font-size: 15px;
+    color: #6b605d;
+    background-color: #f2f2f2;
+    font-family: 'SCDream_Bold';
+}
+#product .ulthermage_box img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+}
+#product .ulthera_box {
+    position: relative;
+    margin: 15px auto 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+#product .ulthera_box .img {
+    float: left;
+    margin-left: 15%;
+}
+#product .ulthera_box .txt {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: 15%;
+    text-align: center;
+    line-height: 30px;
+}
+#product .ulthera_box .txt>h1 {
+    font-size: 20px;
+    font-family: 'SCDream_Bold';
+}
+#product .ulthera_box .txt>h1>span {
+    color: #e89933;
+}
+#product .thermage_box {
+    position: relative;
+    margin: 15px auto 0;
+    width: 80%;
+    border: 1px solid #ddd;
+    background-image: url(../images/sub/new_clinic/clinic10_img06_bg.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+#product .thermage_box .txt {
+    padding: 100px 0;
+    width: 57%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 30px;
+}
+#product .thermage_box .txt>h1 {
+    font-size: 20px;
+    font-family: 'SCDream_Bold';
+}
+#product .thermage_box .txt>h1>span {
+    color: #972e84;
+}
+#product .thermage_box img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
+
+@media all and (max-width: 1400px) {
+    #product .wrapper {
+        width: 1100px !important;
+    }
+}
+@media all and (max-width: 1060px) {
+    #product .wrapper {
+        width: 700px !important;
+    }
+    #product .tit {
+        font-size: 25px;
+    }
+    #product .t_txt {
+        width: 85%;
+    }
+    #product .ulthermage_box {
+        width: 90%;
+    }
+    #product .ulthermage_box .txt {
+        padding: 50px 0 35px 50px;
+        margin-right: 0;
+        width: 90%;
+    }
+    #product .ulthermage_box img {
+        position: inherit;
+    }
+}
+@media all and (max-width: 700px) {
+    #product {
+        padding: 70px 0;
+    }
+    #product .wrapper {
+        width: 90% !important;
+    }
+    #product .title p {
+        font-size: 20px;
+    }
+    #product .title h2 {
+        font-size: 23px;
+        margin: 15px 0 25px 0;
+    }
+    #product .t_txt {
+        width: 90%;
+        font-size: 16px;
+    }
+    #product .main_box {
+        width: 100%;
+    }
+    #product .main_box img {
+        float: none;
+        width: 100%;
+        margin-right: auto;
+    }
+    #product .main_box .txt {
+        position: inherit;
+        padding: 35px;
+        transform: none;
+        top:auto;
+        right: auto;
+    }
+    #product .main_box .txt > p {
+        font-size: 16px;
+    }
+    #product .ulthermage_box {
+        width: 100%;
+    }
+    #product .ulthermage_box .txt {
+        padding: 35px 0 35px 35px;
+    }
+    #product .ulthermage_box .txt > p {
+        font-size: 16px;
+    }
+    #product .ulthermage_box .txt .point p {
+        padding: 8px 15px;
+    }
+    #product .ulthermage_box img {
+        position: inherit;
+    }
+    #product .ulthera_box {
+        width: 100%;
+    }
+    #product .ulthera_box .img{
+        width: 100%;
+        float: none;
+        margin-left: auto;
+    }
+    #product .ulthera_box .txt{
+        position: inherit;
+        top: auto;
+        right: auto;
+        transform: none;
+        margin-right: auto;
+        padding: 35px;
+    }
+    #product .thermage_box {
+        width: 100%;
+        background-image: none;
+    }
+    #product .thermage_box .txt {
+        position: inherit;
+        padding: 35px;
+        width: 100%;
+    }
+    #product .thermage_box img {
+        position: inherit;
+    }
+}
+
+#effect {
+    padding: 110px 0;
+    width: 100%;
+    background-image: url(../images/sub/new_clinic/clinic_effect_bg.jpg);
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+#effect .title {
+    text-align: center;
+}
+#effect .title>p {
+    font-size: 25px;
+    font-family: 'SCDream_Medium';
+}
+#effect .title>h2 {
+    margin: 20px 0 40px 0;
+    font-size: 32px;
+    font-family: 'SCDream_Bold';
+}
+#effect .img {
+    display: flex;
+    justify-content: center;
+}
+#effect .img>figure {
+    margin-right: 20px;
+}
+#effect .img>figure:last-child {
+    margin-right: 0;
+}
+#effect .img figure>p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16.5px;
+    line-height: 25px;
+}
+#effect .img figure>p:after {
+    content:"";
+    display: block;
+    width: 2px;
+    height: 50px;
+    background: #beac9d;
+    margin: 20px auto;
+}
+#effect .img figure>p:before {
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #beac9d;
+    border-radius: 50%;
+}
+#effect .txt {
+    margin-top: 20px;
+    line-height: 30px;
+}
+#effect .txt p {
+    text-align: center;
+}
+
+@media all and (max-width: 700px) {
+    #effect {
+        padding: 70px 0;
+        background-position: 20%;
+    }
+    #effect .title>p {
+        font-size: 20px;
+    }
+    #effect .title>h2 {
+        font-size: 23px;
+    }
+    #effect .img {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #effect .img>figure {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    #effect .img>figure:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    #effect .img figure>p {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 16.5px;
+        line-height: 25px;
+    }
+    #effect .img figure>p:after {
+        display: none;
+    }
+    #effect .img figure>p:before {
+        display: none;
+    }
+
+    #effect .txt {
+        margin-top: 20px;
+        line-height: 30px;
+    }
+    #effect .txt p {
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+#genuine {
+    background-image: url(../images/sub/new_clinic/clinic10_genuine_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+#genuine .ulthera {
+    margin-bottom: 100px;
+}
+#genuine .title p {
+    font-size: 25px;
+}
+#genuine .title p,#genuine .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+#genuine .title h2 {
+    font-size: 32px;
+    font-family: 'SCDream_Bold';
+    margin: 20px 0 40px;
+}
+#genuine .ulthera .title h2>span {
+    font-family: 'SCDream_Bold';
+    color: #e89933;
+}
+#genuine .thermage .title h2>span {
+    font-family: 'SCDream_Bold';
+    color: #972e84;
+}
+#genuine .thermage .img {display: flex;
+    justify-content: space-between;
+}
+#genuine .thermage .img p {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: 'SCDream_Bold';
+    line-height: 1.5;
+    background: #972e84;
+    color: #fff;
+    text-align: center;
+}
+#genuine .thermage .txt p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ff0000;
+}
+#genuine .btn {
+    margin-top: 100px;
+}
+#genuine .ulthera .btn a {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #e89933;
+}
+#genuine .thermage .btn a {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #972e84;
+}
+#genuine .ulthera .btn p {
+    margin: 20px 0;
+    font-family: 'SCDream_Medium';
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #e89933;
+}
+#genuine .thermage .btn p {
+    margin: 20px 0;
+    font-family: 'SCDream_Medium';
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #972e84;
+}
+#genuine .ulthera .btn:hover a {
+    background: #e89933;
+}
+#genuine .thermage .btn:hover a {
+    background: #972e84;
+}
+#genuine .btn:hover a p {
+    color: #fff;
+}
+#genuine .btn:hover a p>span {
+    color: #fff;
+}
+@media (max-width:768px){
+    #genuine {
+        background-image: url(../images/sub/new_clinic/clinic10_genuine_bg.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        padding: 50px 0;
+    }
+    #genuine .title  p,#genuine .title h2 {
+        color: #2f2f2f; 
+        text-align: center;
+    }
+    #genuine .title p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    #genuine .title h2 {
+        font-size: 23px; 
+        font-family: 'SCDream_Bold'; 
+        margin: 15px 0 25px;
+    }
+    #genuine .title h2>span {
+        color: #972e84;
+    }
+    #genuine .ulthera .img figure {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #genuine .ulthera .img figure>img {
+        width: 100%;
+    }
+    #genuine .thermage .img {
+        display: flex; 
+        justify-content: space-between; 
+        flex-direction: column;
+        align-items: center;
+    }
+    #genuine .thermage .img figure {
+        width: 50%;
+    }
+    #genuine .thermage .img figure>img {
+        width: 100%;
+    }
+    #genuine .thermage .img p {
+        margin-bottom: 30px; 
+        padding: 10px 0; 
+        font-size: 14px; 
+        font-family: 'SCDream_Bold'; 
+        line-height: 1.5; 
+        background: #972e84; 
+        color: #fff; 
+        text-align: center;
+    }
+    #genuine .thermage .txt p {
+        font-size: 12px; 
+        line-height: 1.5; 
+        text-align: center; 
+        color: #ff0000;
+    }
+    #genuine .btn {
+        margin-top: 50px;
+    }
+    #genuine .ulthera .btn a {
+        display: block; 
+        width: 300px; 
+        margin: 0 auto; 
+        border: 1px solid #e89933;
+    }
+    #genuine .thermage .btn a {
+        display: block; 
+        width: 300px; 
+        margin: 0 auto; 
+        border: 1px solid #972e84;
+    }
+    #genuine .ulthera .btn p {
+        margin: 20px 0; 
+        font-family: 'SCDream_Medium'; 
+        font-size: 14px; 
+        line-height: 1.5; 
+        text-align: center; 
+        color: #e89933;
+    }
+    #genuine .thermage .btn p {
+        margin: 20px 0; 
+        font-family: 'SCDream_Medium'; 
+        font-size: 14px; 
+        line-height: 1.5; 
+        text-align: center; 
+        color: #972e84;
+    }
+}
+#lifting_process {
+    background-image: url(../images/sub/new_clinic/clinic10_process_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+#lifting_process .title p,#lifting_process .title h2 {
+    color: #fff;
+    text-align: center;
+}
+#lifting_process .title h2 {
+    font-size: 32px;
+    font-family: 'SCDream_Bold';
+}
+#lifting_process .title p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 20px 0 40px;
+}
+#lifting_process .img {
+    display: flex;
+    justify-content: space-between;
+}
+#lifting_process .img p {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+@media (max-width:768px){
+    #lifting_process {
+        background-image: url(../images/sub/new_clinic/clinic10_process_bg.jpg); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        padding: 50px 0;
+    }
+    #lifting_process .title  p,#lifting_process .title h2 {
+        color: #fff; 
+        text-align: center;
+    }
+    #lifting_process .title h2 {
+        font-size: 23px; 
+        font-family: 'SCDream_Bold';
+    }
+    #lifting_process .title p {
+        font-size: 14px; 
+        line-height: 1.5; 
+        margin: 15px 0 25px;
+    }
+    #lifting_process .img {
+        display: flex; 
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+    #lifting_process .img figure {
+        width: 48%;
+    }
+    #lifting_process .img figure>img {
+        width: 100%;
+    }
+    #lifting_process .img p {
+        margin-bottom: 30px; 
+        padding: 20px 0; 
+        font-size: 14px; 
+        line-height: 1.5; 
+        color: #fff; 
+        text-align: center;
+    }
+}
+#lifting {
+    background: #fff; 
+    padding: 150px 0;
+}
+#lifting .title p,#lifting .title h2 {
+    text-align: center;
+}
+#lifting .title p {
+    font-size: 25px; 
+    color: #2f2f2f;
+}
+#lifting .title h2 {
+    font-size: 32px; 
+    font-family: 'SCDream_Bold'; 
+    margin: 20px 0 40px; 
+    color: #972e84;
+}
+#lifting .title:after {
+    content: ""; 
+    display: block; 
+    width: 100px; 
+    height: 2px; 
+    background:#949494; 
+    margin: 100px auto; 
+    transform: rotate(-45deg);
+}
+#lifting .txt p {
+    font-size: 20px; 
+    line-height: 1.5; 
+    text-align: center;
+}
+#lifting .img {
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+}
+@media (max-width:768px){
+    #lifting {
+        background: #fff; 
+        padding: 50px 0 0;
+    }
+    #lifting .title p,#lifting .title h2 {
+        text-align: center;
+    }
+    #lifting .title p {
+        font-size: 20px; 
+        color: #2f2f2f;
+    }
+    #lifting .title h2 {
+        font-size: 23px; 
+        font-family: 'SCDream_Bold'; 
+        margin: 15px 0 25px; 
+        color: #972e84;
+    }
+    #lifting .title:after {
+        content: ""; 
+        display: block; 
+        width: 50px; 
+        height: 2px; 
+        background:#949494;
+        margin: 50px auto; 
+        transform: rotate(-45deg);
+    }
+    #lifting .txt p {
+        font-size: 14px; 
+        line-height: 1.5; 
+        text-align: center;
+    }
+    #lifting .img {
+        position: relative; 
+        bottom: 0; 
+        right: 0; 
+        width: 80%; 
+        margin-left: auto;
+    }
+    #lifting .img>img {
+        width: 100%;
+    }
+}
+#what {
+    background: rgba(232, 224, 214, 1); 
+    padding: 150px 0;
+}
+#what .wrapper {
+    z-index: 1;
+}
+#what .title p,#what .title h2 {
+    color: #2f2f2f; 
+    text-align: center;
+}
+#what .title p {
+    font-size: 25px;
+}
+#what .title h2 {
+    font-size: 32px; 
+    font-family: 'SCDream_Bold'; 
+    margin: 20px 0 40px;
+}
+#what .title h2>span {
+    color: #972e84;
+}
+#what .box {
+    width: 600px; 
+    background: rgba(255, 255, 255, 0.8); 
+    margin: 300px auto 0;
+}
+#what .box p {
+    font-size: 20px; 
+    color: #2f2f2f; 
+    text-align: center; 
+    line-height: 1.5; 
+    padding: 50px;
+}
+#what .img {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50% ,-50%);
+}
+@media (max-width:768px){
+    #what {
+        background: rgba(232, 224, 214, 1); 
+        padding: 50px 0 0;
+    }
+    #what .title p,#what .title h2 {
+        color: #2f2f2f; 
+        text-align: center;
+    }
+    #what .title p {
+        font-size: 20px;
+    }
+    #what .title h2 {
+        font-size: 23px; 
+        font-family: 'SCDream_Bold'; 
+        margin: 15px 0 25px;
+    }
+    #what .title h2>span {
+        color: #972e84;
+    }
+    #what .box {
+        width: 100%; 
+        background: rgba(255, 255, 255, 0.8); 
+        margin: 0 auto;
+    }
+    #what .box p {
+        font-size: 14px; 
+        color: #2f2f2f; 
+        text-align: center; 
+        line-height: 1.5; 
+        padding: 20px;
+    }
+    #what .img {
+        position: relative; 
+        bottom: 0; 
+        left: 0; 
+        transform: translateX(0);
+    }
+    #what .img>img {
+        width: 100%;
+    }
+}
+#anesthesia {
+    padding: 150px 0;
+}
+#anesthesia .title p,#anesthesia .title h2 {
+    color: #2f2f2f; 
+    text-align: center;
+}
+#anesthesia .title p {
+    font-size: 25px;
+}
+#anesthesia .title p>span {
+    color: #b80e0e;
+}
+#anesthesia .title h2 {
+    font-size: 32px; 
+    font-family: 'SCDream_Bold'; 
+    margin: 20px 0 40px;
+}
+#anesthesia .box {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+#anesthesia .box figure {
+    width: 32%; 
+    margin-bottom: 20px;
+}
+#anesthesia .txt {
+    background: rgba(232, 224, 214, 0.2);
+}
+#anesthesia .txt p {
+    font-size: 20px; 
+    color: #2f2f2f; 
+    text-align: center; 
+    line-height: 1.5; 
+    padding: 100px 0;
+}
+#anesthesia .txt p>span{
+    color: #b80e0e;
+}
+#anesthesia .img {
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+}
+#anesthesia .btn {
+    margin-top: 100px;
+}
+#anesthesia .btn a {
+    display: block; 
+    width: 300px; 
+    margin: 0 auto; 
+    border: 1px solid #2f2f2f;
+}
+#anesthesia .btn p {
+    margin: 20px 0; 
+    font-family: 'SCDream_Medium'; 
+    font-size: 20px; 
+    line-height: 1.5; 
+    text-align: center; 
+    color: #2f2f2f;
+}
+#anesthesia .btn p>span {
+    font-family: 'SCDream_Bold';
+}
+#anesthesia .btn:hover a {
+    background: #2f2f2f;
+}
+#anesthesia .btn:hover a p {
+    color: #fff;
+}
+#anesthesia .btn:hover a p>span {
+    color: #fff;
+}
+@media (max-width:768px){
+    #anesthesia {
+        padding: 50px 0;
+    }
+    #anesthesia .title p,#anesthesia .title h2 {
+        color: #2f2f2f; 
+        text-align: center;
+    }
+    #anesthesia .title p {
+        font-size: 20px;
+    }
+    #anesthesia .title p>span {
+        color: #b80e0e;
+    }
+    #anesthesia .title h2 {
+        font-size: 23px; 
+        font-family: 'SCDream_Bold';
+        margin: 15px 0 25px;
+    }
+    #anesthesia .box {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+    }
+    #anesthesia .box figure {
+        width: 32%; 
+        margin-bottom: 20px;
+    }
+    #anesthesia .box figure>img {
+        width: 100%;
+    }
+    #anesthesia .txt {
+        background: rgba(232, 224, 214, 0.2);
+    }
+    #anesthesia .txt p {
+        font-size: 14px; 
+        color: #2f2f2f; 
+        text-align: center; 
+        line-height: 1.5; 
+        padding: 20px 0;
+    }
+    #anesthesia .txt p>span{
+        color: #b80e0e;
+    }
+    #anesthesia .img {
+        position: relative; 
+        bottom: 0; 
+        right: 0; 
+        display: none;
+    }
+    #anesthesia .btn {
+        margin-top: 50px;
+    }
+    #anesthesia .btn a {
+        display: block; 
+        width: 300px; 
+        margin: 0 auto; 
+        border: 1px solid #2f2f2f;
+    }
+    #anesthesia .btn p {
+        margin: 20px 0; 
+        font-family: 'SCDream_Medium'; 
+        font-size: 14px; 
+        line-height: 1.5; 
+        text-align: center; 
+        color: #2f2f2f;
+    }
+    #anesthesia .btn p>span {
+        font-family: 'SCDream_Bold';
+    }
+}
+
+.sub_laser img {
+    width: 100%;
+    max-width: 1903px;
+}
+
+.sec01 {
+    background-image: url(../images/sub/laser/thermage/thermage_02_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+}
+
+.sec01 .title {
+    width: 600px;
+}
+
+.sec01 .title p,
+.sec01 .title h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sec01 .title p {
+    font-size: 20px;
+}
+
+.sec01 .title p:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    margin: 30px auto;
+}
+
+.sec01 .title h2 {
+    font-size: 60px;
+    font-family: 'SCDream_Bold';
+    margin: 0 0 50px;
+}
+
+.sec01 .box {
+    width: 600px;
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.sec01 .box p {
+    font-size: 20px;
+    color: #2f2f2f;
+    text-align: center;
+    line-height: 1.5;
+    padding: 100px;
+}
+
+.sec01 .box p>span {
+    font-family: 'SCDream_Medium';
+}
+
+.sec02 {
+    background: rgba(232, 224, 214, 0.5);
+    padding: 150px 0;
+}
+
+.sec02 .title p,
+.sec02 .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec02 .title p {
+    font-size: 20px;
+}
+
+.sec02 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec02 .title h2>span {
+    color: #972e84;
+}
+
+.sec02 .img {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.sec02 .img:after {
+    content: "";
+    position: absolute;
+    top: 84%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 1px;
+    background: #949494;
+    margin: 10px auto;
+}
+
+.sec02 .img p {
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.sec03 {
+    background-image: url(../images/sub/laser/thermage/thermage_04_bg.jpg);
+    background-size: cover;
+    background-position: 0 30%;
+    background-repeat: no-repeat;
+    padding: 300px 0 150px;
+}
+
+.sec03 .wrapper .txt {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+    padding: 0 0 100px 0;
+}
+
+.sec03 .wrapper .txt>span {
+    font-family: 'SCDream_Medium';
+    color: #fff;
+}
+
+.sec03 .img {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.sec03 .img figure {
+    outline: 1px solid #fff;
+    border: 1px solid #fff;
+}
+
+.sec03 .img figure p {
+    margin: 30px 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.sec04 {
+    background: rgba(232, 224, 214, 0.5);
+    padding: 150px 0;
+}
+
+.sec04:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-image: url(../images/sub/laser/thermage/thermage_05_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.sec04 .box {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+}
+
+.sec04 .box>div {
+    flex: 1;
+}
+
+.sec04 .box .line {
+    display: block;
+    width: 2px;
+    height: 200px;
+    margin: auto 0;
+    background: #e8e0d6;
+    flex: none;
+}
+
+.sec04 .box .tit {
+    font-size: 20px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec04 .box .tit>span {
+    color: #972e84;
+}
+
+.sec04 .box .txt {
+    font-size: 20px;
+    margin: 30px 0 50px;
+    line-height: 1.5;
+}
+
+.sec04 .box .txt>span {
+    font-size: 18px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec04 .cont {
+    margin-top: 100px;
+}
+
+.sec04 .cont p,
+.sec04 .cont h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec04 .cont p {
+    font-size: 20px;
+}
+
+.sec04 .cont h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec04 .cont h2>span {
+    color: #972e84;
+}
+
+.sec04 .cont .txt>figure {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.sec04 .cont .txt>figure:last-child {
+    margin-bottom: 0;
+}
+
+.sec04 .cont .txt>figure>img {
+    flex: 1;
+}
+
+.sec04 .cont .txt>figure>.tip {
+    flex: 2;
+}
+
+.sec04 .cont .txt>figure>.tip>p {
+    text-align: left;
+    font-size: 20px;
+    margin: 30px 0 30px 50px;
+    line-height: 1.5;
+}
+
+.sec04 .cont .txt>figure>.tip>p:nth-of-type(3) {
+    font-size: 18px;
+}
+
+.sec04 .cont .txt>figure>.tip>p>span {
+    font-family: 'SCDream_Bold';
+}
+
+.sec05 {
+    background: rgba(232, 224, 214, 1);
+    padding: 150px 0 0;
+}
+
+.sec05 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec05 .title h2>span {
+    color: #972e84;
+}
+
+.sec05 .img>figure {
+    width: 500px;
+    mix-blend-mode: darken;
+}
+
+.sec05 .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.sec05 .txt>p {
+    font-size: 20px;
+    margin: 70px 0;
+}
+
+.sec05 .txt>p:before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #949494;
+    vertical-align: middle;
+    margin-right: 200px;
+}
+
+.sec05 .txt>p:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 170px;
+    height: 2px;
+    background: #949494;
+}
+
+.sec06 {
+    background-image: url(../images/sub/laser/thermage/thermage_07_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+.sec06 .title p,
+.sec06 .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec06 .title p {
+    font-size: 20px;
+}
+
+.sec06 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec06 .title h2>span {
+    color: #972e84;
+}
+
+.sec06 .img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec06 .img p {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    font-size: 20px;
+    font-family: 'SCDream_Bold';
+    line-height: 1.5;
+    background: #972e84;
+    color: #fff;
+    text-align: center;
+}
+
+.sec06 .txt p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #ff0000;
+}
+
+.sec06 .btn {
+    margin-top: 100px;
+}
+
+.sec06 .btn a {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #972e84;
+}
+
+.sec06 .btn p {
+    margin: 20px 0;
+    font-family: 'SCDream_Medium';
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #972e84;
+}
+
+.sec06 .btn:hover a {
+    background: #972e84;
+}
+
+.sec06 .btn:hover a p {
+    color: #fff;
+}
+
+.sec06 .btn:hover a p>span {
+    color: #fff;
+}
+
+.sec07 {
+    background-image: url(../images/sub/laser/thermage/thermage_08_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+.sec07 .title p,
+.sec07 .title h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sec07 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+}
+
+.sec07 .title p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 30px 0 50px;
+}
+
+.sec07 .img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec07 .img p {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+
+.sec08 {
+    background: #fff;
+    padding: 150px 0;
+}
+
+.sec08 .title p,
+.sec08 .title h2 {
+    text-align: center;
+}
+
+.sec08 .title p {
+    font-size: 20px;
+    color: #2f2f2f;
+}
+
+.sec08 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+    color: #972e84;
+}
+
+.sec08 .title:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #949494;
+    margin: 100px auto;
+    transform: rotate(-45deg);
+}
+
+.sec08 .txt p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.sec08 .img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sec09 {
+    background: rgba(232, 224, 214, 1);
+    padding: 150px 0;
+}
+
+.sec09 .wrapper {
+    z-index: 1;
+}
+
+.sec09 .title p,
+.sec09 .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec09 .title p {
+    font-size: 20px;
+}
+
+.sec09 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec09 .title h2>span {
+    color: #972e84;
+}
+
+.sec09 .box {
+    width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 300px auto 0;
+}
+
+.sec09 .box p {
+    font-size: 20px;
+    color: #2f2f2f;
+    text-align: center;
+    line-height: 1.5;
+    padding: 50px;
+}
+
+.sec09 .img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sec10 {
+    padding: 150px 0;
+}
+
+.sec10 .title p,
+.sec10 .title h2 {
+    color: #2f2f2f;
+    text-align: center;
+}
+
+.sec10 .title p {
+    font-size: 20px;
+}
+
+.sec10 .title p>span {
+    color: #b80e0e;
+}
+
+.sec10 .title h2 {
+    font-size: 40px;
+    font-family: 'SCDream_Bold';
+    margin: 30px 0 50px;
+}
+
+.sec10 .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec10 .box figure {
+    width: 32%;
+    margin-bottom: 20px;
+}
+
+.sec10 .txt {
+    background: rgba(232, 224, 214, 0.2);
+}
+
+.sec10 .txt p {
+    font-size: 20px;
+    color: #2f2f2f;
+    text-align: center;
+    line-height: 1.5;
+    padding: 100px 0;
+}
+
+.sec10 .txt p>span {
+    color: #b80e0e;
+}
+
+.sec10 .img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.sec10 .btn {
+    margin-top: 100px;
+}
+
+.sec10 .btn a {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #2f2f2f;
+}
+
+.sec10 .btn p {
+    margin: 20px 0;
+    font-family: 'SCDream_Medium';
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #2f2f2f;
+}
+
+.sec10 .btn p>span {
+    font-family: 'SCDream_Bold';
+}
+
+.sec10 .btn:hover a {
+    background: #2f2f2f;
+}
+
+.sec10 .btn:hover a p {
+    color: #fff;
+}
+
+.sec10 .btn:hover a p>span {
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .pc_br {
+        display: none;
+    }
+
+    .mo_br {
+        display: block;
+    }
+
+    .sub_laser img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sec01 {
+        background-position: 100%;
+        padding: 50px 0;
+    }
+
+    .sec01 .title {
+        width: 100%;
+    }
+
+    .sec01 .title p,
+    .sec01 .title h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+    .sec01 .title p {
+        font-size: 14px;
+    }
+
+    .sec01 .title p:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 2px;
+        background: #fff;
+        margin: 30px auto;
+    }
+
+    .sec01 .title h2 {
+        font-size: 22px;
+        font-family: 'SCDream_Bold';
+        margin: 0 0 50px;
+    }
+
+    .sec01 .box {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8)
+    }
+
+    .sec01 .box p {
+        font-size: 14px;
+        color: #2f2f2f;
+        text-align: center;
+        line-height: 1.5;
+        padding: 50px;
+    }
+
+    .sec01 .box p>span {
+        font-family: 'SCDream_Medium';
+    }
+
+    .sec02 {
+        padding: 50px 0;
+    }
+
+    .sec02 .title p {
+        font-size: 14px;
+    }
+
+    .sec02 .title h2 {
+        font-size: 20px;
+        margin: 20px 0 50px;
+    }
+
+    .sec02 .img {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .sec02 .img:after {
+        content: "";
+        position: absolute;
+        top: 70%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 1px;
+        background: #949494;
+        margin: 10px auto;
+    }
+
+    .sec02 .img p {
+        margin: 30px 0;
+        font-size: 14px;
+    }
+
+    .sec03 {
+        background-size: 200%;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: #000;
+        padding: 50px 0;
+    }
+
+    .sec03 .wrapper .txt {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 100px 0;
+    }
+
+    .sec03 .img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .sec03 .img figure {
+        width: 40%;
+        margin-bottom: 20px;
+        outline: 1px solid #fff;
+        border: 1px solid #fff;
+    }
+
+    .sec03 .img figure:last-child {
+        margin-bottom: 0;
+    }
+
+    .sec03 .img figure p {
+        margin: 15px 0;
+        font-size: 12px;
+    }
+
+    .sec04 {
+        background: rgba(232, 224, 214, 0.5);
+        padding: 50px 0;
+    }
+
+    .sec04:after {
+        background-image: none;
+    }
+
+    .sec04 .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .sec04 .box>div {
+        flex: 1;
+    }
+
+    .sec04 .box .line {
+        display: block;
+        width: 200px;
+        height: 2px;
+        margin: auto 0;
+        background: #e8e0d6;
+        flex: none;
+    }
+
+    .sec04 .box .tit {
+        font-size: 16px;
+        font-family: 'SCDream_Bold';
+        margin: 15px 0;
+    }
+
+    .sec04 .box .tit>span {
+        color: #972e84;
+    }
+
+    .sec04 .box .txt {
+        font-size: 14px;
+        margin: 15px 0;
+        line-height: 1.5;
+    }
+
+    .sec04 .box .txt>span {
+        font-size: 16px;
+        font-family: 'SCDream_Bold';
+        margin: 30px 0 50px;
+    }
+
+    .sec04 .cont {
+        margin-top: 50px;
+    }
+
+    .sec04 .cont p,
+    h2 {
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec04 .cont p {
+        font-size: 14px;
+    }
+
+    .sec04 .cont h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+    }
+
+    .sec04 .cont h2>span {
+        color: #972e84;
+    }
+
+    .sec04 .cont .txt>figure {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .sec04 .cont .txt>figure:last-child {
+        margin-bottom: 0;
+    }
+
+    .sec04 .cont .txt>figure>img {
+        flex: 1;
+    }
+
+    .sec04 .cont .txt>figure>.tip {
+        flex: 2;
+    }
+
+    .sec04 .cont .txt>figure>.tip>p {
+        text-align: left;
+        font-size: 14px;
+        margin: 30px 0;
+        line-height: 1.5;
+    }
+
+    .sec04 .cont .txt>figure>.tip>p:nth-of-type(3) {
+        font-size: 14px;
+    }
+
+    .sec04 .cont .txt>figure>.tip>p>span {
+        font-family: 'SCDream_Bold';
+    }
+
+    .sec05 {
+        background: rgba(232, 224, 214, 1);
+        padding: 50px 0 0;
+    }
+
+    .sec05 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec05 .title h2>span {
+        color: #972e84;
+    }
+
+    .sec05 .img>figure {
+        width: 50%;
+        mix-blend-mode: darken;
+    }
+
+    .sec05 .txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+    }
+
+    .sec05 .txt>p {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+
+    .sec05 .txt>p:before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #949494;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .sec05 .txt>p:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: none;
+        width: 170px;
+        height: 2px;
+        background: #949494;
+    }
+
+    .sec06 {
+        background-image: url(../images/sub/laser/thermage/thermage_07_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+    }
+
+    .sec06 .title p,
+    .sec06 .title h2 {
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec06 .title p {
+        font-size: 14px;
+    }
+
+    .sec06 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+    }
+
+    .sec06 .title h2>span {
+        color: #972e84;
+    }
+
+    .sec06 .img {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec06 .img figure {
+        width: 50%;
+    }
+
+    .sec06 .img p {
+        margin-bottom: 30px;
+        padding: 10px 0;
+        font-size: 14px;
+        font-family: 'SCDream_Bold';
+        line-height: 1.5;
+        background: #972e84;
+        color: #fff;
+        text-align: center;
+    }
+
+    .sec06 .txt p {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+        color: #ff0000;
+    }
+
+    .sec06 .btn {
+        margin-top: 50px;
+    }
+
+    .sec06 .btn a {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        border: 1px solid #972e84;
+    }
+
+    .sec06 .btn p {
+        margin: 20px 0;
+        font-family: 'SCDream_Medium';
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        color: #972e84;
+    }
+
+    .sec07 {
+        background-image: url(../images/sub/laser/thermage/thermage_08_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+    }
+
+    .sec07 .title p,
+    .sec07 .title h2 {
+        color: #fff;
+        text-align: center;
+    }
+
+    .sec07 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+    }
+
+    .sec07 .title p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 30px 0 50px;
+    }
+
+    .sec07 .img {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .sec07 .img figure {
+        width: 48%;
+    }
+
+    .sec07 .img p {
+        margin-bottom: 30px;
+        padding: 20px 0;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #fff;
+        text-align: center;
+    }
+
+    .sec08 {
+        background: #fff;
+        padding: 50px 0 0;
+    }
+
+    .sec08 .title p,
+    .sec08 .title h2 {
+        text-align: center;
+    }
+
+    .sec08 .title p {
+        font-size: 14px;
+        color: #2f2f2f;
+    }
+
+    .sec08 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+        color: #972e84;
+    }
+
+    .sec08 .title:after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 2px;
+        background: #949494;
+        margin: 50px auto;
+        transform: rotate(-45deg);
+    }
+
+    .sec08 .txt p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .sec08 .img {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 80%;
+        margin-left: auto;
+    }
+
+    .sec09 {
+        background: rgba(232, 224, 214, 1);
+        padding: 50px 0 0;
+    }
+
+    .sec09 .title p,
+    .sec09 .title h2 {
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec09 .title p {
+        font-size: 14px;
+    }
+
+    .sec09 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 20px 0 50px;
+    }
+
+    .sec09 .title h2>span {
+        color: #972e84;
+    }
+
+    .sec09 .box {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        margin: 0 auto;
+    }
+
+    .sec09 .box p {
+        font-size: 14px;
+        color: #2f2f2f;
+        text-align: center;
+        line-height: 1.5;
+        padding: 20px;
+    }
+
+    .sec09 .img {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .sec10 {
+        padding: 50px 0;
+    }
+
+    .sec10 .title p,
+    .sec10 .title h2 {
+        color: #2f2f2f;
+        text-align: center;
+    }
+
+    .sec10 .title p {
+        font-size: 14px;
+    }
+
+    .sec10 .title p>span {
+        color: #b80e0e;
+    }
+
+    .sec10 .title h2 {
+        font-size: 20px;
+        font-family: 'SCDream_Bold';
+        margin: 30px 0 50px;
+    }
+
+    .sec10 .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .sec10 .box figure {
+        width: 32%;
+        margin-bottom: 20px;
+    }
+
+    .sec10 .txt {
+        background: rgba(232, 224, 214, 0.2);
+    }
+
+    .sec10 .txt p {
+        font-size: 14px;
+        color: #2f2f2f;
+        text-align: center;
+        line-height: 1.5;
+        padding: 20px 0;
+    }
+
+    .sec10 .txt p>span {
+        color: #b80e0e;
+    }
+
+    .sec10 .img {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        display: none;
+    }
+
+    .sec10 .btn {
+        margin-top: 50px;
+    }
+
+    .sec10 .btn a {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        border: 1px solid #2f2f2f;
+    }
+
+    .sec10 .btn p {
+        margin: 20px 0;
+        font-family: 'SCDream_Medium';
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        color: #2f2f2f;
+    }
+
+    .sec10 .btn p>span {
+        font-family: 'SCDream_Bold';
+    }
+}
+
+#caution {
+    margin-bottom: 150px;
+    padding: 100px 0;
+    background-image: url(../images/sub/new_clinic/clinic_caution_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#caution .wrapper {
+    position: relative;
+}
+
+#caution .text01 {
+    font-size: 25px;
+    color: #fff;
+    font-family: 'SCDream_Medium';
+}
+
+#caution .line {
+    display: block;
+    margin: 20px 0 50px;
+    width: 50px;
+    height: 3px;
+    background-color: #c4a589;
+}
+
+#caution .text02 {
+    width: 32%;
+    color: #fff;
+    line-height: 30px;
+}
+
+#caution .box {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 30px 30px 50px 0px rgb(0 0 0 / 10%);
+}
+
+#caution .box p {
+    line-height: 45px;
+}
+
+#caution .box p::before {
+    display: inline-block;
+    margin: 0 8px 5px 0;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #c4a589;
+    transform: rotate(45deg);
+}
+
+@media all and (max-width: 1400px) {
+    #caution {
+        margin-bottom: 290px;
+        padding: 80px 0 140px;
+    }
+
+    #caution .text01 {
+        text-align: center;
+    }
+
+    #caution .line {
+        margin: 20px auto 30px;
+    }
+
+    #caution .text02 {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    #caution .box {
+        bottom: -330px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media all and (max-width: 1060px) {
+    #caution .text02 {
+        width: 70%;
+    }
+
+    #caution .box {
+        padding: 35px;
+    }
+}
+
+@media all and (max-width: 700px) {
+    #caution {
+        margin-bottom: 70px;
+        padding: 70px 0;
+    }
+
+    #caution .text01 {
+        font-size: 20px;
+    }
+
+    #caution .box {
+        position: relative;
+        bottom: 0;
+        padding: 20px 30px;
+        margin-top: 40px;
+    }
+
+    #caution .text02 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #caution .box p {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #caution .box p:first-of-type {
+        margin-top: 0;
+    }
+}

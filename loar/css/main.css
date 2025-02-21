@@ -1,0 +1,989 @@
+/* main_visual */
+#main_visual {
+    position:relative;
+    width: 100%;
+    height: auto;
+    /* height: 100vh; */
+    overflow: hidden;
+}
+#main_visual .title {
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    left: 100px;
+    text-align: left;
+    z-index: 1;
+}
+#main_visual .title h2 {
+    font-size: 2.5rem;
+    font-family: 'SCDream_Bold';
+    color: #fff;
+}
+#main_visual .title .title_ctn {
+    font-size:1.2rem;
+    line-height:1.5;
+    color: #fff;
+}
+#main_visual .visual_video {
+    width: 100%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%); */
+}
+@media all and (max-width: 1200px) {
+    #main_visual .title h2 {
+        font-size: 1.8rem;
+    }
+    #main_visual .title .title_ctn {
+        font-size: .9rem;
+    }
+}
+
+@media all and (max-width: 700px) {
+    #main_visual .title {
+        display: none;
+        bottom: 8%;
+        left: 5%;
+    }
+    #main_visual .title h2 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    #main_visual .title .title_ctn {
+        font-size: 16px;
+        width: 78%;
+    }
+}
+
+/* 이벤트 배너 */
+
+#event_banner {
+    position: relative;
+    margin-top: -2px;
+    background: linear-gradient(-45deg, #6b605d, #beac9d, #6b605d, #beac9d);
+    background-size: 400% 400%;
+    animation: event_banner_bg 15s ease infinite;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+@-webkit-keyframes event_banner_bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes event_banner_bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes event_banner_bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes event_banner_bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+#event_banner img {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    width: 1000px;
+    height: 72px;
+    transform: translate(50%, 50%);
+    /* right: 55px;
+    bottom: -20px;s
+    width: 170px;
+    height: 170px; */
+}
+#event_banner .line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#event_banner .line span {
+    position: absolute;
+    background-color: #fff;
+}
+#event_banner .line .left_line {
+    top: 0;
+    left: 10px;
+    width: 1px;
+    height: 100%;
+}
+#event_banner .line .top_line {
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+#event_banner .line .right_line {
+    top: 0;
+    right: 10px;
+    width: 1px;
+    height: 100%;
+}
+#event_banner .line .bottom_line {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
+#event_banner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#event_banner .text h1 {
+    margin-bottom: 20px;
+    padding-top: 35px;
+    animation: h1_color 1s step-end infinite;
+    font-size: 32px;
+    font-family: 'SCDream_Bold';
+}
+
+@-webkit-keyframes h1_color {
+    0% {
+        color: #ffef7c;
+    }
+    50% {
+        color: #fff;
+    }
+}
+@-moz-keyframes h1_color {
+    0% {
+        color: #ffef7c;
+    }
+    50% {
+        color: #fff;
+    }
+}
+@-o-keyframes h1_color {
+    0% {
+        color: #ffef7c;
+    }
+    50% {
+        color: #fff;
+    }
+}
+@keyframes h1_color {
+    0% {
+        color: #ffef7c;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+
+#event_banner .text p {
+    margin: 10px 0 15px;
+    color: #fff;
+    font-family: 'SCDream_Regular';
+}
+#event_banner .go_event {
+    display: inline-block;
+    margin: 0 auto 35px;
+    padding: 8px 25px;
+    font-size: 16px;
+    font-family: 'SCDream_Regular';
+    letter-spacing: 0;
+    animation: go_event_color 1s step-end infinite;
+}
+
+@-webkit-keyframes go_event_color {
+    0% {
+        color: #fff;
+        background-color: #1a1a1a;
+    }
+    50% {
+        color: #6b605d;
+        background-color: #fff;
+    }
+}
+@-moz-keyframes go_event_color {
+    0% {
+        color: #fff;
+        background-color: #1a1a1a;
+    }
+    50% {
+        color: #6b605d;
+        background-color: #fff;
+    }
+}
+@-o-keyframes go_event_color {
+    0% {
+        color: #fff;
+        background-color: #1a1a1a;
+    }
+    50% {
+        color: #6b605d;
+        background-color: #fff;
+    }
+}
+@keyframes go_event_color {
+    0% {
+        color: #fff;
+        background-color: #1a1a1a;
+    }
+    50% {
+        color: #6b605d;
+        background-color: #fff;
+    }
+}
+#event_banner:hover .go_event {
+    color: #6b605d;
+    background-color: #fff;
+}
+
+@media all and (max-width: 1200px) {
+    #event_banner .text h1 {
+        font-size: 28px;
+    }
+}
+@media all and (max-width: 700px) {
+    #event_banner .text h1 {
+        margin: 0 auto 15px;
+        padding-top: 30px;
+        width: 90%;
+        font-size: 25px;
+        line-height: 32px;
+    }
+    #event_banner .go_event {
+        margin: 0 auto 30px;
+        padding: 6px 20px;
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+}
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+/* 원장님 약력 */
+#m_history .title p {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #5f5f5f;
+}
+#m_history .title h2 {
+    text-align: left;
+}
+#m_history .title .line {
+    display: block;
+    margin: 25px 0 40px;
+    width: 100%;
+    height: 2px;
+    background-color: #beab9c;
+}
+#m_history .history_box ul li {
+    float: left;
+    width: 32%;
+    height: 610px;
+    margin-left: 2%;
+    background-color: #f5f1ee;
+}
+#m_history .history_box ul li:first-of-type {
+    margin-left: 0;
+}
+#m_history .history_box ul li h1 {
+    width: 100%;
+    background-color: #beab9c;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'SCDream_Bold';
+}
+#m_history .history_box ul li > p {
+    padding: 15px 30px 0 30px;
+    font-size: 16px;
+    line-height: 22px;
+}
+#m_history .history_box ul li > p::before {
+    content: '';
+    margin: 0px 5px 4px 0;
+    width:5px;
+    height: 5px;
+    display: inline-block;
+    background-color: #beab9c;
+    transform: rotate(45deg);
+}
+#m_history .thesis_btn {
+    display: block;
+    padding: 12px 15px;
+    margin: 20px auto;
+    width: 85%;
+    border: 1px solid #beab9c;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+#m_history .thesis_btn p {
+    float: left;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'SCDream_Medium';
+}
+#m_history .thesis_btn button {
+    float: right;
+    padding: 5px 20px;
+    border: none;
+    background-color: #beab9c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#banner {
+    padding: 100px 0;
+    margin: 100px auto 0;
+    max-width: 1903px;
+    background-image: url(/images/main/derma_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: right 30%;
+    background-size: cover;
+    box-sizing: border-box;
+}
+#banner .banner_txt h1 {
+    float: left;
+    width: 90px;
+}
+#banner .banner_txt h1 img {
+    width: 100%;
+}
+#banner .banner_txt h2 {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 35px;
+    line-height: 45px;
+}
+#banner .banner_txt h2 br.mo {
+    display: none;
+}
+#banner .banner_txt h2 span {
+    font-family: 'SCDream_Bold';
+}
+#banner .banner_txt h2 span.t_red {
+    color: #c42836;
+}
+#banner .banner_txt p {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #727272;
+}
+@media all and (max-width: 1400px) {
+    #banner {
+        background-position: 50% top;
+    }
+}
+@media all and (max-width: 1060px) {
+    #banner {
+        background-position: 75% top;
+    }
+    #banner .banner_txt h1 {
+        float: none;
+        width: 60px;
+    }
+    #banner .banner_txt h2 {
+        margin-left:0;
+        margin-top: 25px;
+        font-size: 32px;
+        line-height: 42px;
+    }
+    #banner .banner_txt p {
+        margin-top: 25px;
+        font-size: 18px;
+        line-height: 28px;
+    }    
+}
+@media all and (max-width: 700px) {
+    #banner {
+        margin: 70px auto 0;
+        padding: 50px 0;
+        background-position: 20%;
+    }
+    #banner .banner_txt h1 {
+        width: 55px;
+    }
+    #banner .banner_txt h2 {
+        margin-top: 20px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    #banner .banner_txt h2 br.mo {
+        display: block;
+    }
+    #banner .banner_txt p {
+        font-size: 16px;
+        line-height:25px;
+    }
+}
+
+.thesis {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 80%);
+    overflow-y: auto;
+    z-index: 999999999;
+    -ms-overflow-style: none;
+}
+.thesis::-webkit-scrollbar {
+    display: none;
+}
+.thesis .close_btn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 15px;
+    font-family: 'SCDream_Medium';
+    font-size: 45px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    z-index: 9;
+}
+.thesis .wrapper {
+    margin: 100px auto !important;
+}
+.thesis .box span {
+    display: block;
+    margin-bottom: 20px;
+    color: #c42836;
+    font-size: 25px;
+    text-decoration: underline;
+    font-family: 'SCDream_Bold';
+}
+.thesis .box p {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.thesis .box .b_txt {
+    font-family: 'SCDream_Bold';
+}
+.active .line {
+    margin-top: 30px;
+    width: 100%;
+    height: 2px;
+    background-color: #beab9c;
+}
+.active .box {
+    width: 100%;
+    padding: 45px;
+    background-color: #f5f1ee;
+    box-sizing: border-box;
+}
+.active .box p {
+    position: relative;
+}
+.active .box p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+
+@media all and (max-width: 1400px) {
+    #m_history .history_box ul li:first-of-type {
+        width: 49%;
+        margin-left: 0;
+        height: 475px;
+    }
+    #m_history .history_box ul li:nth-child(2) {
+        width: 49%;
+        margin-left: 2%;
+        height: 475px;
+    }
+    #m_history .history_box ul li:nth-child(3) {
+        width: 100%;
+        margin-left: 0;
+        margin-top:2%;
+        height: auto;
+    }
+    #m_history .thesis_btn {
+        width: 40%;
+        margin: 25px;
+    }
+}
+@media all and (max-width: 1060px) {
+    #m_history .title {
+        margin: 0 auto;
+        width: 90%;
+    }
+    #m_history .history_box {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #m_history .history_box ul li:first-of-type {
+        height: 540px;
+    }
+    #m_history .history_box ul li:nth-child(2) {
+        height: 540px;
+    }
+}
+@media all and (max-width: 700px) {
+    #m_history .title {
+        margin: 0;
+        width: 100%;
+    }
+    #m_history .title p {
+        padding-bottom: 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    #m_history .title .line {
+        margin: 20px 0 20px;
+    }
+    #m_history .history_box ul li {
+        width: 100% !important;
+        padding-bottom: 25px;
+        margin: 20px 0 0 0 !important;
+    }
+    #m_history .history_box ul li:first-of-type,
+    #m_history .history_box ul li:nth-child(2) {
+        height: auto;
+    }
+    #m_history .history_box ul li > p {
+        padding: 13px 20px 0 20px;
+    }
+    #m_history .thesis_btn {
+        width: 87%;
+        margin: 25px 25px 0 25px;
+    }
+
+
+    .thesis .wrapper {
+        margin: 75px auto !important;
+    }
+    .thesis .close_btn {
+        font-size: 35px;
+        padding: 10px;
+    }
+    .active .box {
+        padding: 25px;
+    }
+    .thesis .box p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .thesis .box span {
+        font-size: 20px;
+    }
+}
+
+/* sec - 의료진소개 */
+#m_doctor {
+    position: relative;
+    padding: 100px 0;
+    background-image: url(/images/main/doctor_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+#m_doctor .content {
+    /* margin-top:50px;
+    background-image: url(/images/main/doctor_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;  해제 */
+}
+/* #m_doctor .content .wrapper {
+    width: 1060px;
+} 해제(?) */
+#m_doctor .content .d_img {
+    position: relative; /* 삭제 */
+    float: left;
+    /* width: 497px; 해제 */
+    width: 49%; /* 삭제 */
+    padding: 50px; /* 삭제 */
+    margin-top: 50px; /* 삭제 */
+    background-color: #f2f2f2; /* 삭제 */
+    margin-left: 2%; /* 삭제 */
+    box-sizing: border-box; /* 삭제 */
+    /* margin-left: 65px;
+    margin-bottom: 100px; 해제 */
+    box-shadow: 15px 15px 20px #dbd3cd;
+    border-top: 2px solid #c1ac9b
+}
+#m_doctor .content .d_img:first-of-type {
+    margin-left: 0;
+}
+/* #m_doctor .content .d_img img {
+    width: 100%;
+} 해제 */
+#m_doctor .content .text01 {
+    /* margin-left: 10px; 해제 */
+    /* padding: 30px 0; 해제 */
+    padding: 0 0 30px 0; /* 삭제 */
+    font-size: 28px;
+    font-family: "SCDream_ExtraBold";
+}
+#m_doctor .content .text01 span {
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: "SCDream_Light";
+}
+#m_doctor .content .text02 {
+    /* margin-left: 10px; 해제 */
+    padding-bottom: 30px;
+    line-height: 28px;
+}
+#m_doctor .content .read_more {
+    /* margin-left: 10px; 해제 */
+    color: #868686;
+}
+#m_doctor .content .d_img img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 55px;
+}/* 삭제 */
+@media all and (max-width: 1400px) {
+    #m_doctor .content .d_img {
+        padding: 71px 38px 71px 38px;
+    }
+    #m_doctor .content .d_img:first-of-type {
+        padding: 85px 38px 85px 38px;
+    }
+    #m_doctor .content .text01 {
+        font-size: 28px;
+    }
+    #m_doctor .content .text01 span {
+        margin-left: 10px;
+    }
+    #m_doctor .content .d_img img {
+        width: 50px;
+    }
+} /* 삭제 */
+@media all and (max-width: 1060px) {
+    /* #m_doctor .content .wrapper {
+        width: 700px;
+    } 해제(?) */
+    #m_doctor .content .d_img {
+        /* width: 325px;
+        margin-left: 50px; 해제 */
+        padding: 61px 30px; /* 삭제 */
+    }
+    #m_doctor .content .d_img:first-of-type {
+        padding: 75px 30px; 
+    } /* 삭제 */
+    #m_doctor .content .text01 {
+        /* padding: 20px 0; 
+        font-size: 28px; 해제 */
+        padding: 0 0 20px 0; /* 삭제 */
+        font-size: 25px; /* 삭제 */
+    }
+    #m_doctor .content .text01 span {
+        margin-left: 10px;
+    }
+    #m_doctor .content .text02 {
+        padding-bottom: 30px;
+        font-size: 16px;
+    }
+    #m_doctor .content .text02 br {
+        display: none;
+    }
+}
+@media all and (max-width: 700px) {
+    #m_doctor {
+        padding: 70px 0;
+    }
+    #m_doctor .content {
+        background-position: bottom center;
+        background-size: 270%;
+    }
+    /* #m_doctor .content .wrapper {
+        width: 90%;
+    } 해제(?) */
+    #m_doctor .content .d_img {
+        margin-left: 0;
+        /* margin-bottom: 50px; 해제 */
+        margin-bottom: 0;
+        margin-top: 35px;
+        width: 100%;
+    }
+    #m_doctor .content .d_img img {
+        width: 35px;
+    }
+    #m_doctor .content .d_img:first-of-type,
+    #m_doctor .content .d_img {
+        padding: 50px 30px
+    }
+    #m_doctor .content .text01 {
+        font-size: 22px;
+    }
+    #m_doctor .content .text01 span {
+        margin-left: 5px;
+    }
+    #m_doctor .content .text01,
+    #m_doctor .content .text02,
+    #m_doctor .content .read_more {
+        margin-left: 0;
+    }
+    #m_doctor .content .text02 {
+        padding-bottom: 25px;
+        line-height: 22px;
+    }
+}
+
+/* 둘러보기 */
+#m_gallery .left {
+    float: left;
+    width: 30%;
+}
+#m_gallery .title {
+    text-align: left;
+    margin: 30px 0 45px;
+}
+#m_gallery .title h2 {
+    text-align: left;
+    font-size: 35px;
+    font-family: 'SCDream_Bold';
+}
+#m_gallery .title h3 {
+    text-align: left;
+    width: 90%;
+    line-height: 25px;
+}
+#m_gallery .title button {
+    margin-top: 30px;
+    padding: 0;
+    text-align: left;
+    color: #868686;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.thumbs {
+    width: 97%;
+}
+.thumbs a {
+    float: left;
+    width: 33.3%;
+}
+.thumbs img {
+    padding:3px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#m_gallery .right {
+    float: right;
+    width: 68%;
+    height: auto;
+}
+#mainImg {
+    width:100%;
+}
+#mainImg img {
+    width: 100%;
+}
+
+@media all and (max-width: 1400px) {
+    #m_gallery .left {
+        width: 100%;
+    }
+    #m_gallery .title {
+        margin: 0 0 40px;
+    }
+    #m_gallery .title h2 {
+        font-size: 30px;
+    }
+    #m_gallery .title h3 {
+        width: 100%;
+    }
+    .thumbs {
+        width: 100%;
+    }
+    .thumbs a {
+        width: 20%;
+    }
+    #m_gallery .right {
+        width: 100%;
+    }
+}
+@media all and (max-width: 700px) {
+    #m_gallery .title {
+        margin: 0 0 30px;
+    }
+    #m_gallery .title h2 {
+        font-size: 25px;
+    }
+    #m_gallery .title h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #m_gallery .title button {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+/* sec - 레이저 */
+#m_laser {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+    background-image: url(/images/main/eq_bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+#m_laser .title span,
+#m_laser .title h2,
+#m_laser .title h3 {
+    color: #fff;
+}
+#m_laser .content {
+    margin-top: 50px;
+}
+#m_laser .clinic_laser .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .4;
+}
+#m_laser .clinic_laser .slick-current {
+    opacity: 1;
+}
+#m_laser .clinic_laser > div {
+    padding: 0 28% !important;
+}
+#m_laser .clinic_laser img {
+    margin: 0 auto 20px;
+}
+#m_laser .clinic_laser span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'SCDream_Bold';
+}
+#m_laser .clinic_laser span.no_logo {
+    margin-top: 115px;
+}
+#m_laser .clinic_laser p {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 30px;
+}
+#m_laser .slick-prev {
+    width: 102px;
+    height: 30px;
+    left: -200px;
+    background: url(/images/main/btn_prev.png) 100% no-repeat;
+}
+#m_laser .slick-next {
+    width: 102px;
+    height: 30px;
+    right: -200px;
+    background: url(/images/main/btn_next.png) 100% no-repeat;
+}
+.slick-prev:before, .slick-next:before {
+    display: none;
+}
+#m_laser .read_more {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+#m_laser .read_more p {
+    margin: 65px 0 30px;
+    font-family: 'SCDream_Medium';
+    font-size: 22px;
+}
+#m_laser .read_more button {
+    padding: 18px 0;
+    width: 230px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+@media all and (max-width: 1400px) {
+    #m_laser {
+        background-size: 120%;
+    }
+    #m_laser .clinic_laser > div {
+        padding: 0 25% !important;
+    }
+    #m_laser .read_more button {
+        padding: 15px 0;
+    }
+}
+@media all and (max-width: 1060px) {
+    #m_laser {
+        background-size: 150%;
+    }
+    #m_laser .clinic_laser > div {
+        padding: 0 !important;
+    }
+    #m_laser .clinic_laser span.no_logo {
+        margin-top: 60px;
+    }
+    #m_laser .clinic_laser p {
+        line-height: 28px;
+    }
+    #m_laser .slick-prev {
+        left: 0;
+    }
+    #m_laser .slick-next {
+        right: 0;
+    }
+    #m_laser .read_more p {
+        margin: 45px 0 30px;
+        font-size: 20px;
+    }
+    #m_laser .read_more button {
+        width: 190px;
+        font-size: 16px;
+    }
+}
+@media all and (max-width: 700px) {
+    #m_laser {
+        background-size: 290%;
+        padding: 70px 0;
+    }
+    #m_laser .clinic_laser img {
+        margin: 0 auto 15px;
+    }
+    #m_laser .clinic_laser img:first-of-type {
+        width: 75%;
+    }
+    #m_laser .clinic_laser p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #m_laser .clinic_laser span {
+        font-size: 22px;
+    }
+    #m_laser .read_more p {
+        margin: 25px 0;
+        font-size: 16px;
+    }
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+}
