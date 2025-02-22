@@ -269,7 +269,7 @@ body::-webkit-scrollbar-thumb {
 #sec-01 .inner .left .title {
     font-family: 's-core-dream-medium';
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 #sec-01 .inner .left .btn-box {
     width: 50%;
@@ -405,7 +405,7 @@ body::-webkit-scrollbar-thumb {
     #sec-01 .inner .left .title {
         font-family: 's-core-dream-medium';
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        line-height: 1.2rem;
     }
     #sec-01 .inner .left .btn-box {
         width: 50%;
@@ -538,7 +538,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-family: 's-core-dream-medium';
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 #sec-02 .inner .img-box {
     display: flex;
@@ -586,7 +586,7 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         font-family: 's-core-dream-medium';
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        line-height: 1.2rem;
     }
     #sec-02 .inner .img-box {
         display: flex;
@@ -737,11 +737,11 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-family: 's-core-dream-medium';
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 #sec-03 .inner .center-box .title>a {
     display: block;
-    margin: 0 auto;
+    margin: 30px auto;
     text-align: center;
     font-family: 's-core-dream-medium';
     font-size: 0.7rem;
@@ -862,11 +862,11 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         font-family: 's-core-dream-medium';
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        line-height: 1.2rem;
     }
     #sec-03 .inner .center-box .title>a {
         display: block;
-        margin: 0 auto;
+        margin: 15px auto;
         text-align: center;
         font-family: 's-core-dream-medium';
         font-size: 0.5rem;
@@ -882,7 +882,7 @@ body::-webkit-scrollbar-thumb {
     text-align: left;
     font-family: 's-core-dream-medium';
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 #sec-04 .inner .title span {
     font-size: 1rem;
@@ -923,7 +923,7 @@ body::-webkit-scrollbar-thumb {
         text-align: left;
         font-family: 's-core-dream-medium';
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        line-height: 1.2rem;
     }
     #sec-04 .inner .title span {
         font-size: 0.6rem;
@@ -966,7 +966,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-family: 's-core-dream-medium';
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 #sec-05 .inner .title span {
     font-size: 1rem;
@@ -1010,7 +1010,7 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         font-family: 's-core-dream-medium';
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        line-height: 1.2rem;
     }
     #sec-05 .inner .title span {
         font-size: 0.6rem;
@@ -1057,7 +1057,7 @@ body::-webkit-scrollbar-thumb {
     text-align: left;
     font-family: 's-core-dream-medium';
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 #sec-06 .inner .profile.flex {
     display: flex;
@@ -1121,7 +1121,7 @@ body::-webkit-scrollbar-thumb {
         text-align: left;
         font-family: 's-core-dream-medium';
         font-size: 0.9rem;
-        line-height: 1.5rem;
+        line-height: 1.2rem;
     }
     #sec-06 .inner .profile.flex {
         display: flex;
