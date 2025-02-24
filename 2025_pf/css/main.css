@@ -1068,18 +1068,18 @@ body::-webkit-scrollbar-thumb {
 #sec-06 .inner .profile .text {
     margin: auto 0 auto 50px;
 }
-#sec-06 .inner .profile .text i {
+#sec-06 .inner .profile .text div {
     display: block;
 }
-#sec-06 .inner .profile .text i img {
+#sec-06 .inner .profile .text div img {
     display: inline-block;
     width: 40px;
     margin: 20px 0;
 }
-#sec-06 .inner .profile .text i::before {
+#sec-06 .inner .profile .text div::before {
     vertical-align: middle;
 }
-#sec-06 .inner .profile .text i>p {
+#sec-06 .inner .profile .text div>p {
     margin-left: 20px;
     display: inline-block;
     font-size: 1rem;
